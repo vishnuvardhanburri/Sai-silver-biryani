@@ -7,6 +7,7 @@ const restaurantInfo = {
   reviewCount: 192,
   priceRange: "\u20B9200\u2013400",
   phone: "089194 43535",
+  smsPhone: "+918919443535",
   email: "contact@saisilverbiryani.com",
   address: "FMRC+3Q9, Vijayawada Rd, Sanath Nagar, Vijayawada, Andhra Pradesh 520007",
   openingTime: "11:30 AM",
@@ -694,6 +695,77 @@ function showToast(message) {
   }, 3200);
 }
 
+function getFormValue(formData, key, fallback = "Not provided") {
+  const value = String(formData.get(key) ?? "").trim();
+  return value || fallback;
+}
+
+function formatDateValue(value) {
+  if (!value || value === "Not provided") return "Not provided";
+
+  const date = new Date(`${value}T00:00:00`);
+  if (Number.isNaN(date.getTime())) return value;
+
+  return new Intl.DateTimeFormat("en-IN", { dateStyle: "medium" }).format(date);
+}
+
+function formatTimeValue(value) {
+  if (!value || value === "Not provided") return "Not provided";
+
+  const [hours, minutes] = value.split(":").map(Number);
+  if (Number.isNaN(hours) || Number.isNaN(minutes)) return value;
+
+  const date = new Date();
+  date.setHours(hours, minutes, 0, 0);
+  return new Intl.DateTimeFormat("en-IN", { timeStyle: "short" }).format(date);
+}
+
+function buildReservationMessage(formData) {
+  return [
+    `New table reservation for ${restaurantInfo.name}`,
+    "",
+    `Name: ${getFormValue(formData, "name")}`,
+    `Phone: ${getFormValue(formData, "phone")}`,
+    `Email: ${getFormValue(formData, "email")}`,
+    `Date: ${formatDateValue(getFormValue(formData, "date"))}`,
+    `Time: ${formatTimeValue(getFormValue(formData, "time"))}`,
+    `Guests: ${getFormValue(formData, "guests")}`,
+    `Special requests: ${getFormValue(formData, "requests")}`,
+    "",
+    "Please confirm this table booking.",
+  ].join("\n");
+}
+
+function buildCateringMessage(formData) {
+  return [
+    `New catering inquiry for ${restaurantInfo.name}`,
+    "",
+    `Name: ${getFormValue(formData, "name")}`,
+    `Phone: ${getFormValue(formData, "phone")}`,
+    `Email: ${getFormValue(formData, "email")}`,
+    `Event date: ${formatDateValue(getFormValue(formData, "date"))}`,
+    `Guests: ${getFormValue(formData, "guests")}`,
+    `Package: ${getFormValue(formData, "package")}`,
+    `Details: ${getFormValue(formData, "details")}`,
+    "",
+    "Please contact me regarding the catering requirement.",
+  ].join("\n");
+}
+
+function getSmsLink(message) {
+  const separator = /iPad|iPhone|iPod/i.test(window.navigator.userAgent) ? "&" : "?";
+  return `sms:${restaurantInfo.smsPhone}${separator}body=${encodeURIComponent(message)}`;
+}
+
+function openSmsComposer(message) {
+  const link = document.createElement("a");
+  link.href = getSmsLink(message);
+  link.style.display = "none";
+  document.body.append(link);
+  link.click();
+  link.remove();
+}
+
 function openVideo(videoId, title) {
   if (!modal || !videoFrame) return;
 
@@ -768,11 +840,16 @@ function handleFormSubmit(event) {
   event.preventDefault();
 
   const isCateringForm = form.id === "catering-form";
+  const formData = new FormData(form);
   const message = isCateringForm
-    ? "Catering inquiry captured. We'll get back to you within 24 hours."
-    : "Reservation request captured. We'll confirm your table shortly.";
+    ? buildCateringMessage(formData)
+    : buildReservationMessage(formData);
+  const toastMessage = isCateringForm
+    ? "Opening your SMS app with the catering inquiry details."
+    : "Opening your SMS app with the reservation details.";
 
-  showToast(message);
+  openSmsComposer(message);
+  showToast(toastMessage);
   form.reset();
 }
 

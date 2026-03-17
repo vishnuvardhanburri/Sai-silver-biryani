@@ -2082,6 +2082,18 @@ textarea {
   font-size: 0.95rem;
 }
 
+.form-note {
+  margin: 14px 0 0;
+  color: #7c685e;
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+.form-note a {
+  color: var(--primary);
+  font-weight: 700;
+}
+
 .toast {
   position: fixed;
   left: 16px;
