@@ -788,6 +788,7 @@ function markRevealTargets(scope = document) {
     ".about-visual",
     ".about-copy",
     ".feature-card",
+    ".menu-book-promo",
     ".menu-card",
     ".pricing-note",
     ".offer-card",
