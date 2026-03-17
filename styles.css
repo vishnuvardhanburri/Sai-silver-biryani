@@ -272,34 +272,46 @@ section[id] {
 .hero__content {
   position: relative;
   z-index: 1;
-  padding: 28px 0 72px;
+  display: flex;
+  flex-direction: column;
+  min-height: 730px;
+  padding: 30px 0 78px;
 }
 
 .topbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 24px;
+  gap: 28px;
   animation: fade-lift 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.05s both;
 }
 
 .brand {
-  font-size: 1.05rem;
-  font-weight: 700;
-  letter-spacing: -0.02em;
+  font-size: 1.2rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  white-space: nowrap;
 }
 
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 14px;
   flex-wrap: wrap;
   justify-content: flex-end;
+  padding: 12px 14px;
+  margin-left: auto;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .nav-links button {
   position: relative;
+  padding: 0;
   color: rgba(255, 255, 255, 0.88);
+  font-size: 1.04rem;
+  font-weight: 600;
   transition: color 0.2s ease, transform 0.2s ease;
 }
 
@@ -326,9 +338,16 @@ section[id] {
   transform: scaleX(1);
 }
 
+.nav-links .button {
+  min-height: 52px;
+  padding: 12px 24px;
+  margin-left: 4px;
+  white-space: nowrap;
+}
+
 .hero-copy {
-  max-width: 680px;
-  padding: 112px 0 0;
+  max-width: 640px;
+  padding: 84px 0 0;
 }
 
 .rating-pill {
@@ -358,12 +377,14 @@ section[id] {
   font-size: clamp(3rem, 7vw, 5rem);
   line-height: 0.94;
   letter-spacing: -0.05em;
+  max-width: 8ch;
   animation: fade-lift 0.92s cubic-bezier(0.22, 1, 0.36, 1) 0.22s both;
 }
 
 .hero-tagline {
   margin: 0;
   font-size: clamp(1.05rem, 2vw, 1.4rem);
+  max-width: 18ch;
   color: rgba(255, 255, 255, 0.84);
   animation: fade-lift 0.92s cubic-bezier(0.22, 1, 0.36, 1) 0.3s both;
 }
@@ -373,6 +394,7 @@ section[id] {
   flex-wrap: wrap;
   gap: 10px 12px;
   margin-top: 28px;
+  max-width: 620px;
   animation: fade-lift 0.92s cubic-bezier(0.22, 1, 0.36, 1) 0.38s both;
 }
 
@@ -430,6 +452,9 @@ section[id] {
 
 .order-strip {
   margin-top: 28px;
+  display: grid;
+  gap: 12px;
+  width: fit-content;
   animation: fade-lift 0.92s cubic-bezier(0.22, 1, 0.36, 1) 0.54s both;
 }
 
@@ -487,6 +512,7 @@ section[id] {
   flex-wrap: wrap;
   gap: 12px;
   margin-top: 20px;
+  max-width: 620px;
   animation: fade-lift 0.92s cubic-bezier(0.22, 1, 0.36, 1) 0.62s both;
 }
 
@@ -1798,6 +1824,17 @@ textarea {
 }
 
 @media (max-width: 1080px) {
+  .topbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .nav-links {
+    width: 100%;
+    justify-content: flex-start;
+    margin-left: 0;
+  }
+
   .about-grid,
   .form-shell,
   .contact-grid {
@@ -1864,11 +1901,19 @@ textarea {
   }
 
   .nav-links {
+    padding: 0;
+    border: 0;
+    background: transparent;
     justify-content: flex-start;
   }
 
+  .nav-links .button {
+    margin-left: 0;
+  }
+
   .hero-copy {
-    padding-top: 76px;
+    max-width: 100%;
+    padding-top: 54px;
   }
 
   .section {
