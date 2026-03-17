@@ -524,28 +524,29 @@ function renderMenuCards(animate = false) {
               <p>${item.description}</p>
               <div class="menu-card__footer">
                 <span class="spice-pill">${item.spiceLevel}</span>
-                <span class="menu-card__hint">${
-                  isExpanded ? "Tap to close details" : "Tap for ingredients and cooking story"
-                }</span>
+                <span class="menu-card__hint">${isExpanded ? "Close story" : "View story"}</span>
                 <span class="menu-card__chevron" aria-hidden="true"></span>
               </div>
             </div>
           </button>
           <div class="menu-card__details" id="menu-card-detail-${item.id}">
             <div class="menu-card__details-inner">
+              <div class="menu-card__details-intro">
+                <p class="menu-card__detail-kicker">Chef's note</p>
+                <p class="menu-card__detail-summary">${details.finish}</p>
+              </div>
               <div class="menu-card__detail-grid">
-                <div class="menu-card__detail-block">
+                <div class="menu-card__detail-block menu-card__detail-block--story">
                   <p class="menu-card__detail-label">How we make it</p>
                   <p>${details.cooking}</p>
                 </div>
-                <div class="menu-card__detail-block">
+                <div class="menu-card__detail-block menu-card__detail-block--ingredients">
                   <p class="menu-card__detail-label">Main ingredients</p>
                   <div class="menu-card__detail-list">
                     ${details.ingredients.map((ingredient) => `<span>${ingredient}</span>`).join("")}
                   </div>
                 </div>
               </div>
-              <p class="menu-card__finish">${details.finish}</p>
             </div>
           </div>
         </article>
