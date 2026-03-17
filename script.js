@@ -443,6 +443,12 @@ let modalHideTimer = null;
 let menuRefreshTimer = null;
 let revealObserver = null;
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+const mobileViewport = window.matchMedia("(max-width: 760px)");
+const saveDataEnabled = Boolean(navigator.connection?.saveData);
+
+function canUseMotion() {
+  return !(prefersReducedMotion.matches || mobileViewport.matches || saveDataEnabled);
+}
 
 function formatCurrency(value) {
   return `\u20B9 ${value}`;
@@ -498,7 +504,7 @@ function renderMenuCards(animate = false) {
       const image = item.image
         ? `
           <div class="menu-card__image">
-            <img src="${item.image}" alt="${item.name}" loading="lazy" />
+            <img src="${item.image}" alt="${item.name}" loading="lazy" decoding="async" width="940" height="650" />
             ${item.popular ? '<span class="menu-card__badge">Popular</span>' : ""}
           </div>
         `
@@ -586,7 +592,7 @@ function renderGallery() {
     .map(
       (item) => `
         <article class="gallery-card">
-          <img src="${item.url}" alt="${item.alt}" loading="lazy" />
+          <img src="${item.url}" alt="${item.alt}" loading="lazy" decoding="async" width="940" height="650" />
           <span>${item.alt}</span>
         </article>
       `,
@@ -601,7 +607,7 @@ function renderVideos() {
         <article class="video-card">
           <button type="button" data-video-id="${video.videoId}" data-video-title="${video.title}">
             <div class="video-thumb">
-              <img src="${video.thumbnail}" alt="${video.title}" loading="lazy" />
+              <img src="${video.thumbnail}" alt="${video.title}" loading="lazy" decoding="async" width="1280" height="720" />
               <span class="video-play">&#9658;</span>
               <span class="video-duration">${video.duration}</span>
             </div>
@@ -808,7 +814,7 @@ function markRevealTargets(scope = document) {
     node.style.setProperty("--reveal-delay", `${Math.min((index % 6) * 70, 280)}ms`);
 
     if (
-      prefersReducedMotion.matches ||
+      !canUseMotion() ||
       node.getBoundingClientRect().top < window.innerHeight * 0.92
     ) {
       node.classList.add("is-visible");
@@ -820,7 +826,7 @@ function markRevealTargets(scope = document) {
 }
 
 function setupRevealAnimations() {
-  if (prefersReducedMotion.matches) {
+  if (!canUseMotion()) {
     markRevealTargets(document);
     return;
   }
@@ -843,7 +849,7 @@ function setupRevealAnimations() {
 }
 
 function triggerMenuGridRefresh() {
-  if (prefersReducedMotion.matches) return;
+  if (!canUseMotion()) return;
 
   menuGrid.classList.remove("is-refreshing");
   clearTimeout(menuRefreshTimer);
@@ -856,27 +862,9 @@ function triggerMenuGridRefresh() {
 }
 
 function setupHeroParallax() {
-  if (!heroBackdrop || prefersReducedMotion.matches) return;
-
-  let isTicking = false;
-
-  const updateBackdrop = () => {
-    const offset = Math.min(window.scrollY, 420);
-    heroBackdrop.style.transform = `scale(1.08) translate3d(0, ${offset * 0.12}px, 0)`;
-    isTicking = false;
-  };
-
-  updateBackdrop();
-
-  window.addEventListener(
-    "scroll",
-    () => {
-      if (isTicking) return;
-      isTicking = true;
-      window.requestAnimationFrame(updateBackdrop);
-    },
-    { passive: true },
-  );
+  if (!heroBackdrop) return;
+  heroBackdrop.style.willChange = "auto";
+  heroBackdrop.style.transform = "";
 }
 
 function init() {
