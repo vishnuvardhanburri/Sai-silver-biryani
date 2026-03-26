@@ -306,7 +306,8 @@ section[id] {
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.nav-links button {
+.nav-links button,
+.nav-link-anchor {
   position: relative;
   padding: 0;
   color: rgba(255, 255, 255, 0.88);
@@ -315,7 +316,8 @@ section[id] {
   transition: color 0.2s ease, transform 0.2s ease;
 }
 
-.nav-links button::after {
+.nav-links button::after,
+.nav-link-anchor::after {
   content: "";
   position: absolute;
   left: 0;
@@ -329,12 +331,14 @@ section[id] {
   transition: transform 0.24s ease;
 }
 
-.nav-links button:hover {
+.nav-links button:hover,
+.nav-link-anchor:hover {
   color: #ffffff;
   transform: translateY(-1px);
 }
 
-.nav-links button:hover::after {
+.nav-links button:hover::after,
+.nav-link-anchor:hover::after {
   transform: scaleX(1);
 }
 
