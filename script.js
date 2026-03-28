@@ -27,8 +27,7 @@ const menuItems = [
         description:
           "Aromatic basmati rice layered with tender chicken, slow-cooked in traditional dum style",
         spiceLevel: "Medium Spice",
-        image:
-          "https://images.pexels.com/photos/33947401/pexels-photo-33947401.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        image: "./media/gallery/signature-chicken-dum.jpeg",
         popular: true,
       },
       {
@@ -38,8 +37,7 @@ const menuItems = [
         description:
           "Premium mutton pieces cooked with fragrant spices and saffron-infused rice",
         spiceLevel: "Medium Spice",
-        image:
-          "https://images.pexels.com/photos/29631417/pexels-photo-29631417.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        image: "./media/gallery/fry-biryani-special.jpeg",
         popular: true,
       },
       {
@@ -49,8 +47,7 @@ const menuItems = [
         description:
           "Our chef's special with premium ingredients and authentic Hyderabadi flavors",
         spiceLevel: "High Spice",
-        image:
-          "https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTJ8MHwxfHNlYXJjaHwyfHxiaXJ5YW5pfGVufDB8fHx8MTc3MzcyNTYyNXww&ixlib=rb-4.1.0&q=85",
+        image: "./media/gallery/special-rice-platter.jpeg",
         popular: false,
       },
       {
@@ -188,33 +185,60 @@ const reviews = [
 const gallery = [
   {
     id: 1,
-    url: "https://images.pexels.com/photos/33947401/pexels-photo-33947401.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-    alt: "Signature Chicken Dum Biryani",
+    url: "./media/gallery/signature-chicken-dum.jpeg",
+    alt: "Signature chicken dum biryani served with salan and raita",
+    title: "Signature Dum Biryani",
+    tag: "Best Seller",
+    featured: true,
   },
   {
     id: 2,
-    url: "https://images.pexels.com/photos/29631417/pexels-photo-29631417.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-    alt: "Mutton Dum Biryani",
+    url: "./media/gallery/fry-biryani-special.jpeg",
+    alt: "Rich fry biryani topped with roasted cashews and peppers",
+    title: "Rich Fry Biryani",
+    tag: "Chef Pick",
   },
   {
     id: 3,
-    url: "https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTJ8MHwxfHNlYXJjaHwyfHxiaXJ5YW5pfGVufDB8fHx8MTc3MzcyNTYyNXww&ixlib=rb-4.1.0&q=85",
-    alt: "Special Silver Dum Biryani",
+    url: "./media/gallery/special-rice-platter.jpeg",
+    alt: "Special rice platter with house curry and fresh garnish",
+    title: "Special Rice Platter",
+    tag: "House Special",
   },
   {
     id: 4,
-    url: "https://images.unsplash.com/photo-1751200503125-d8cb239f95ba?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTF8MHwxfHNlYXJjaHwzfHxpbmRpYW4lMjByZXN0YXVyYW50JTIwaW50ZXJpb3J8ZW58MHx8fHwxNzczNzI1ODY3fDA&ixlib=rb-4.1.0&q=85",
-    alt: "Restaurant Interior",
+    url: "./media/gallery/roomali-roti-curry.jpeg",
+    alt: "Roomali roti served with a creamy curry",
+    title: "Roti & Curry Pairing",
+    tag: "Freshly Served",
   },
   {
     id: 5,
-    url: "https://images.pexels.com/photos/10148453/pexels-photo-10148453.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-    alt: "Dining Area",
+    url: "./media/gallery/butter-naan-gravy.jpeg",
+    alt: "Butter naan paired with signature green gravy",
+    title: "Butter Naan Combo",
+    tag: "Bread Special",
   },
   {
     id: 6,
-    url: "https://images.unsplash.com/photo-1770990409935-17f1ae739b21?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzOTB8MHwxfHNlYXJjaHw0fHxjYXRlcmluZyUyMGJ1ZmZldHxlbnwwfHx8fDE3NzM3MjU4OTB8MA&ixlib=rb-4.1.0&q=85",
-    alt: "Catering Services",
+    url: "./media/gallery/veg-starter-platter.jpeg",
+    alt: "Veg starter platter with crisp fried vegetables and garnish",
+    title: "Veg Starter Platter",
+    tag: "Starter Favourite",
+  },
+  {
+    id: 7,
+    url: "./media/gallery/handi-rice-sides.jpeg",
+    alt: "Handi rice served with salan and raita sides",
+    title: "Handi Rice Set",
+    tag: "Table Favourite",
+  },
+  {
+    id: 8,
+    url: "./media/gallery/butter-naan-basket.jpeg",
+    alt: "Butter naan basket served hot from the tandoor",
+    title: "Fresh Butter Naan",
+    tag: "Tandoor Fresh",
   },
 ];
 
@@ -294,31 +318,48 @@ const cateringPackages = [
 const videos = [
   {
     id: 1,
-    title: "Traditional Dum Biryani Cooking Process",
+    title: "Krishna Podcast: Story, Growth, and Restaurant Journey",
     description:
-      "Watch how we prepare our signature dum biryani using authentic Hyderabadi methods",
-    thumbnail:
-      "https://images.pexels.com/photos/33947401/pexels-photo-33947401.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-    videoId: "dQw4w9WgXcQ",
-    duration: "3:45",
+      "A highlighted podcast conversation with Krishna about how Sai Silver Dum Biryani was built, the work behind the kitchen, and the ambition to grow the brand.",
+    thumbnail: "./media/gallery/podcast-cover.jpeg",
+    source: "./media/videos/krishna-podcast.mp4",
+    sourceType: "local",
+    duration: "3:02",
+    eyebrow: "Owner Podcast",
+    featured: true,
   },
   {
     id: 2,
-    title: "Restaurant Tour & Ambiance",
-    description: "Take a virtual tour of our restaurant and dining experience",
-    thumbnail:
-      "https://images.pexels.com/photos/10148453/pexels-photo-10148453.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-    videoId: "dQw4w9WgXcQ",
-    duration: "2:30",
+    title: "Kitchen Preparation in Motion",
+    description:
+      "A longer kitchen-side clip showing the pace, flame, and finishing movement behind service time.",
+    thumbnail: "./media/gallery/signature-chicken-dum.jpeg",
+    source: "./media/videos/kitchen-prep.mp4",
+    sourceType: "local",
+    duration: "0:39",
+    eyebrow: "Kitchen Clip",
   },
   {
     id: 3,
-    title: "Customer Testimonials",
-    description: "Hear what our satisfied customers have to say about their experience",
-    thumbnail:
-      "https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTJ8MHwxfHNlYXJjaHwyfHxiaXJ5YW5pfGVufDB8fHx8MTc3MzcyNTYyNXww&ixlib=rb-4.1.0&q=85",
-    videoId: "dQw4w9WgXcQ",
-    duration: "4:20",
+    title: "Fresh Plating Showcase",
+    description:
+      "A clean service clip showing the final plated visual before it reaches the table.",
+    thumbnail: "./media/gallery/special-rice-platter.jpeg",
+    source: "./media/videos/plating-showcase.mp4",
+    sourceType: "local",
+    duration: "0:21",
+    eyebrow: "Service Clip",
+  },
+  {
+    id: 4,
+    title: "Quick Serve Reel",
+    description:
+      "A fast short-format shot that adds live energy to the page and highlights ready-to-serve movement.",
+    thumbnail: "./media/gallery/fry-biryani-special.jpeg",
+    source: "./media/videos/quick-serve.mp4",
+    sourceType: "local",
+    duration: "0:02",
+    eyebrow: "Quick Reel",
   },
 ];
 
@@ -434,6 +475,7 @@ const servicePills = document.querySelector("#service-pills");
 const toast = document.querySelector("#toast");
 const modal = document.querySelector("#video-modal");
 const videoFrame = document.querySelector("#video-frame");
+const videoPlayer = document.querySelector("#video-player");
 const heroBackdrop = document.querySelector(".hero__backdrop");
 
 let activeCategory = menuItems[0].category;
@@ -592,9 +634,12 @@ function renderGallery() {
   galleryGrid.innerHTML = gallery
     .map(
       (item) => `
-        <article class="gallery-card">
+        <article class="gallery-card ${item.featured ? "gallery-card--feature" : ""}">
           <img src="${item.url}" alt="${item.alt}" loading="lazy" decoding="async" width="940" height="650" />
-          <span>${item.alt}</span>
+          <div class="gallery-card__meta">
+            <span class="gallery-card__tag">${item.tag}</span>
+            <strong>${item.title}</strong>
+          </div>
         </article>
       `,
     )
@@ -605,15 +650,16 @@ function renderVideos() {
   videoGrid.innerHTML = videos
     .map(
       (video) => `
-        <article class="video-card">
-          <button type="button" data-video-id="${video.videoId}" data-video-title="${video.title}">
-            <div class="video-thumb">
-              <img src="${video.thumbnail}" alt="${video.title}" loading="lazy" decoding="async" width="1280" height="720" />
-              <span class="video-play">&#9658;</span>
-              <span class="video-duration">${video.duration}</span>
-            </div>
-          </button>
+        <article class="video-card ${video.featured ? "video-card--featured" : ""}">
+          <div class="video-thumb">
+            <video controls playsinline preload="metadata" poster="${video.thumbnail}">
+              <source src="${video.source}" type="video/mp4" />
+            </video>
+            ${video.eyebrow ? `<span class="video-badge">${video.eyebrow}</span>` : ""}
+            <span class="video-duration">${video.duration}</span>
+          </div>
           <div class="video-card__copy">
+            ${video.eyebrow ? `<p class="video-card__eyebrow">${video.eyebrow}</p>` : ""}
             <h3>${video.title}</h3>
             <p>${video.description}</p>
           </div>
@@ -766,12 +812,27 @@ function openSmsComposer(message) {
   link.remove();
 }
 
-function openVideo(videoId, title) {
-  if (!modal || !videoFrame) return;
+function openVideo(source, sourceType, title) {
+  if (!modal || !videoFrame || !videoPlayer) return;
 
   clearTimeout(modalHideTimer);
-  videoFrame.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
   document.querySelector("#video-modal-title").textContent = title;
+
+  if (sourceType === "youtube") {
+    videoPlayer.pause();
+    videoPlayer.hidden = true;
+    videoPlayer.removeAttribute("src");
+    videoFrame.hidden = false;
+    videoFrame.src = `https://www.youtube.com/embed/${source}?autoplay=1`;
+  } else {
+    videoFrame.hidden = true;
+    videoFrame.src = "";
+    videoPlayer.hidden = false;
+    videoPlayer.src = source;
+    videoPlayer.load();
+    void videoPlayer.play().catch(() => {});
+  }
+
   modal.hidden = false;
   requestAnimationFrame(() => {
     modal.classList.add("is-open");
@@ -780,13 +841,18 @@ function openVideo(videoId, title) {
 }
 
 function closeVideo() {
-  if (!modal || !videoFrame) return;
+  if (!modal || !videoFrame || !videoPlayer) return;
 
   modal.classList.remove("is-open");
   clearTimeout(modalHideTimer);
   modalHideTimer = window.setTimeout(() => {
     modal.hidden = true;
     videoFrame.src = "";
+    videoFrame.hidden = true;
+    videoPlayer.pause();
+    videoPlayer.removeAttribute("src");
+    videoPlayer.load();
+    videoPlayer.hidden = true;
     document.body.style.overflow = "";
   }, 240);
 }
@@ -827,10 +893,10 @@ function handleScrollClick(event) {
 }
 
 function handleVideoClick(event) {
-  const trigger = event.target.closest("[data-video-id]");
+  const trigger = event.target.closest("[data-video-src]");
   if (!trigger) return;
 
-  openVideo(trigger.dataset.videoId, trigger.dataset.videoTitle);
+  openVideo(trigger.dataset.videoSrc, trigger.dataset.videoType, trigger.dataset.videoTitle);
 }
 
 function handleFormSubmit(event) {
