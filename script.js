@@ -28,102 +28,107 @@ const menuItems = [
           "Aromatic basmati rice layered with tender chicken, slow-cooked in traditional dum style",
         spiceLevel: "Medium Spice",
         image: "./media/gallery/signature-chicken-dum.jpeg",
+        alt: "Chicken dum biryani served at Sai Silver Dum Biryani in Vijayawada",
         popular: true,
       },
       {
         id: 102,
-        name: "Mutton Dum Biryani",
-        price: 320,
+        name: "Mughlai Chicken Biryani",
+        price: 280,
         description:
-          "Premium mutton pieces cooked with fragrant spices and saffron-infused rice",
+          "A richer chicken biryani with deeper masala, fuller aroma, and a festive Mughlai-style finish",
         spiceLevel: "Medium Spice",
         image: "./media/gallery/fry-biryani-special.jpeg",
+        alt: "Mughlai chicken biryani with rich masala at Sai Silver Dum Biryani Vijayawada",
         popular: true,
       },
       {
         id: 103,
-        name: "Special Silver Dum Biryani",
-        price: 400,
+        name: "Special Chicken Biryani",
+        price: 300,
         description:
-          "Our chef's special with premium ingredients and authentic Hyderabadi flavors",
+          "A premium house chicken biryani layered for extra flavor, aroma, and a more indulgent serving",
         spiceLevel: "High Spice",
         image: "./media/gallery/special-rice-platter.jpeg",
+        alt: "Special chicken biryani platter from Sai Silver Dum Biryani Vijayawada",
         popular: false,
       },
       {
         id: 104,
-        name: "Fry Biryani",
-        price: 280,
+        name: "Chicken 65 Biryani",
+        price: 250,
         description:
-          "Unique flavored rice with perfectly fried pieces - a local favorite",
+          "Spicy Chicken 65 pieces paired with biryani rice for a bolder, crowd-favorite combination",
         spiceLevel: "Medium Spice",
         image:
           "https://images.unsplash.com/photo-1697155406055-2db32d47ca07?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTJ8MHwxfHNlYXJjaHwzfHxiaXJ5YW5pfGVufDB8fHx8MTc3MzcyNTYyNXww&ixlib=rb-4.1.0&q=85",
+        alt: "Chicken 65 biryani style serving for the Sai Silver Dum Biryani menu",
         popular: false,
       },
       {
         id: 105,
-        name: "Veg Dum Biryani",
-        price: 200,
+        name: "Mutton Dum Biryani",
+        price: 300,
         description:
-          "Fresh vegetables and paneer layered with aromatic basmati rice",
-        spiceLevel: "Low Spice",
+          "Tender mutton layered with fragrant basmati rice and dum-cooked for a deep, rich finish",
+        spiceLevel: "Medium Spice",
         image:
           "https://images.unsplash.com/photo-1589302168068-964664d93dc0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTJ8MHwxfHNlYXJjaHwxfHxiaXJ5YW5pfGVufDB8fHx8MTc3MzcyNTYyNXww&ixlib=rb-4.1.0&q=85",
+        alt: "Mutton dum biryani with long grain rice at Sai Silver Dum Biryani Vijayawada",
         popular: false,
       },
     ],
   },
   {
     id: 2,
-    category: "Starters",
+    category: "Starters & Tandoori",
     items: [
       {
         id: 201,
-        name: "Chicken 65",
+        name: "Veg Manchuria",
         price: 180,
-        description: "Spicy fried chicken appetizer with curry leaves",
-        spiceLevel: "High Spice",
+        description: "Crisp vegetable Manchuria tossed in a savory Indo-Chinese style sauce",
+        spiceLevel: "Medium Spice",
       },
       {
         id: 202,
-        name: "Butter Naan",
-        price: 40,
-        description: "Soft, buttery Indian flatbread baked in tandoor",
-        spiceLevel: "Low Spice",
+        name: "Paneer Tikka",
+        price: 250,
+        description: "Paneer cubes marinated and roasted for a smoky tandoori finish",
+        spiceLevel: "Medium Spice",
       },
       {
         id: 203,
-        name: "Paneer Tikka",
-        price: 160,
-        description: "Grilled cottage cheese cubes marinated in spices",
+        name: "Chicken Tikka",
+        price: 280,
+        description: "Juicy chicken tikka roasted in tandoori spices for a richer grill flavor",
         spiceLevel: "Medium Spice",
       },
     ],
   },
   {
     id: 3,
-    category: "Accompaniments",
+    category: "Curries & Breads",
     items: [
       {
         id: 301,
-        name: "Raita",
-        price: 50,
-        description: "Cool yogurt with cucumber and spices",
+        name: "Paneer Butter Masala",
+        price: 180,
+        description: "Creamy paneer curry with buttery tomato gravy and mild spice",
         spiceLevel: "Low Spice",
       },
       {
         id: 302,
-        name: "Mirchi Ka Salan",
-        price: 80,
-        description: "Traditional gravy with green chilies and peanuts",
-        spiceLevel: "High Spice",
+        name: "Butter Naan",
+        price: 40,
+        description: "Soft tandoor-baked naan brushed with butter and served hot",
+        spiceLevel: "Low Spice",
       },
       {
         id: 303,
-        name: "Double Ka Meetha",
-        price: 100,
-        description: "Traditional Hyderabadi bread pudding dessert",
+        name: "Lassi",
+        price: 40,
+        description: "A chilled classic drink that pairs well with spicy biryani meals",
         spiceLevel: "Low Spice",
       },
     ],
@@ -186,7 +191,7 @@ const gallery = [
   {
     id: 1,
     url: "./media/gallery/signature-chicken-dum.jpeg",
-    alt: "Signature chicken dum biryani served with salan and raita",
+    alt: "Signature chicken dum biryani with salan and raita at Sai Silver Dum Biryani Vijayawada",
     title: "Signature Dum Biryani",
     tag: "Best Seller",
     featured: true,
@@ -194,49 +199,49 @@ const gallery = [
   {
     id: 2,
     url: "./media/gallery/fry-biryani-special.jpeg",
-    alt: "Rich fry biryani topped with roasted cashews and peppers",
+    alt: "Rich fry biryani topped with roasted cashews and peppers at Sai Silver Dum Biryani",
     title: "Rich Fry Biryani",
     tag: "Chef Pick",
   },
   {
     id: 3,
     url: "./media/gallery/special-rice-platter.jpeg",
-    alt: "Special rice platter with house curry and fresh garnish",
+    alt: "Special rice platter with curry and garnish from Sai Silver Dum Biryani Vijayawada",
     title: "Special Rice Platter",
     tag: "House Special",
   },
   {
     id: 4,
     url: "./media/gallery/roomali-roti-curry.jpeg",
-    alt: "Roomali roti served with a creamy curry",
+    alt: "Roomali roti served with creamy curry at Sai Silver Dum Biryani",
     title: "Roti & Curry Pairing",
     tag: "Freshly Served",
   },
   {
     id: 5,
     url: "./media/gallery/butter-naan-gravy.jpeg",
-    alt: "Butter naan paired with signature green gravy",
+    alt: "Butter naan with signature gravy served at Sai Silver Dum Biryani Vijayawada",
     title: "Butter Naan Combo",
     tag: "Bread Special",
   },
   {
     id: 6,
     url: "./media/gallery/veg-starter-platter.jpeg",
-    alt: "Veg starter platter with crisp fried vegetables and garnish",
+    alt: "Veg starter platter with crisp fried vegetables at Sai Silver Dum Biryani",
     title: "Veg Starter Platter",
     tag: "Starter Favourite",
   },
   {
     id: 7,
     url: "./media/gallery/handi-rice-sides.jpeg",
-    alt: "Handi rice served with salan and raita sides",
+    alt: "Handi rice served with salan and raita at Sai Silver Dum Biryani Vijayawada",
     title: "Handi Rice Set",
     tag: "Table Favourite",
   },
   {
     id: 8,
     url: "./media/gallery/butter-naan-basket.jpeg",
-    alt: "Butter naan basket served hot from the tandoor",
+    alt: "Butter naan basket fresh from the tandoor at Sai Silver Dum Biryani",
     title: "Fresh Butter Naan",
     tag: "Tandoor Fresh",
   },
@@ -326,7 +331,6 @@ const videos = [
     sourceType: "local",
     duration: "3:02",
     eyebrow: "Owner Podcast",
-    featured: true,
   },
   {
     id: 2,
@@ -361,6 +365,18 @@ const videos = [
     duration: "0:02",
     eyebrow: "Quick Reel",
   },
+  {
+    id: 5,
+    title: "Fresh Crowd Favorite: What Makes Our Biryani Stand Out",
+    description:
+      "A recent reel capturing the buzz around Sai Silver Dum Biryani, from rich masala layers and dum aroma to the serving style that keeps customers coming back for something different.",
+    thumbnail: "./media/gallery/special-rice-platter.jpeg",
+    source: "./media/videos/instagram-reel-highlight.mp4",
+    sourceType: "local",
+    duration: "Latest",
+    eyebrow: "Recent Highlight",
+    featured: true,
+  },
 ];
 
 const menuCardDetails = {
@@ -376,9 +392,42 @@ const menuCardDetails = {
     finish:
       "The result is juicy chicken, aromatic rice, and that rich restaurant-style dum fragrance.",
   },
+  "Mughlai Chicken Biryani": {
+    cooking:
+      "Chicken is cooked with a richer masala base and layered with fragrant rice so the final pot feels fuller, warmer, and more indulgent.",
+    ingredients: [
+      "Marinated chicken",
+      "Basmati rice",
+      "Mughlai-style masala",
+      "Whole spices and fresh herbs",
+    ],
+    finish: "It lands with deeper gravy flavor, rich aroma, and a more celebratory biryani feel.",
+  },
+  "Special Chicken Biryani": {
+    cooking:
+      "This house special gets extra layering, stronger seasoning, and a longer dum finish so every spoon tastes fuller and more premium.",
+    ingredients: [
+      "Premium chicken pieces",
+      "Aged basmati rice",
+      "Ghee-roasted onions",
+      "House special spice mix",
+    ],
+    finish: "It is built to feel richer, more aromatic, and clearly more indulgent than the regular plate.",
+  },
+  "Chicken 65 Biryani": {
+    cooking:
+      "Spicy Chicken 65 pieces are paired with biryani rice and finishing masala, giving the dish a sharper kick and a more crowd-pleasing style.",
+    ingredients: [
+      "Chicken 65 pieces",
+      "Spiced biryani rice",
+      "Green chilies",
+      "Fresh coriander and masala oil",
+    ],
+    finish: "You get a lively spice hit, crisp chicken bites, and a distinctly punchier biryani experience.",
+  },
   "Mutton Dum Biryani": {
     cooking:
-      "Tender mutton is slow-cooked until soft, then rested in a sealed pot with saffron rice so the meat juices and spices build a deep Hyderabadi flavor.",
+      "Tender mutton is slow-cooked until soft, then sealed with fragrant rice on dum so the juices and spices build deep flavor into every layer.",
     ingredients: [
       "Slow-cooked mutton",
       "Basmati rice",
@@ -387,56 +436,16 @@ const menuCardDetails = {
     ],
     finish: "It lands with bold aroma, richer masala depth, and a premium festive feel.",
   },
-  "Special Silver Dum Biryani": {
+  "Veg Manchuria": {
     cooking:
-      "This chef special gets extra layering, richer seasoning, and a longer dum finish so every spoon tastes fuller, silkier, and more indulgent.",
+      "Vegetable dumplings are fried until crisp, then tossed in a glossy Indo-Chinese sauce with garlic, chilies, and fresh aromatics.",
     ingredients: [
-      "Premium cuts",
-      "Aged basmati rice",
-      "Ghee-roasted onions",
-      "Signature silver spice mix",
+      "Mixed vegetable balls",
+      "Garlic and chili sauce",
+      "Spring onion",
+      "Soy-style seasoning",
     ],
-    finish: "It is built to feel heavier, more aromatic, and unmistakably premium.",
-  },
-  "Fry Biryani": {
-    cooking:
-      "The rice is tossed with spicy fried pieces and finishing masala after cooking, giving the dish a sharper roast note and a more local favorite style.",
-    ingredients: [
-      "Spiced rice",
-      "Fried chicken pieces",
-      "Green chilies",
-      "Fresh coriander and masala oil",
-    ],
-    finish: "You get a smoky fry finish, lively spice, and strong street-style flavor.",
-  },
-  "Veg Dum Biryani": {
-    cooking:
-      "Seasonal vegetables and paneer are layered with fragrant rice, herbs, and saffron, then finished on dum so the vegetables stay soft but not soggy.",
-    ingredients: [
-      "Basmati rice",
-      "Paneer and vegetables",
-      "Mint and coriander",
-      "Saffron, ghee, and mild spices",
-    ],
-    finish:
-      "It stays light, aromatic, and comforting while still carrying proper biryani depth.",
-  },
-  "Chicken 65": {
-    cooking:
-      "Boneless chicken is marinated, fried hot, and finished with curry leaves and bold spice for that punchy starter feel.",
-    ingredients: [
-      "Chicken bites",
-      "Red chili masala",
-      "Curry leaves",
-      "Ginger-garlic marinade",
-    ],
-    finish: "Crisp outside, juicy inside, and made to wake up the table.",
-  },
-  "Butter Naan": {
-    cooking:
-      "The dough is stretched and baked fast so it stays soft, then brushed with butter for a rich finish.",
-    ingredients: ["Refined flour dough", "Butter", "Salt", "Tandoor heat"],
-    finish: "Soft texture and buttery warmth make it perfect with gravies and salan.",
+    finish: "It brings a crisp bite, savory coating, and a familiar starter-style comfort.",
   },
   "Paneer Tikka": {
     cooking:
@@ -444,23 +453,29 @@ const menuCardDetails = {
     ingredients: ["Fresh paneer", "Yogurt marinade", "Tandoori spices", "Capsicum and onion"],
     finish: "It balances smoky grill flavor with a creamy center.",
   },
-  Raita: {
+  "Chicken Tikka": {
     cooking:
-      "Fresh curd is chilled and mixed right before service so it stays cool and clean beside the biryani.",
-    ingredients: ["Curd", "Cucumber", "Roasted cumin", "Fresh herbs"],
-    finish: "It cools the palate and softens the spice between bites.",
+      "Chicken is marinated in spiced curd and roasted in the tandoor until the edges pick up char and color.",
+    ingredients: ["Boneless chicken", "Yogurt marinade", "Tandoori spices", "Smoky grill heat"],
+    finish: "It delivers a juicy center, smoky finish, and classic tandoori depth.",
   },
-  "Mirchi Ka Salan": {
+  "Paneer Butter Masala": {
     cooking:
-      "Green chilies simmer in a nutty gravy until the sauce turns glossy, spicy, and deeply savory.",
-    ingredients: ["Green chilies", "Peanut-sesame base", "Tamarind", "Slow-cooked masala"],
-    finish: "It adds authentic Hyderabadi heat and gravy richness to the plate.",
+      "Paneer is simmered in a buttery tomato gravy until the sauce turns smooth, rich, and lightly sweet.",
+    ingredients: ["Paneer cubes", "Tomato-butter gravy", "Cream", "Mild spice blend"],
+    finish: "It lands creamy, comforting, and ideal with naan or roti.",
   },
-  "Double Ka Meetha": {
+  "Butter Naan": {
     cooking:
-      "Bread is gently fried, soaked in sweetened milk, and finished with nuts for a traditional dessert close.",
-    ingredients: ["Bread slices", "Reduced milk", "Sugar syrup", "Nuts and cardamom"],
-    finish: "Sweet, soft, and classic after a spicy biryani meal.",
+      "The dough is stretched and baked fast so it stays soft, then brushed with butter for a rich finish.",
+    ingredients: ["Refined flour dough", "Butter", "Salt", "Tandoor heat"],
+    finish: "Soft texture and buttery warmth make it perfect with gravies and curries.",
+  },
+  Lassi: {
+    cooking:
+      "Curd is churned until smooth and chilled before service so it stays cool, creamy, and refreshing.",
+    ingredients: ["Fresh curd", "Water", "Sugar or salt", "Chilled finish"],
+    finish: "It cools the palate and balances the spice from biryani and starters.",
   },
 };
 
@@ -547,7 +562,7 @@ function renderMenuCards(animate = false) {
       const image = item.image
         ? `
           <div class="menu-card__image">
-            <img src="${item.image}" alt="${item.name}" loading="lazy" decoding="async" width="940" height="650" />
+            <img src="${item.image}" alt="${item.alt || item.name}" loading="lazy" decoding="async" width="940" height="650" />
             ${item.popular ? '<span class="menu-card__badge">Popular</span>' : ""}
           </div>
         `
