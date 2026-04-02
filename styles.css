@@ -2759,13 +2759,16 @@ textarea {
   .nav-links {
     width: calc(100% + 8px);
     margin-right: -8px;
-    padding: 10px 12px;
+    padding: 0 8px 8px 0;
     flex-wrap: nowrap;
     overflow-x: auto;
     overscroll-behavior-x: contain;
     scrollbar-width: none;
     -webkit-overflow-scrolling: touch;
     mask-image: none;
+    background: transparent;
+    border: 0;
+    box-shadow: none;
   }
 
   .nav-links::-webkit-scrollbar {
@@ -2778,8 +2781,8 @@ textarea {
     min-height: 38px;
     padding: 9px 14px;
     border-radius: 999px;
-    background: rgba(56, 40, 33, 0.34);
-    border: 1px solid rgba(255, 255, 255, 0.22);
+    background: rgba(56, 40, 33, 0.22);
+    border: 1px solid rgba(255, 255, 255, 0.14);
     font-size: 0.9rem;
     color: rgba(255, 255, 255, 0.92);
   }
@@ -2795,12 +2798,20 @@ textarea {
   }
 
   .hero-copy {
-    padding: 22px 16px 18px;
+    padding: 18px 0 8px;
+    border-radius: 0;
+    background: transparent;
+    border: 0;
+    box-shadow: none;
   }
 
   .rating-pill {
     gap: 10px;
     padding: 9px 12px;
+    width: fit-content;
+    background: rgba(56, 40, 33, 0.24);
+    border-color: rgba(255, 255, 255, 0.18);
+    box-shadow: none;
   }
 
   .hero h1 {
@@ -2826,14 +2837,16 @@ textarea {
   .service-pills span {
     padding: 9px 12px;
     font-size: 0.86rem;
-    background: rgba(56, 40, 33, 0.36);
+    background: rgba(56, 40, 33, 0.22);
+    border-color: rgba(255, 255, 255, 0.16);
+    box-shadow: none;
   }
 
   .hero-actions {
     display: grid;
     grid-template-columns: 1fr;
     gap: 10px;
-    margin-top: 22px;
+    margin-top: 18px;
   }
 
   .hero-actions .button {
@@ -2844,12 +2857,12 @@ textarea {
 
   .order-strip {
     width: 100%;
-    margin-top: 22px;
+    margin-top: 18px;
     gap: 10px;
-    padding: 16px;
-    border-radius: 22px;
-    background: rgba(42, 28, 22, 0.34);
-    border: 1px solid rgba(255, 255, 255, 0.16);
+    padding: 0;
+    border-radius: 0;
+    background: transparent;
+    border: 0;
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
   }
@@ -2874,7 +2887,7 @@ textarea {
 
   .service-pills {
     gap: 10px;
-    margin-top: 16px;
+    margin-top: 14px;
   }
 
   .section {
