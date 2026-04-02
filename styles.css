@@ -37,6 +37,13 @@ body {
   overflow-x: hidden;
 }
 
+h1,
+h2,
+h3,
+.brand {
+  font-family: "Cormorant Garamond", Georgia, serif;
+}
+
 .site-background {
   position: fixed;
   inset: 0;
@@ -308,9 +315,9 @@ section[id] {
 }
 
 .brand {
-  font-size: 1.2rem;
-  font-weight: 800;
-  letter-spacing: -0.03em;
+  font-size: 1.7rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
   white-space: nowrap;
   text-shadow: 0 3px 14px rgba(18, 10, 8, 0.34);
 }
@@ -408,9 +415,9 @@ section[id] {
 
 .hero h1 {
   margin: 20px 0 14px;
-  font-size: clamp(3rem, 7vw, 5rem);
-  line-height: 0.94;
-  letter-spacing: -0.05em;
+  font-size: clamp(3.5rem, 7.4vw, 5.8rem);
+  line-height: 0.88;
+  letter-spacing: -0.04em;
   max-width: 8ch;
   text-shadow: 0 6px 22px rgba(18, 10, 8, 0.42);
   animation: fade-lift 0.92s cubic-bezier(0.22, 1, 0.36, 1) 0.22s both;
@@ -747,9 +754,9 @@ section[id] {
 .section-copy h2,
 .about-copy h2 {
   margin: 0 0 14px;
-  font-size: clamp(2.3rem, 5vw, 3rem);
-  line-height: 1;
-  letter-spacing: -0.05em;
+  font-size: clamp(2.7rem, 5.5vw, 3.8rem);
+  line-height: 0.92;
+  letter-spacing: -0.03em;
   color: #22181a;
   text-shadow: none;
 }
@@ -936,8 +943,13 @@ section[id] {
 .form-intro h3,
 .reservation-card h3 {
   margin: 0 0 8px;
-  font-size: 1.1rem;
-  letter-spacing: -0.03em;
+  font-size: 1.5rem;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.mobile-sticky-bar {
+  display: none;
 }
 
 .tabs {
@@ -2752,8 +2764,8 @@ textarea {
   }
 
   .brand {
-    font-size: 1.08rem;
-    letter-spacing: -0.02em;
+    font-size: 1.28rem;
+    letter-spacing: -0.01em;
   }
 
   .nav-links {
@@ -2793,8 +2805,7 @@ textarea {
   }
 
   .nav-links .button {
-    min-height: 42px;
-    padding-inline: 18px;
+    display: none;
   }
 
   .hero-copy {
@@ -2815,22 +2826,22 @@ textarea {
   }
 
   .hero h1 {
-    margin: 16px 0 10px;
-    font-size: clamp(2.8rem, 13vw, 4.1rem);
-    line-height: 0.92;
-    max-width: 7ch;
+    margin: 10px 0 8px;
+    font-size: clamp(3rem, 13.5vw, 4.4rem);
+    line-height: 0.88;
+    max-width: 6.4ch;
   }
 
   .hero-tagline {
-    max-width: 20ch;
-    font-size: 1rem;
-    line-height: 1.45;
+    max-width: 16ch;
+    font-size: 1.02rem;
+    line-height: 1.35;
     color: rgba(255, 247, 238, 0.9);
   }
 
   .hero-meta {
-    gap: 10px;
-    margin-top: 20px;
+    gap: 8px;
+    margin-top: 16px;
   }
 
   .hero-meta span,
@@ -2842,22 +2853,31 @@ textarea {
     box-shadow: none;
   }
 
+  .hero-meta span:last-child,
+  .service-pills {
+    display: none;
+  }
+
   .hero-actions {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 10px;
-    margin-top: 18px;
+    margin-top: 16px;
   }
 
   .hero-actions .button {
     width: 100%;
-    min-height: 52px;
+    min-height: 50px;
     border-radius: 14px;
+  }
+
+  .hero-actions .button--book {
+    grid-column: 1 / -1;
   }
 
   .order-strip {
     width: 100%;
-    margin-top: 18px;
+    margin-top: 14px;
     gap: 10px;
     padding: 0;
     border-radius: 0;
@@ -2869,7 +2889,7 @@ textarea {
 
   .order-strip p {
     margin: 0;
-    font-size: 0.9rem;
+    font-size: 0.84rem;
   }
 
   .order-links {
@@ -2900,9 +2920,9 @@ textarea {
   }
 
   .section-copy h2 {
-    font-size: clamp(2rem, 9vw, 2.6rem);
-    line-height: 0.98;
-    letter-spacing: -0.04em;
+    font-size: clamp(2.3rem, 10vw, 3rem);
+    line-height: 0.92;
+    letter-spacing: -0.02em;
   }
 
   .section-copy p,
@@ -2978,6 +2998,33 @@ textarea {
   .map-card iframe {
     min-height: 280px;
   }
+
+  .mobile-sticky-bar {
+    position: fixed;
+    left: 12px;
+    right: 12px;
+    bottom: calc(12px + env(safe-area-inset-bottom));
+    z-index: 30;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 22px;
+    background: rgba(30, 20, 16, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    box-shadow: 0 16px 36px rgba(18, 10, 8, 0.22);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  .mobile-sticky-bar .button {
+    min-height: 48px;
+    border-radius: 14px;
+  }
+
+  .footer {
+    padding-bottom: calc(110px + env(safe-area-inset-bottom));
+  }
 }
 
 @media (max-width: 520px) {
@@ -2986,7 +3033,7 @@ textarea {
   }
 
   .hero h1 {
-    font-size: clamp(2.45rem, 12.5vw, 3.4rem);
+    font-size: clamp(2.8rem, 13vw, 3.8rem);
   }
 
   .rating-pill {
