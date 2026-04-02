@@ -1,21 +1,21 @@
 :root {
-  --bg: #f8f1e8;
-  --bg-soft: #fbf4ec;
-  --bg-warm: #f3e7d8;
-  --text: #1e1919;
-  --text-muted: #6b6460;
-  --line: rgba(97, 82, 90, 0.16);
-  --card: rgba(255, 252, 248, 0.78);
-  --card-soft: rgba(255, 252, 248, 0.66);
-  --primary: #61525a;
-  --primary-dark: #4a3d43;
-  --accent: #ff8c19;
-  --accent-soft: rgba(255, 140, 25, 0.12);
-  --shadow: 0 30px 90px rgba(30, 25, 25, 0.16);
-  --shadow-soft: 0 18px 48px rgba(30, 25, 25, 0.1);
-  --radius-lg: 28px;
-  --radius-md: 20px;
-  --radius-sm: 12px;
+  --bg: #f7efe5;
+  --bg-soft: #fbf5ee;
+  --bg-warm: #efdfcf;
+  --text: #1d1714;
+  --text-muted: #655952;
+  --line: rgba(84, 61, 49, 0.14);
+  --card: rgba(255, 251, 246, 0.84);
+  --card-soft: rgba(255, 250, 244, 0.72);
+  --primary: #6f5348;
+  --primary-dark: #4d372f;
+  --accent: #cf7a25;
+  --accent-soft: rgba(207, 122, 37, 0.14);
+  --shadow: 0 34px 90px rgba(29, 18, 13, 0.18);
+  --shadow-soft: 0 20px 48px rgba(29, 18, 13, 0.12);
+  --radius-lg: 32px;
+  --radius-md: 24px;
+  --radius-sm: 14px;
   --container: 1180px;
 }
 
@@ -465,9 +465,9 @@ section[id] {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 48px;
-  padding: 12px 22px;
-  border-radius: 10px;
+  min-height: 50px;
+  padding: 13px 24px;
+  border-radius: 14px;
   font-weight: 700;
   transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, color 0.2s ease;
 }
@@ -477,18 +477,18 @@ section[id] {
 }
 
 .button--solid {
-  background: var(--primary);
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
   color: #ffffff;
-  box-shadow: 0 14px 28px rgba(30, 25, 25, 0.2);
+  box-shadow: 0 16px 30px rgba(30, 25, 25, 0.22);
 }
 
 .button--solid:hover {
-  background: var(--primary-dark);
+  background: linear-gradient(135deg, #7e6053, var(--primary-dark));
 }
 
 .button--ghost {
-  background: rgba(56, 40, 33, 0.3);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(70, 52, 43, 0.34);
+  border: 1px solid rgba(255, 255, 255, 0.34);
   color: #ffffff;
   box-shadow: 0 12px 24px rgba(18, 10, 8, 0.12);
 }
@@ -630,7 +630,7 @@ section[id] {
 
 .section {
   position: relative;
-  padding: 96px 0;
+  padding: 108px 0;
   overflow: hidden;
   isolation: isolate;
   background: transparent;
@@ -733,11 +733,11 @@ section[id] {
 
 .section-copy {
   max-width: 760px;
-  padding: 24px 28px;
+  padding: 28px 32px;
   border-radius: 28px;
-  background: rgba(255, 249, 242, 0.84);
-  border: 1px solid rgba(255, 255, 255, 0.62);
-  box-shadow: 0 18px 46px rgba(22, 14, 11, 0.12);
+  background: rgba(255, 250, 245, 0.88);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0 22px 54px rgba(22, 14, 11, 0.1);
 }
 
 .section-copy--center {
@@ -859,9 +859,9 @@ section[id] {
   gap: 18px;
   padding: 28px;
   border-radius: 28px;
-  background: rgba(255, 248, 240, 0.88);
-  border: 1px solid rgba(255, 255, 255, 0.62);
-  box-shadow: 0 20px 50px rgba(20, 12, 9, 0.12);
+  background: linear-gradient(180deg, rgba(255, 250, 245, 0.92), rgba(250, 241, 232, 0.88));
+  border: 1px solid rgba(255, 255, 255, 0.74);
+  box-shadow: 0 24px 60px rgba(20, 12, 9, 0.12);
   backdrop-filter: none;
   -webkit-backdrop-filter: none;
 }
@@ -907,8 +907,8 @@ section[id] {
 .form-card,
 .map-card,
 .pricing-note {
-  background: rgba(255, 252, 248, 0.82);
-  border: 1px solid rgba(255, 255, 255, 0.48);
+  background: linear-gradient(180deg, rgba(255, 251, 246, 0.92), rgba(249, 241, 233, 0.88));
+  border: 1px solid rgba(255, 255, 255, 0.68);
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-soft);
   backdrop-filter: none;
@@ -929,8 +929,8 @@ section[id] {
 .form-card:hover,
 .map-card:hover,
 .pricing-note:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 26px 54px rgba(30, 25, 25, 0.14);
+  transform: translateY(-8px);
+  box-shadow: 0 30px 64px rgba(30, 25, 25, 0.16);
 }
 
 .feature-card h3,
@@ -1135,7 +1135,7 @@ section[id] {
 .menu-card__body {
   display: grid;
   gap: 12px;
-  padding: 22px 20px 18px;
+  padding: 24px 22px 20px;
 }
 
 .menu-card__footer {
@@ -1166,7 +1166,7 @@ section[id] {
   min-height: 40px;
   padding: 8px 14px;
   border-radius: 999px;
-  background: rgba(92, 69, 75, 0.08);
+  background: rgba(111, 83, 72, 0.1);
   color: var(--primary);
   font-weight: 800;
   white-space: nowrap;
@@ -1323,7 +1323,7 @@ section[id] {
   padding: 26px;
   text-align: center;
   background:
-    linear-gradient(180deg, rgba(255, 252, 248, 0.9), rgba(250, 243, 236, 0.84));
+    linear-gradient(180deg, rgba(255, 252, 248, 0.94), rgba(248, 239, 230, 0.88));
 }
 
 .offer-grid {
@@ -1355,7 +1355,7 @@ section[id] {
   justify-content: space-between;
   gap: 12px;
   padding: 18px 20px;
-  background: linear-gradient(to right, var(--primary), var(--primary-dark));
+  background: linear-gradient(135deg, #74594d, var(--primary-dark));
   color: #ffffff;
 }
 
@@ -1405,10 +1405,10 @@ section[id] {
 .social-strip {
   padding: 20px 24px;
   border-radius: 18px;
-  background: rgba(255, 252, 248, 0.42);
-  border: 1px solid rgba(255, 255, 255, 0.34);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background: linear-gradient(180deg, rgba(255, 251, 246, 0.86), rgba(250, 242, 234, 0.82));
+  border: 1px solid rgba(255, 255, 255, 0.64);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
 }
 
 .section-callout a {
@@ -1449,10 +1449,10 @@ section[id] {
   padding: 34px;
   border-radius: 34px;
   background:
-    linear-gradient(180deg, rgba(255, 252, 248, 0.92), rgba(255, 248, 241, 0.94)),
-    linear-gradient(135deg, rgba(255, 202, 150, 0.08), transparent 45%);
-  border: 1px solid rgba(255, 255, 255, 0.65);
-  box-shadow: 0 24px 70px rgba(41, 31, 28, 0.09);
+    linear-gradient(180deg, rgba(255, 252, 248, 0.94), rgba(255, 247, 239, 0.96)),
+    linear-gradient(135deg, rgba(207, 122, 37, 0.08), transparent 45%);
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  box-shadow: 0 26px 74px rgba(41, 31, 28, 0.1);
 }
 
 #videos .container {
@@ -1472,8 +1472,8 @@ section[id] {
   position: relative;
   overflow: hidden;
   border-radius: var(--radius-md);
-  box-shadow: var(--shadow-soft);
-  border: 1px solid rgba(255, 255, 255, 0.32);
+  box-shadow: 0 24px 54px rgba(26, 17, 13, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.42);
 }
 
 .gallery-card img {
@@ -1644,7 +1644,7 @@ section[id] {
 }
 
 .review-card {
-  padding: 22px;
+  padding: 26px;
 }
 
 .review-card__top,
