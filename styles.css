@@ -60,11 +60,7 @@ body {
 }
 
 .site-background__veil {
-  position: absolute;
-  inset: 0;
-  background:
-    radial-gradient(circle at top right, rgba(255, 172, 82, 0.08), transparent 26%),
-    linear-gradient(180deg, rgba(20, 12, 9, 0.06), rgba(20, 12, 9, 0.12) 45%, rgba(20, 12, 9, 0.16));
+  display: none;
 }
 
 .site-shell {
@@ -269,7 +265,7 @@ section[id] {
 
 .hero {
   position: relative;
-  min-height: 730px;
+  min-height: 620px;
   color: #ffffff;
   overflow: hidden;
 }
@@ -281,18 +277,11 @@ section[id] {
 }
 
 .hero__backdrop {
-  background:
-    linear-gradient(to top, rgba(30, 25, 25, 0.12), rgba(30, 25, 25, 0.03)),
-    url("./media/gallery/signature-chicken-dum.jpeg")
-      center/cover no-repeat;
-  transform: scale(1.04);
-  opacity: 0.08;
+  display: none;
 }
 
 .hero__overlay {
-  background:
-    radial-gradient(circle at top left, rgba(255, 184, 113, 0.06), transparent 26%),
-    linear-gradient(to right, rgba(17, 11, 8, 0.12), rgba(17, 11, 8, 0.08), rgba(17, 11, 8, 0.03));
+  display: none;
 }
 
 .hero__content {
@@ -300,8 +289,14 @@ section[id] {
   z-index: 1;
   display: flex;
   flex-direction: column;
-  min-height: 730px;
-  padding: 30px 0 78px;
+  min-height: 620px;
+  padding: 30px 0 26px;
+}
+
+.site-shell > main {
+  position: relative;
+  z-index: 2;
+  margin-top: -96px;
 }
 
 .topbar {
@@ -317,6 +312,7 @@ section[id] {
   font-weight: 800;
   letter-spacing: -0.03em;
   white-space: nowrap;
+  text-shadow: 0 3px 14px rgba(18, 10, 8, 0.34);
 }
 
 .nav-links {
@@ -328,8 +324,9 @@ section[id] {
   padding: 12px 14px;
   margin-left: auto;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(44, 30, 24, 0.34);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  box-shadow: 0 14px 30px rgba(18, 10, 8, 0.16);
 }
 
 .nav-links button,
@@ -377,7 +374,12 @@ section[id] {
 
 .hero-copy {
   max-width: 640px;
-  padding: 84px 0 0;
+  padding: 34px 30px 24px;
+  border-radius: 32px;
+  background:
+    linear-gradient(135deg, rgba(42, 28, 22, 0.36), rgba(42, 28, 22, 0.14));
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 24px 54px rgba(18, 10, 8, 0.12);
 }
 
 
@@ -387,8 +389,9 @@ section[id] {
   gap: 12px;
   padding: 10px 14px;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.12);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(56, 40, 33, 0.34);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  box-shadow: 0 10px 22px rgba(21, 14, 11, 0.16);
   backdrop-filter: none;
   -webkit-backdrop-filter: none;
   animation: fade-lift 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.14s both;
@@ -400,7 +403,7 @@ section[id] {
 }
 
 .muted {
-  color: rgba(255, 255, 255, 0.68);
+  color: rgba(255, 255, 255, 0.82);
 }
 
 .hero h1 {
@@ -409,6 +412,7 @@ section[id] {
   line-height: 0.94;
   letter-spacing: -0.05em;
   max-width: 8ch;
+  text-shadow: 0 6px 22px rgba(18, 10, 8, 0.42);
   animation: fade-lift 0.92s cubic-bezier(0.22, 1, 0.36, 1) 0.22s both;
 }
 
@@ -417,6 +421,7 @@ section[id] {
   font-size: clamp(1.05rem, 2vw, 1.4rem);
   max-width: 18ch;
   color: rgba(255, 255, 255, 0.84);
+  text-shadow: 0 4px 16px rgba(18, 10, 8, 0.34);
   animation: fade-lift 0.92s cubic-bezier(0.22, 1, 0.36, 1) 0.3s both;
 }
 
@@ -433,9 +438,12 @@ section[id] {
 .service-pills span {
   padding: 10px 14px;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(56, 40, 33, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.24);
   font-size: 0.95rem;
+  color: #ffffff;
+  box-shadow: 0 10px 22px rgba(21, 14, 11, 0.12);
+  text-shadow: 0 2px 10px rgba(18, 10, 8, 0.24);
 }
 
 .hero-actions {
@@ -472,9 +480,10 @@ section[id] {
 }
 
 .button--ghost {
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.28);
+  background: rgba(56, 40, 33, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   color: #ffffff;
+  box-shadow: 0 12px 24px rgba(18, 10, 8, 0.12);
 }
 
 .button--book {
@@ -507,12 +516,17 @@ section[id] {
   display: grid;
   gap: 12px;
   width: fit-content;
+  padding: 14px 16px 12px;
+  border-radius: 24px;
+  background: rgba(42, 28, 22, 0.24);
+  border: 1px solid rgba(255, 255, 255, 0.16);
   animation: fade-lift 0.92s cubic-bezier(0.22, 1, 0.36, 1) 0.54s both;
 }
 
 .order-strip p {
   margin: 0 0 12px;
-  color: rgba(255, 255, 255, 0.78);
+  color: rgba(255, 255, 255, 0.96);
+  text-shadow: 0 2px 12px rgba(18, 10, 8, 0.28);
 }
 
 .order-links,
@@ -578,7 +592,7 @@ section[id] {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-  margin-top: 20px;
+  margin-top: 14px;
   max-width: 620px;
   animation: fade-lift 0.92s cubic-bezier(0.22, 1, 0.36, 1) 0.62s both;
 }
@@ -652,9 +666,9 @@ section[id] {
 .section--about {
   --section-image:
     url("https://images.pexels.com/photos/10148453/pexels-photo-10148453.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-  --section-image-opacity: 0.08;
-  margin-top: -74px;
-  padding-top: 154px;
+  --section-image-opacity: 0.03;
+  margin-top: 0;
+  padding-top: 132px;
   background: transparent;
 }
 
@@ -712,6 +726,11 @@ section[id] {
 
 .section-copy {
   max-width: 760px;
+  padding: 24px 28px;
+  border-radius: 28px;
+  background: rgba(255, 249, 242, 0.84);
+  border: 1px solid rgba(255, 255, 255, 0.62);
+  box-shadow: 0 18px 46px rgba(22, 14, 11, 0.12);
 }
 
 .section-copy--center {
@@ -732,7 +751,7 @@ section[id] {
   line-height: 1;
   letter-spacing: -0.05em;
   color: #22181a;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.45);
+  text-shadow: none;
 }
 
 .section-copy p,
@@ -747,7 +766,34 @@ section[id] {
 .pricing-note p,
 .form-intro p {
   margin: 0;
-  color: var(--text-muted);
+  color: #5b4f49;
+  line-height: 1.7;
+}
+
+.order-online-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.order-online-card {
+  padding: 24px;
+  border-radius: 24px;
+  background: rgba(255, 251, 246, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.66);
+  box-shadow: 0 18px 44px rgba(22, 14, 11, 0.12);
+}
+
+.order-online-card h3 {
+  margin: 0 0 12px;
+  font-size: 1.12rem;
+  letter-spacing: -0.03em;
+  color: #22181a;
+}
+
+.order-online-card p {
+  margin: 0;
+  color: #564a45;
   line-height: 1.7;
 }
 
@@ -806,8 +852,8 @@ section[id] {
   gap: 18px;
   padding: 28px;
   border-radius: 28px;
-  background: rgba(255, 248, 240, 0.82);
-  border: 1px solid rgba(255, 255, 255, 0.52);
+  background: rgba(255, 248, 240, 0.88);
+  border: 1px solid rgba(255, 255, 255, 0.62);
   box-shadow: 0 20px 50px rgba(20, 12, 9, 0.12);
   backdrop-filter: none;
   -webkit-backdrop-filter: none;
@@ -1391,7 +1437,7 @@ section[id] {
   padding: 34px;
   border-radius: 34px;
   background:
-    linear-gradient(180deg, rgba(255, 252, 248, 0.8), rgba(255, 248, 241, 0.88)),
+    linear-gradient(180deg, rgba(255, 252, 248, 0.92), rgba(255, 248, 241, 0.94)),
     linear-gradient(135deg, rgba(255, 202, 150, 0.08), transparent 45%);
   border: 1px solid rgba(255, 255, 255, 0.65);
   box-shadow: 0 24px 70px rgba(41, 31, 28, 0.09);
@@ -1399,7 +1445,7 @@ section[id] {
 
 #videos .container {
   background:
-    linear-gradient(180deg, rgba(255, 252, 248, 0.74), rgba(254, 247, 238, 0.86)),
+    linear-gradient(180deg, rgba(255, 252, 248, 0.88), rgba(254, 247, 238, 0.92)),
     linear-gradient(135deg, rgba(255, 140, 25, 0.07), transparent 48%);
 }
 
@@ -2427,6 +2473,7 @@ textarea {
 
   .menu-grid,
   .offer-grid,
+  .order-online-grid,
   .video-grid,
   .review-grid,
   .catering-grid,
@@ -2477,18 +2524,15 @@ textarea {
   }
 
   .hero {
-    min-height: 760px;
+    min-height: 680px;
   }
 
   .hero__backdrop {
-    transform: none;
-    opacity: 0.12;
+    display: none;
   }
 
   .hero__overlay {
-    background:
-      radial-gradient(circle at top center, rgba(255, 191, 115, 0.1), transparent 42%),
-      linear-gradient(to bottom, rgba(17, 11, 8, 0.05), rgba(17, 11, 8, 0.12) 35%, rgba(17, 11, 8, 0.2));
+    display: none;
   }
 
   .topbar,
@@ -2499,9 +2543,9 @@ textarea {
   }
 
   .nav-links {
-    padding: 0;
-    border: 0;
-    background: transparent;
+    padding: 10px 12px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    background: rgba(42, 28, 22, 0.3);
     justify-content: flex-start;
   }
 
@@ -2511,7 +2555,7 @@ textarea {
 
   .hero-copy {
     max-width: 100%;
-    padding-top: 54px;
+    padding: 24px 18px 18px;
   }
 
   .section {
@@ -2519,8 +2563,12 @@ textarea {
   }
 
   .section--about {
-    margin-top: -42px;
-    padding-top: 118px;
+    padding-top: 104px;
+  }
+
+  .section-copy {
+    padding: 20px 18px;
+    border-radius: 24px;
   }
 
   #gallery .container,
@@ -2539,6 +2587,7 @@ textarea {
   .field-row,
   .menu-grid,
   .offer-grid,
+  .order-online-grid,
   .video-grid,
   .review-grid,
   .catering-grid,
@@ -2710,7 +2759,7 @@ textarea {
   .nav-links {
     width: calc(100% + 8px);
     margin-right: -8px;
-    padding: 0 8px 6px 0;
+    padding: 10px 12px;
     flex-wrap: nowrap;
     overflow-x: auto;
     overscroll-behavior-x: contain;
@@ -2729,8 +2778,8 @@ textarea {
     min-height: 38px;
     padding: 9px 14px;
     border-radius: 999px;
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(56, 40, 33, 0.34);
+    border: 1px solid rgba(255, 255, 255, 0.22);
     font-size: 0.9rem;
     color: rgba(255, 255, 255, 0.92);
   }
@@ -2746,7 +2795,7 @@ textarea {
   }
 
   .hero-copy {
-    padding-top: 26px;
+    padding: 22px 16px 18px;
   }
 
   .rating-pill {
@@ -2777,7 +2826,7 @@ textarea {
   .service-pills span {
     padding: 9px 12px;
     font-size: 0.86rem;
-    background: rgba(255, 255, 255, 0.12);
+    background: rgba(56, 40, 33, 0.36);
   }
 
   .hero-actions {
@@ -2799,10 +2848,10 @@ textarea {
     gap: 10px;
     padding: 16px;
     border-radius: 22px;
-    background: rgba(16, 10, 8, 0.38);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
+    background: rgba(42, 28, 22, 0.34);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
   }
 
   .order-strip p {
@@ -2834,6 +2883,7 @@ textarea {
 
   .section-copy {
     gap: 12px;
+    padding: 18px 16px;
   }
 
   .section-copy h2 {
@@ -2982,9 +3032,7 @@ textarea {
   }
 
   .site-background__veil {
-    background:
-      radial-gradient(circle at top center, rgba(255, 184, 113, 0.08), transparent 32%),
-      linear-gradient(180deg, rgba(16, 10, 8, 0.04), rgba(16, 10, 8, 0.1) 34%, rgba(16, 10, 8, 0.16));
+    display: none;
   }
 }
 
