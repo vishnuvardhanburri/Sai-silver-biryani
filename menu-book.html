@@ -26,7 +26,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css?v=2.7" />
+    <link rel="stylesheet" href="./styles.css?v=3.2" />
   </head>
   <body class="menu-book-page">
     <div class="site-background" aria-hidden="true">
@@ -230,13 +230,12 @@
 
           <div class="menu-results-info" id="menu-results-info" hidden aria-live="polite"></div>
 
-          <!-- KITCHEN CATEGORY TABS -->
-          <nav
-            class="menu-tabs-nav"
-            id="menu-tabs"
-            role="tablist"
-            aria-label="Menu categories"
-          ></nav>
+          <!-- KITCHEN CATEGORY TABS SLIDER -->
+          <div class="tabs-slider-wrapper">
+            <button type="button" class="tabs-slide-arrow tabs-slide-arrow--left" id="tabs-slide-left" aria-label="Slide categories left">&#8249;</button>
+            <div class="tabs-scroll-track" id="menu-tabs" role="tablist" aria-label="Menu categories"></div>
+            <button type="button" class="tabs-slide-arrow tabs-slide-arrow--right" id="tabs-slide-right" aria-label="Slide categories right">&#8250;</button>
+          </div>
 
           <!-- DYNAMIC MENU CARDS & HIGH-SPEED LIST CONTAINER -->
           <div class="menu-grid" id="menu-grid" aria-live="polite"></div>
@@ -273,6 +272,6 @@
       </a>
     </aside>
 
-    <script src="./script.js?v=2.7"></script>
+    <script src="./script.js?v=3.1"></script>
   </body>
 </html>

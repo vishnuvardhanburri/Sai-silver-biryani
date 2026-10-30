@@ -3163,7 +3163,7 @@ function renderServicePills() {
 
 function renderMenuTabs() {
   if (!menuTabs) return;
-  menuTabs.classList.add("tabs-wrap");
+  menuTabs.classList.add("tabs-scroll-track");
   menuTabs.innerHTML = menuItems
     .map((category) => {
       const isActive = category.category === activeCategory && !menuSearchQuery.trim();
@@ -4039,6 +4039,21 @@ function init() {
     });
   }
   document.addEventListener("keydown", handleKeydown);
+
+  // Horizontal Slider Arrows for Category Tabs
+  const slideLeftBtn = document.querySelector("#tabs-slide-left");
+  const slideRightBtn = document.querySelector("#tabs-slide-right");
+  if (slideLeftBtn && menuTabs) {
+    slideLeftBtn.addEventListener("click", () => {
+      menuTabs.scrollBy({ left: -300, behavior: "smooth" });
+    });
+  }
+  if (slideRightBtn && menuTabs) {
+    slideRightBtn.addEventListener("click", () => {
+      menuTabs.scrollBy({ left: 300, behavior: "smooth" });
+    });
+  }
+
 
   // Tier Navigation Dropdown & Fast Filter Handlers
   document.querySelectorAll("[data-tier-filter]").forEach(link => {

@@ -31,7 +31,7 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css?v=2.7" />
+    <link rel="stylesheet" href="./styles.css?v=3.2" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -787,8 +787,11 @@
             </div>
 
             <!-- Categories Scrollable Tabs -->
-            <div class="tabs-scroll-wrapper">
-              <div class="tabs" id="menu-tabs" role="tablist" aria-label="Menu categories"></div>
+                        <!-- Interactive Category Tabs Slider -->
+            <div class="tabs-slider-wrapper">
+              <button type="button" class="tabs-slide-arrow tabs-slide-arrow--left" id="tabs-slide-left" aria-label="Slide categories left">&#8249;</button>
+              <div class="tabs-scroll-track" id="menu-tabs" role="tablist" aria-label="Menu categories"></div>
+              <button type="button" class="tabs-slide-arrow tabs-slide-arrow--right" id="tabs-slide-right" aria-label="Slide categories right">&#8250;</button>
             </div>
 
             <div class="menu-results-info" id="menu-results-info" aria-live="polite" hidden></div>
@@ -1588,7 +1591,7 @@
 
     <div class="toast" id="toast" hidden></div>
 
-    <script type="module" src="./script.js?v=2.7"></script>
+    <script type="module" src="./script.js?v=3.0"></script>
       <!-- FLOATING WHATSAPP SIDE DOCK & DIRECT ACCESS -->
     <aside class="whatsapp-dock" aria-label="WhatsApp Quick Contact">
       <a
