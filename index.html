@@ -31,7 +31,7 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css?v=2.2" />
+    <link rel="stylesheet" href="./styles.css?v=2.5" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -261,22 +261,257 @@
         <div class="hero__backdrop"></div>
         <div class="hero__overlay"></div>
         <div class="container hero__content">
-          <div class="topbar">
-            <div class="brand">Sai Silver Dum Biryani</div>
-            <nav class="nav-links" aria-label="Primary">
-              <button type="button" data-scroll-target="about">About</button>
-              <button type="button" data-scroll-target="menu">Menu</button>
-              <button type="button" data-scroll-target="videos">Podcast</button>
-              <button type="button" data-scroll-target="payments">Payments</button>
-              <button type="button" data-scroll-target="catering">Catering</button>
-              <button type="button" data-scroll-target="contact">Contact</button>
-              <a class="nav-link-anchor" href="./links/">Links</a>
-              <a class="button button--solid button--zomato-nav" target="_blank" rel="noreferrer" href="https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order">Zomato</a>
-              <a class="button button--solid button--swiggy-nav" target="_blank" rel="noreferrer" href="https://www.swiggy.com/city/vijayawada/sai-silver-dum-biryani-mogalrajapuram-benz-circle-and-auto-nagar-rest809458">Swiggy</a>
-              <a class="button button--solid" target="_blank" rel="noreferrer" href="https://wa.me/918919443535?text=Hi%20Sai%20Silver%20Dum%20Biryani,%20I%20would%20like%20to%20order" style="background:#25d366;color:#ffffff;border:0;">WhatsApp</a>
-              <a class="button button--ghost" href="tel:08919443535">Call: 089194 43535</a>
-            </nav>
-          </div>
+          <header class="topbar">
+            <!-- ROW 1: BRAND + DIRECT ORDER ACTIONS -->
+            <div class="topbar-main-row">
+              <a href="./index.html" class="brand-tech">
+                <span class="brand-tech__name">Sai Silver Dum Biryani</span>
+                <span class="brand-tech__kicker">Authentic Hyderabadi Cuisine &bull; Auto Nagar, Vijayawada</span>
+              </a>
+
+              <div class="tech-topbar-actions">
+                <a class="tech-btn tech-btn--wa" target="_blank" rel="noreferrer" href="https://wa.me/918919443535?text=Hi%20Sai%20Silver%20Dum%20Biryani,%20I%20would%20like%20to%20order">
+                  WhatsApp: 89194 43535
+                </a>
+                <a class="tech-btn tech-btn--zomato" target="_blank" rel="noreferrer" href="https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order">
+                  Zomato &nearr;
+                </a>
+                <a class="tech-btn tech-btn--swiggy" target="_blank" rel="noreferrer" href="https://www.swiggy.com/city/vijayawada/sai-silver-dum-biryani-mogalrajapuram-benz-circle-and-auto-nagar-rest809458">
+                  Swiggy &nearr;
+                </a>
+                <a class="tech-btn tech-btn--call" href="tel:08919443535">
+                  Call: 089194 43535
+                </a>
+              </div>
+            </div>
+
+            <!-- ROW 2: BREADCRUMB + 5 TIER CATEGORIZED DIRECTORY (VARDHAN TECH AESTHETIC) -->
+            <div class="topbar-sub-row">
+              <div class="tech-breadcrumbs">
+                <span>Sai Silver</span>
+                <span class="crumb-sep">&gt;</span>
+                <span>Auto Nagar Kitchen</span>
+                <span class="crumb-sep">&gt;</span>
+                <span>134 Verified Dishes</span>
+              </div>
+
+              <!-- 5 TIERS (NO OVAL) -->
+              <nav class="tech-tier-nav" aria-label="System Directory">
+                <!-- Tier 1: Restaurant -->
+                <div class="tech-tier-dropdown">
+                  <button type="button" class="tech-tier-btn" aria-haspopup="true" aria-expanded="false">
+                    <span>01. Restaurant</span>
+                    <span class="toggle-icon">+</span>
+                  </button>
+                  <div class="tech-tier-panel">
+                    <div class="tech-tier-panel__header">
+                      <span>Sai Silver / Restaurant</span>
+                      <span>03 Topics</span>
+                    </div>
+                    <div class="tech-tier-list">
+                      <a href="#about" class="tech-tier-row" data-scroll-target="about">
+                        <span>
+                          <strong>About Restaurant</strong>
+                          <small>Heritage &amp; slow-dum tradition</small>
+                        </span>
+                        <span class="arrow-icon">&nearr;</span>
+                      </a>
+                      <a href="#videos" class="tech-tier-row" data-scroll-target="videos">
+                        <span>
+                          <strong>Meet Founder (Krishna)</strong>
+                          <small>Owner podcast &amp; video interview</small>
+                        </span>
+                        <span class="arrow-icon">&nearr;</span>
+                      </a>
+                      <a href="#gallery" class="tech-tier-row" data-scroll-target="gallery">
+                        <span>
+                          <strong>Kitchen Dum Craft</strong>
+                          <small>Handi dum gallery &amp; dining space</small>
+                        </span>
+                        <span class="arrow-icon">&nearr;</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Tier 2: Menu System -->
+                <div class="tech-tier-dropdown">
+                  <button type="button" class="tech-tier-btn" aria-haspopup="true" aria-expanded="false">
+                    <span>02. Menu System</span>
+                    <span class="toggle-icon">+</span>
+                  </button>
+                  <div class="tech-tier-panel">
+                    <div class="tech-tier-panel__header">
+                      <span>Kitchen Directory / Menu</span>
+                      <span>134 Items</span>
+                    </div>
+                    <div class="tech-tier-list">
+                      <a href="#menu" class="tech-tier-row" data-scroll-target="menu" data-tier-filter="all">
+                        <span>
+                          <strong>All 134 Authentic Dishes</strong>
+                          <small>Live prices &amp; direct ordering</small>
+                        </span>
+                        <span class="arrow-icon">&nearr;</span>
+                      </a>
+                      <a href="#menu" class="tech-tier-row" data-scroll-target="menu" data-tier-filter="veg">
+                        <span>
+                          <strong>Pure Veg Specialties</strong>
+                          <small>Paneer, Kaju &amp; Veggies (40 items)</small>
+                        </span>
+                        <span class="arrow-icon">&nearr;</span>
+                      </a>
+                      <a href="#menu" class="tech-tier-row" data-scroll-target="menu" data-tier-filter="non-veg">
+                        <span>
+                          <strong>Non-Veg Specialties</strong>
+                          <small>Chicken, Seafood &amp; Curries (94 items)</small>
+                        </span>
+                        <span class="arrow-icon">&nearr;</span>
+                      </a>
+                      <a href="#menu" class="tech-tier-row" data-scroll-target="menu" data-tier-speed="Couple &amp; Family Packs">
+                        <span>
+                          <strong>Couple &amp; Family Packs</strong>
+                          <small>Save up to 28% on combo meals</small>
+                        </span>
+                        <span class="arrow-icon">&nearr;</span>
+                      </a>
+                      <a href="./menu-book.html" class="tech-tier-row" style="background:rgba(255,177,80,0.1);border-color:rgba(255,177,80,0.3);">
+                        <span>
+                          <strong style="color:#ffb150;">Digital Menu Book &amp; Calculator</strong>
+                          <small>Analytical view &amp; portion calculator</small>
+                        </span>
+                        <span class="arrow-icon" style="color:#ffb150;">&rarr;</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Tier 3: Orders -->
+                <div class="tech-tier-dropdown">
+                  <button type="button" class="tech-tier-btn" aria-haspopup="true" aria-expanded="false">
+                    <span>03. Orders</span>
+                    <span class="toggle-icon">+</span>
+                  </button>
+                  <div class="tech-tier-panel">
+                    <div class="tech-tier-panel__header">
+                      <span>Delivery Channels / Live</span>
+                      <span>4 Methods</span>
+                    </div>
+                    <div class="tech-tier-list">
+                      <a href="https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order" target="_blank" rel="noreferrer" class="tech-tier-row">
+                        <span>
+                          <strong style="color:#ff707b;">Order on Zomato</strong>
+                          <small>Live GPS tracking &amp; offers</small>
+                        </span>
+                        <span class="arrow-icon">&nearr;</span>
+                      </a>
+                      <a href="https://www.swiggy.com/city/vijayawada/sai-silver-dum-biryani-mogalrajapuram-benz-circle-and-auto-nagar-rest809458" target="_blank" rel="noreferrer" class="tech-tier-row">
+                        <span>
+                          <strong style="color:#ff9d47;">Order on Swiggy</strong>
+                          <small>Doorstep Vijayawada delivery</small>
+                        </span>
+                        <span class="arrow-icon">&nearr;</span>
+                      </a>
+                      <a href="https://wa.me/918919443535?text=Hi%20Sai%20Silver%20Dum%20Biryani,%20I%20would%20like%20to%20order" target="_blank" rel="noreferrer" class="tech-tier-row">
+                        <span>
+                          <strong style="color:#25d366;">WhatsApp Direct Order (89194 43535)</strong>
+                          <small>Direct takeaway dispatch</small>
+                        </span>
+                        <span class="arrow-icon">&nearr;</span>
+                      </a>
+                      <a href="#catering" class="tech-tier-row" data-scroll-target="catering">
+                        <span>
+                          <strong>Event &amp; Bulk Catering</strong>
+                          <small>20 to 500+ guests packages</small>
+                        </span>
+                        <span class="arrow-icon">&nearr;</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Tier 4: Payments -->
+                <div class="tech-tier-dropdown">
+                  <button type="button" class="tech-tier-btn" aria-haspopup="true" aria-expanded="false">
+                    <span>04. Payments</span>
+                    <span class="toggle-icon">+</span>
+                  </button>
+                  <div class="tech-tier-panel">
+                    <div class="tech-tier-panel__header">
+                      <span>Checkout / UPI Verification</span>
+                      <span>Direct</span>
+                    </div>
+                    <div class="tech-tier-list">
+                      <a href="#payments" class="tech-tier-row" data-scroll-target="payments">
+                        <span>
+                          <strong>Direct UPI &amp; QR Codes</strong>
+                          <small>GPay / PhonePe / Paytm to 89194 43535</small>
+                        </span>
+                        <span class="arrow-icon">&nearr;</span>
+                      </a>
+                      <a href="https://wa.me/918919443535?text=Hi%20Krishna%20/%20Sai%20Silver%20Dum%20Biryani,%20I%20have%20made%20a%20UPI%20payment%20for%20my%20order" target="_blank" rel="noreferrer" class="tech-tier-row">
+                        <span>
+                          <strong style="color:#25d366;">WhatsApp Payment Screenshot</strong>
+                          <small>Direct to owner Krishna (89194 43535)</small>
+                        </span>
+                        <span class="arrow-icon">&nearr;</span>
+                      </a>
+                      <a href="#payments" class="tech-tier-row" data-scroll-target="payments">
+                        <span>
+                          <strong>Cash &amp; POS Counter Swipe</strong>
+                          <small>Available at Sanath Nagar kitchen</small>
+                        </span>
+                        <span class="arrow-icon">&nearr;</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Tier 5: Directory -->
+                <div class="tech-tier-dropdown">
+                  <button type="button" class="tech-tier-btn" aria-haspopup="true" aria-expanded="false">
+                    <span>05. Directory</span>
+                    <span class="toggle-icon">+</span>
+                  </button>
+                  <div class="tech-tier-panel">
+                    <div class="tech-tier-panel__header">
+                      <span>Official Links &amp; Hotline</span>
+                      <span>Auto Nagar</span>
+                    </div>
+                    <div class="tech-tier-list">
+                      <a href="tel:08919443535" class="tech-tier-row">
+                        <span>
+                          <strong>Hotline: 089194 43535</strong>
+                          <small>Reservations &amp; kitchen queries</small>
+                        </span>
+                        <span class="arrow-icon">&nearr;</span>
+                      </a>
+                      <a href="https://wa.me/918919443535" target="_blank" rel="noreferrer" class="tech-tier-row">
+                        <span>
+                          <strong style="color:#25d366;">WhatsApp: 89194 43535</strong>
+                          <small>Direct chat with owner Krishna</small>
+                        </span>
+                        <span class="arrow-icon">&nearr;</span>
+                      </a>
+                      <a href="#contact" class="tech-tier-row" data-scroll-target="contact">
+                        <span>
+                          <strong>Auto Nagar Location &amp; Map</strong>
+                          <small>Sanath Nagar, Vijayawada 520007</small>
+                        </span>
+                        <span class="arrow-icon">&nearr;</span>
+                      </a>
+                      <a href="./links/" class="tech-tier-row">
+                        <span>
+                          <strong>Official Links Directory</strong>
+                          <small>Social pages &amp; online channels</small>
+                        </span>
+                        <span class="arrow-icon">&rarr;</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </header>
 
           <div class="hero-copy">
             <div class="rating-pill">
@@ -851,6 +1086,34 @@
             </div>
 
             <div class="payments-grid">
+              <!-- Mode 4: WhatsApp Direct & UPI Verification -->
+              <div class="payment-card payment-card--whatsapp-direct">
+                <div class="payment-card__header">
+                  <div class="payment-card__icon" style="background:#25d366;color:#ffffff;">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 6.46 17.5 2 12.04 2M12.05 3.67C16.58 3.67 20.28 7.37 20.28 11.92C20.28 16.46 16.58 20.17 12.05 20.17C10.57 20.17 9.15 19.78 7.9 19.04L7.6 18.86L4.48 19.68L5.31 16.64L5.12 16.33C4.33 15.07 3.91 13.51 3.91 11.91C3.91 7.36 7.61 3.67 12.05 3.67M9.06 6.94C8.91 6.94 8.67 6.99 8.46 7.22C8.25 7.45 7.66 8 7.66 9.21C7.66 10.42 8.54 11.59 8.67 11.75C8.79 11.91 10.37 14.35 12.8 15.41C13.38 15.66 13.83 15.81 14.19 15.92C14.78 16.11 15.32 16.08 15.75 16.02C16.23 15.95 17.22 15.42 17.43 14.83C17.64 14.25 17.64 13.75 17.58 13.64C17.51 13.54 17.36 13.48 17.14 13.37C16.92 13.26 15.83 12.72 15.63 12.65C15.42 12.57 15.27 12.54 15.13 12.76C14.98 12.98 14.56 13.48 14.43 13.63C14.31 13.78 14.18 13.8 13.97 13.69C13.75 13.59 13.04 13.35 12.21 12.61C11.55 12.02 11.11 11.3 10.98 11.08C10.86 10.86 10.97 10.74 11.08 10.63C11.18 10.53 11.3 10.37 11.41 10.24C11.52 10.11 11.56 10.02 11.63 9.87C11.7 9.73 11.67 9.6 11.61 9.49C11.56 9.38 11.11 8.28 10.93 7.83C10.74 7.39 10.56 7.45 10.42 7.45C10.29 7.45 10.14 7.44 10 7.44C9.85 7.44 9.61 7.5 9.43 7.7C9.25 7.9 8.76 8.36 8.76 9.32"/></svg>
+                  </div>
+                  <div>
+                    <h3>WhatsApp &amp; Direct UPI</h3>
+                    <span class="payment-card__badge" style="background:#25d366;color:#ffffff;">Verified Contact</span>
+                  </div>
+                </div>
+                <p>
+                  Pay via any UPI App (GPay, PhonePe, Paytm, BHIM) to <strong>89194 43535</strong> and send your screenshot for instant confirmation and speedy kitchen dispatch.
+                </p>
+                <div class="payment-tags">
+                  <span>Owner: Krishna</span>
+                  <span>UPI Number: 89194 43535</span>
+                  <span>Instant Dispatch</span>
+                  <span>Direct Kitchen Contact</span>
+                </div>
+                <div class="payment-card__actions">
+                  <a href="https://wa.me/918919443535?text=Hi%20Krishna%20/%20Sai%20Silver%20Dum%20Biryani,%20I%20have%20made%20a%20UPI%20payment%20for%20my%20order" target="_blank" rel="noreferrer" class="button button--solid" style="background:#25d366;color:#ffffff;border:0;">
+                    WhatsApp Payment Screenshot ↗
+                  </a>
+                  <a href="tel:08919443535" class="button button--ghost">Call: 089194 43535</a>
+                  <a href="./links/" class="button button--ghost">Official Links &rarr;</a>
+                </div>
+              </div>
               <!-- Mode 1: Online Delivery -->
               <div class="payment-card">
                 <div class="payment-card__header">
@@ -1325,7 +1588,7 @@
 
     <div class="toast" id="toast" hidden></div>
 
-    <script type="module" src="./script.js?v=2.2"></script>
+    <script type="module" src="./script.js?v=2.5"></script>
       <!-- FLOATING WHATSAPP SIDE DOCK & DIRECT ACCESS -->
     <aside class="whatsapp-dock" aria-label="WhatsApp Quick Contact">
       <a

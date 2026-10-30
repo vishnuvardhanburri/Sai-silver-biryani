@@ -15,6 +15,8 @@ const restaurantInfo = {
   services: ["Dine-in", "Drive-through", "No-contact delivery"],
 };
 
+
+
 const menuItems = [
   {
     "category": "Signature Biryanis",
@@ -2735,6 +2737,375 @@ const menuItems = [
   }
 ];
 
+const reviews = [
+  {
+    id: 1,
+    name: "Aswini Kumar",
+    rating: 5,
+    date: "1 week ago",
+    comment:
+      "Biryanis are very good. Starters are also ok. Definitely worth trying to satisfy your Biryani cravings.",
+    reviewCount: 144,
+    photoCount: 44,
+  },
+  {
+    id: 2,
+    name: "Anonymous Customer",
+    rating: 5,
+    date: "2 weeks ago",
+    comment: "Rice in fry biryani is too good and very unique flavour. Worth the price.",
+    reviewCount: 0,
+    photoCount: 0,
+  },
+  {
+    id: 3,
+    name: "Happy Diner",
+    rating: 5,
+    date: "3 weeks ago",
+    comment:
+      "Super, food quality, clean ambiance, homely hospitality, overall awesome.",
+    reviewCount: 0,
+    photoCount: 0,
+  },
+  {
+    id: 4,
+    name: "Food Lover",
+    rating: 5,
+    date: "1 month ago",
+    comment:
+      "Food was very delicious. Service is so humble. Atmosphere is somewhat conjusted but food makes up for it!",
+    reviewCount: 0,
+    photoCount: 0,
+  },
+  {
+    id: 5,
+    name: "Biryani Enthusiast",
+    rating: 4,
+    date: "1 month ago",
+    comment:
+      "Great taste and authentic flavors. The chicken dum biryani is a must-try. Portion sizes are good.",
+    reviewCount: 0,
+    photoCount: 0,
+  },
+];
+
+const gallery = [
+  {
+    id: 1,
+    url: "./media/gallery/signature-chicken-dum.jpeg",
+    alt: "Signature chicken dum biryani with salan and raita at Sai Silver Dum Biryani Vijayawada",
+    title: "Signature Dum Biryani",
+    tag: "Best Seller",
+    featured: true,
+  },
+  {
+    id: 2,
+    url: "./media/gallery/fry-biryani-special.jpeg",
+    alt: "Rich fry biryani topped with roasted cashews and peppers at Sai Silver Dum Biryani",
+    title: "Rich Fry Biryani",
+    tag: "Chef Pick",
+  },
+  {
+    id: 3,
+    url: "./media/gallery/special-rice-platter.jpeg",
+    alt: "Special rice platter with curry and garnish from Sai Silver Dum Biryani Vijayawada",
+    title: "Special Rice Platter",
+    tag: "House Special",
+  },
+  {
+    id: 4,
+    url: "./media/gallery/roomali-roti-curry.jpeg",
+    alt: "Roomali roti served with creamy curry at Sai Silver Dum Biryani",
+    title: "Roti & Curry Pairing",
+    tag: "Freshly Served",
+  },
+  {
+    id: 5,
+    url: "./media/gallery/butter-naan-gravy.jpeg",
+    alt: "Butter naan with signature gravy served at Sai Silver Dum Biryani Vijayawada",
+    title: "Butter Naan Combo",
+    tag: "Bread Special",
+  },
+  {
+    id: 6,
+    url: "./media/gallery/veg-starter-platter.jpeg",
+    alt: "Veg starter platter with crisp fried vegetables at Sai Silver Dum Biryani",
+    title: "Veg Starter Platter",
+    tag: "Starter Favourite",
+  },
+  {
+    id: 7,
+    url: "./media/gallery/handi-rice-sides.jpeg",
+    alt: "Handi rice served with salan and raita at Sai Silver Dum Biryani Vijayawada",
+    title: "Handi Rice Set",
+    tag: "Table Favourite",
+  },
+  {
+    id: 8,
+    url: "./media/gallery/butter-naan-basket.jpeg",
+    alt: "Butter naan basket fresh from the tandoor at Sai Silver Dum Biryani",
+    title: "Fresh Butter Naan",
+    tag: "Tandoor Fresh",
+  },
+];
+
+const offers = [
+  {
+    id: 1,
+    title: "Family Combo",
+    description: "2 Chicken Biryanis + 1 Starter + Raita",
+    price: 550,
+    originalPrice: 650,
+    discount: "15% OFF",
+    validUntil: "Valid till: 31 Jan 2025",
+  },
+  {
+    id: 2,
+    title: "Weekend Special",
+    description: "Special Silver Dum Biryani + Mirchi Ka Salan + Dessert",
+    price: 450,
+    originalPrice: 580,
+    discount: "22% OFF",
+    validUntil: "Valid till: Every Weekend",
+  },
+  {
+    id: 3,
+    title: "Lunch Deal",
+    description: "Any Biryani + Raita (11:30 AM - 3:00 PM)",
+    price: 220,
+    originalPrice: 300,
+    discount: "27% OFF",
+    validUntil: "Valid till: Daily",
+  },
+];
+
+const cateringPackages = [
+  {
+    id: 1,
+    name: "Small Gathering",
+    servings: "20-30 people",
+    price: "\u20B98,000",
+    features: [
+      "Choice of 2 Biryani varieties",
+      "2 Starter options",
+      "Raita & Salan included",
+      "Disposable plates & cutlery",
+    ],
+  },
+  {
+    id: 2,
+    name: "Medium Event",
+    servings: "50-75 people",
+    price: "\u20B915,000",
+    featured: true,
+    features: [
+      "Choice of 3 Biryani varieties",
+      "3 Starter options",
+      "Raita, Salan & Dessert included",
+      "Service staff provided",
+      "Chafing dishes setup",
+    ],
+  },
+  {
+    id: 3,
+    name: "Large Celebration",
+    servings: "100+ people",
+    price: "Custom Quote",
+    features: [
+      "Choice of 4+ Biryani varieties",
+      "5+ Starter & Side options",
+      "Full menu customization",
+      "Professional service staff",
+      "Complete setup & cleanup",
+      "Live counter option available",
+    ],
+  },
+];
+
+const videos = [
+  {
+    id: 1,
+    title: "Krishna Podcast: Story, Growth, and Restaurant Journey",
+    description:
+      "A highlighted podcast conversation with Krishna about how Sai Silver Dum Biryani was built, the work behind the kitchen, and the ambition to grow the brand.",
+    thumbnail: "./media/gallery/podcast-cover.jpeg",
+    source: "./media/videos/krishna-podcast.mp4",
+    sourceType: "local",
+    duration: "3:02",
+    eyebrow: "Owner Podcast",
+  },
+  {
+    id: 2,
+    title: "Kitchen Preparation in Motion",
+    description:
+      "A longer kitchen-side clip showing the pace, flame, and finishing movement behind service time.",
+    thumbnail: "./media/gallery/signature-chicken-dum.jpeg",
+    source: "./media/videos/kitchen-prep.mp4",
+    sourceType: "local",
+    duration: "0:39",
+    eyebrow: "Kitchen Clip",
+  },
+  {
+    id: 3,
+    title: "Fresh Plating Showcase",
+    description:
+      "A clean service clip showing the final plated visual before it reaches the table.",
+    thumbnail: "./media/gallery/special-rice-platter.jpeg",
+    source: "./media/videos/plating-showcase.mp4",
+    sourceType: "local",
+    duration: "0:21",
+    eyebrow: "Service Clip",
+  },
+  {
+    id: 4,
+    title: "Quick Serve Reel",
+    description:
+      "A fast short-format shot that adds live energy to the page and highlights ready-to-serve movement.",
+    thumbnail: "./media/gallery/fry-biryani-special.jpeg",
+    source: "./media/videos/quick-serve.mp4",
+    sourceType: "local",
+    duration: "0:02",
+    eyebrow: "Quick Reel",
+  },
+  {
+    id: 5,
+    title: "Fresh Crowd Favorite: What Makes Our Biryani Stand Out",
+    description:
+      "A recent reel capturing the buzz around Sai Silver Dum Biryani, from rich masala layers and dum aroma to the serving style that keeps customers coming back for something different.",
+    thumbnail: "./media/gallery/special-rice-platter.jpeg",
+    source: "./media/videos/instagram-reel-highlight.mp4",
+    sourceType: "local",
+    duration: "Latest",
+    eyebrow: "Recent Highlight",
+    featured: true,
+  },
+];
+
+const menuCardDetails = {
+  "Chicken Dum Biryani": {
+    cooking:
+      "Fresh chicken is marinated with house spices, layered with long-grain basmati, and sealed for a slow dum cook so the steam carries the masala into every grain.",
+    ingredients: [
+      "Premium basmati rice",
+      "Fresh chicken",
+      "Saffron and ghee",
+      "Mint, fried onions, and house masala",
+    ],
+    finish:
+      "The result is juicy chicken, aromatic rice, and that rich restaurant-style dum fragrance.",
+  },
+  "Mughlai Chicken Biryani": {
+    cooking:
+      "Chicken is cooked with a richer masala base and layered with fragrant rice so the final pot feels fuller, warmer, and more indulgent.",
+    ingredients: [
+      "Marinated chicken",
+      "Basmati rice",
+      "Mughlai-style masala",
+      "Whole spices and fresh herbs",
+    ],
+    finish: "It lands with deeper gravy flavor, rich aroma, and a more celebratory biryani feel.",
+  },
+  "Special Chicken Biryani": {
+    cooking:
+      "This house special gets extra layering, stronger seasoning, and a longer dum finish so every spoon tastes fuller and more premium.",
+    ingredients: [
+      "Premium chicken pieces",
+      "Aged basmati rice",
+      "Ghee-roasted onions",
+      "House special spice mix",
+    ],
+    finish: "It is built to feel richer, more aromatic, and clearly more indulgent than the regular plate.",
+  },
+  "Chicken 65 Biryani": {
+    cooking:
+      "Spicy Chicken 65 pieces are paired with biryani rice and finishing masala, giving the dish a sharper kick and a more crowd-pleasing style.",
+    ingredients: [
+      "Chicken 65 pieces",
+      "Spiced biryani rice",
+      "Green chilies",
+      "Fresh coriander and masala oil",
+    ],
+    finish: "You get a lively spice hit, crisp chicken bites, and a distinctly punchier biryani experience.",
+  },
+  "Mutton Dum Biryani": {
+    cooking:
+      "Tender mutton is slow-cooked until soft, then sealed with fragrant rice on dum so the juices and spices build deep flavor into every layer.",
+    ingredients: [
+      "Slow-cooked mutton",
+      "Basmati rice",
+      "Saffron milk",
+      "Whole spices and fresh herbs",
+    ],
+    finish: "It lands with bold aroma, richer masala depth, and a premium festive feel.",
+  },
+  "Veg Manchuria": {
+    cooking:
+      "Vegetable dumplings are fried until crisp, then tossed in a glossy Indo-Chinese sauce with garlic, chilies, and fresh aromatics.",
+    ingredients: [
+      "Mixed vegetable balls",
+      "Garlic and chili sauce",
+      "Spring onion",
+      "Soy-style seasoning",
+    ],
+    finish: "It brings a crisp bite, savory coating, and a familiar starter-style comfort.",
+  },
+  "Paneer Tikka": {
+    cooking:
+      "Paneer cubes are coated in a spiced yogurt marinade and roasted until lightly charred on the edges.",
+    ingredients: ["Fresh paneer", "Yogurt marinade", "Tandoori spices", "Capsicum and onion"],
+    finish: "It balances smoky grill flavor with a creamy center.",
+  },
+  "Chicken Tikka": {
+    cooking:
+      "Chicken is marinated in spiced curd and roasted in the tandoor until the edges pick up char and color.",
+    ingredients: ["Boneless chicken", "Yogurt marinade", "Tandoori spices", "Smoky grill heat"],
+    finish: "It delivers a juicy center, smoky finish, and classic tandoori depth.",
+  },
+  "Paneer Butter Masala": {
+    cooking:
+      "Paneer is simmered in a buttery tomato gravy until the sauce turns smooth, rich, and lightly sweet.",
+    ingredients: ["Paneer cubes", "Tomato-butter gravy", "Cream", "Mild spice blend"],
+    finish: "It lands creamy, comforting, and ideal with naan or roti.",
+  },
+  "Butter Naan": {
+    cooking:
+      "The dough is stretched and baked fast so it stays soft, then brushed with butter for a rich finish.",
+    ingredients: ["Refined flour dough", "Butter", "Salt", "Tandoor heat"],
+    finish: "Soft texture and buttery warmth make it perfect with gravies and curries.",
+  },
+  Lassi: {
+    cooking:
+      "Curd is churned until smooth and chilled before service so it stays cool, creamy, and refreshing.",
+    ingredients: ["Fresh curd", "Water", "Sugar or salt", "Chilled finish"],
+    finish: "It cools the palate and balances the spice from biryani and starters.",
+  },
+};
+
+
+
+// Global DOM references
+let menuTabs, menuGrid, offerGrid, galleryGrid, videoGrid, reviewGrid, cateringGrid, servicePills, toast, modal, videoFrame, videoPlayer, heroBackdrop, menuDietFilters, menuSearchInput, menuSearchClear, menuResultsInfo;
+
+function queryDOMElements() {
+  menuTabs = document.querySelector("#menu-tabs");
+  menuGrid = document.querySelector("#menu-grid");
+  offerGrid = document.querySelector("#offer-grid") || document.querySelector("#offers-grid");
+  galleryGrid = document.querySelector("#gallery-grid");
+  videoGrid = document.querySelector("#video-grid") || document.querySelector("#videos-grid");
+  reviewGrid = document.querySelector("#review-grid") || document.querySelector("#reviews-grid");
+  cateringGrid = document.querySelector("#catering-grid");
+  servicePills = document.querySelector("#service-pills");
+  toast = document.querySelector("#toast");
+  modal = document.querySelector("#video-modal");
+  videoFrame = document.querySelector("#video-frame");
+  videoPlayer = document.querySelector("#video-player");
+  heroBackdrop = document.querySelector(".hero__backdrop");
+  menuDietFilters = document.querySelector(".menu-diet-filters") || document.querySelector("#menu-diet-filters");
+  menuSearchInput = document.querySelector("#menu-search-input");
+  menuSearchClear = document.querySelector("#menu-search-clear");
+  menuResultsInfo = document.querySelector("#menu-results-info");
+}
+
 let menuViewMode = "grid";
 let activeCategory = menuItems[0].category;
 let activeDietFilter = "all";
@@ -3168,8 +3539,9 @@ function renderMenuCards(animate = false) {
 
 function updateDietFilterPills() {
   if (!menuDietFilters) return;
-  menuDietFilters.querySelectorAll(".filter-pill").forEach((pill) => {
-    pill.classList.toggle("is-active", pill.dataset.filter === activeDietFilter);
+  menuDietFilters.querySelectorAll(".filter-pill, .diet-pill, [data-filter], [data-diet]").forEach((pill) => {
+    const val = pill.dataset.filter || pill.dataset.diet;
+    pill.classList.toggle("is-active", val === activeDietFilter);
   });
 }
 function renderOffers() {
@@ -3479,10 +3851,10 @@ function handleMenuGridInteractions(event) {
 }
 
 function handleDietFilter(event) {
-  const filterBtn = event.target.closest("[data-filter]");
+  const filterBtn = event.target.closest("[data-filter]") || event.target.closest("[data-diet]");
   if (!filterBtn) return;
 
-  activeDietFilter = filterBtn.dataset.filter;
+  activeDietFilter = filterBtn.dataset.filter || filterBtn.dataset.diet;
   updateDietFilterPills();
   renderMenuCards(true);
 }
@@ -3633,6 +4005,8 @@ function setupHeroParallax() {
 }
 
 function init() {
+  queryDOMElements();
+
   renderServicePills();
   renderMenuTabs();
   renderMenuCards();
@@ -3665,6 +4039,35 @@ function init() {
     });
   }
   document.addEventListener("keydown", handleKeydown);
+
+  // Tier Navigation Dropdown & Fast Filter Handlers
+  document.querySelectorAll("[data-tier-filter]").forEach(link => {
+    link.addEventListener("click", (e) => {
+      const filter = link.dataset.tierFilter;
+      if (filter) {
+        activeDietFilter = filter;
+        updateDietFilterPills();
+        renderMenuTabs();
+        renderMenuCards(true);
+      }
+    });
+  });
+
+  document.querySelectorAll("[data-tier-speed]").forEach(link => {
+    link.addEventListener("click", (e) => {
+      const targetCat = link.dataset.tierSpeed;
+      const matched = menuItems.find(c => c.category === targetCat);
+      if (matched) {
+        activeCategory = matched.category;
+        menuSearchQuery = "";
+        if (menuSearchInput) menuSearchInput.value = "";
+        if (menuSearchClear) menuSearchClear.hidden = true;
+        renderMenuTabs();
+        renderMenuCards(true);
+      }
+    });
+  });
+
 
   // View mode switcher: Cards vs High-Speed List
   const viewModeBtns = document.querySelectorAll("[data-view-mode]");
@@ -3780,3 +4183,4 @@ function init() {
 }
 
 init();
+

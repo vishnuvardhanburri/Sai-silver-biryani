@@ -328,12 +328,12 @@ section[id] {
   gap: 14px;
   flex-wrap: wrap;
   justify-content: flex-end;
-  padding: 12px 14px;
+  padding: 0;
   margin-left: auto;
-  border-radius: 999px;
-  background: rgba(44, 30, 24, 0.34);
-  border: 1px solid rgba(255, 255, 255, 0.22);
-  box-shadow: 0 14px 30px rgba(18, 10, 8, 0.16);
+  border-radius: 0 !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
 .nav-links button,
@@ -4517,4 +4517,786 @@ textarea {
   .list-row__desc {
     white-space: normal;
   }
+}
+
+/* ==========================================================================
+   CLEAN LUXURY TIER NAVIGATION (ZERO OVAL CAPSULE)
+   ========================================================================== */
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  width: 100%;
+  padding: 12px 0;
+  position: relative;
+  z-index: 120;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: #ffffff;
+  flex-shrink: 0;
+}
+
+.brand__name {
+  font-size: 1.48rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  color: #ffffff;
+}
+
+.brand__sub {
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #ffb150;
+  opacity: 0.95;
+  margin-top: 2px;
+}
+
+/* Tier Navigation Bar - Clean list/dropdown items, NO OVAL */
+.tier-nav {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin: 0 auto 0 20px;
+}
+
+.tier-dropdown {
+  position: relative;
+}
+
+.tier-trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 9px 13px;
+  background: transparent;
+  border: 0;
+  color: rgba(255, 255, 255, 0.9);
+  font-family: inherit;
+  font-size: 0.92rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.tier-trigger:hover,
+.tier-dropdown:hover .tier-trigger,
+.tier-dropdown.is-open .tier-trigger {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.09);
+}
+
+.tier-chevron {
+  transition: transform 0.22s ease;
+  opacity: 0.75;
+}
+
+.tier-dropdown:hover .tier-chevron,
+.tier-dropdown.is-open .tier-chevron {
+  transform: rotate(180deg);
+  opacity: 1;
+  color: #ffb150;
+}
+
+/* Dropdown Menu Tier List */
+.tier-menu {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  min-width: 280px;
+  background: rgba(24, 17, 14, 0.98);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 177, 80, 0.28);
+  border-radius: 12px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.65);
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition: opacity 0.2s cubic-bezier(0.16, 1, 0.3, 1), transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.2s;
+  z-index: 300;
+}
+
+.tier-dropdown:hover .tier-menu,
+.tier-dropdown:focus-within .tier-menu,
+.tier-dropdown.is-open .tier-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.tier-link {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.18s ease, transform 0.18s ease;
+  color: inherit;
+  text-align: left;
+}
+
+.tier-link:hover {
+  background: rgba(255, 177, 80, 0.14);
+  transform: translateX(3px);
+}
+
+.tier-link strong {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.tier-link small {
+  font-size: 0.74rem;
+  color: #a89f99;
+  margin-top: 2px;
+}
+
+.tier-link--featured {
+  background: rgba(255, 177, 80, 0.08);
+  border: 1px dashed rgba(255, 177, 80, 0.3);
+  margin-top: 4px;
+}
+
+.tier-link--featured:hover {
+  background: rgba(255, 177, 80, 0.2);
+}
+
+.tier-link--featured strong {
+  color: #ffb150;
+}
+
+/* Topbar Direct Action Buttons */
+.topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.topbar-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 15px;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.topbar-btn--wa {
+  background: #25d366;
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.35);
+}
+
+.topbar-btn--wa:hover {
+  background: #20ba59;
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.topbar-btn--zomato {
+  background: #e23744;
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(226, 55, 68, 0.3);
+}
+
+.topbar-btn--zomato:hover {
+  background: #cb202d;
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.topbar-btn--swiggy {
+  background: #fc8019;
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(252, 128, 25, 0.3);
+}
+
+.topbar-btn--swiggy:hover {
+  background: #e06d0b;
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.topbar-btn--call {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  color: #ffffff;
+}
+
+.topbar-btn--call:hover {
+  background: rgba(255, 255, 255, 0.16);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 1024px) {
+  .topbar {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .tier-nav {
+    order: 3;
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 6px;
+    white-space: nowrap;
+    margin: 0;
+  }
+}
+
+/* WhatsApp Card in Payments Section */
+.payment-card--whatsapp-direct {
+  border: 2px solid rgba(37, 211, 102, 0.45);
+  background: linear-gradient(180deg, rgba(37, 211, 102, 0.08) 0%, rgba(35, 25, 21, 0.98) 100%);
+}
+
+
+/* ==========================================================================
+   VARDHAN TECH STYLE TECHNICAL NAVIGATION (ZERO OVALS, CRISP TIER DIRECTORY)
+   ========================================================================== */
+.hero .topbar {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  z-index: 150;
+}
+
+.topbar-main-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+}
+
+.brand-tech {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.brand-tech__name {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, monospace;
+  font-size: 1.32rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-tech__name::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: #ffb150;
+  border-radius: 2px;
+}
+
+.brand-tech__kicker {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #ffb150;
+  margin-top: 3px;
+  opacity: 0.95;
+}
+
+/* Secondary Breadcrumb Strip */
+.topbar-sub-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  width: 100%;
+  padding-top: 8px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.72rem;
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.tech-breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tech-breadcrumbs span {
+  color: #ffb150;
+}
+
+.tech-breadcrumbs .crumb-sep {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* Technical Tier Nav */
+.tech-tier-nav {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.tech-tier-dropdown {
+  position: relative;
+}
+
+.tech-tier-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 4px;
+  color: #e5dcd6;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tech-tier-btn:hover,
+.tech-tier-dropdown:hover .tech-tier-btn,
+.tech-tier-dropdown.is-open .tech-tier-btn {
+  background: rgba(255, 177, 80, 0.12);
+  border-color: rgba(255, 177, 80, 0.4);
+  color: #ffffff;
+}
+
+.tech-tier-btn .toggle-icon {
+  font-size: 0.7rem;
+  color: #ffb150;
+  transition: transform 0.2s ease;
+}
+
+.tech-tier-dropdown:hover .tech-tier-btn .toggle-icon,
+.tech-tier-dropdown.is-open .tech-tier-btn .toggle-icon {
+  transform: rotate(45deg);
+}
+
+/* Technical Dropdown Drawer Panel */
+.tech-tier-panel {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  min-width: 320px;
+  background: #0d0a08;
+  border: 1px solid rgba(255, 177, 80, 0.35);
+  border-radius: 6px;
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.8);
+  padding: 12px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition: opacity 0.2s cubic-bezier(0.16, 1, 0.3, 1), transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.2s;
+  z-index: 400;
+}
+
+.tech-tier-dropdown:hover .tech-tier-panel,
+.tech-tier-dropdown.is-open .tech-tier-panel {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.tech-tier-panel__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffb150;
+}
+
+.tech-tier-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.tech-tier-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: #e5dcd6;
+  text-decoration: none;
+  font-size: 0.84rem;
+  font-weight: 600;
+  transition: all 0.18s ease;
+  cursor: pointer;
+}
+
+.tech-tier-row:hover {
+  background: rgba(255, 177, 80, 0.12);
+  border-color: rgba(255, 177, 80, 0.3);
+  color: #ffffff;
+  transform: translateX(3px);
+}
+
+.tech-tier-row span {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.tech-tier-row strong {
+  font-size: 0.86rem;
+  color: #ffffff;
+}
+
+.tech-tier-row small {
+  font-size: 0.72rem;
+  color: #999;
+}
+
+.tech-tier-row .arrow-icon {
+  font-family: ui-monospace, monospace;
+  font-size: 0.9rem;
+  color: #ffb150;
+}
+
+/* Actions in topbar */
+.tech-topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tech-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border-radius: 4px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+}
+
+.tech-btn--wa {
+  background: rgba(37, 211, 102, 0.15);
+  border-color: rgba(37, 211, 102, 0.4);
+  color: #25d366;
+}
+
+.tech-btn--wa:hover {
+  background: #25d366;
+  color: #ffffff;
+}
+
+.tech-btn--zomato {
+  background: rgba(226, 55, 68, 0.15);
+  border-color: rgba(226, 55, 68, 0.4);
+  color: #ff707b;
+}
+
+.tech-btn--zomato:hover {
+  background: #e23744;
+  color: #ffffff;
+}
+
+.tech-btn--swiggy {
+  background: rgba(252, 128, 25, 0.15);
+  border-color: rgba(252, 128, 25, 0.4);
+  color: #ff9d47;
+}
+
+.tech-btn--swiggy:hover {
+  background: #fc8019;
+  color: #ffffff;
+}
+
+.tech-btn--call {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.16);
+  color: #ffffff;
+}
+
+.tech-btn--call:hover {
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.tech-btn--explore {
+  background: rgba(255, 177, 80, 0.12);
+  border-color: rgba(255, 177, 80, 0.4);
+  color: #ffb150;
+}
+
+.tech-btn--explore:hover {
+  background: #ffb150;
+  color: #1a120e;
+}
+
+
+/* ==========================================================================
+   CARD CONTRAST & VISIBILITY FIX (100% READABLE TEXT)
+   ========================================================================== */
+.menu-card,
+.menu-card--text-only {
+  background: #ffffff !important;
+  border: 1px solid rgba(200, 185, 175, 0.6) !important;
+  border-radius: 16px !important;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.16) !important;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.menu-card--text-only {
+  border-top: 4px solid #ffb150 !important;
+  padding: 8px 4px 4px !important;
+}
+
+.menu-card__body {
+  background: #ffffff !important;
+  color: #1a120e !important;
+  padding: 20px 20px 18px !important;
+}
+
+.menu-card__title,
+.menu-card--text-only .menu-card__title {
+  color: #1a120e !important;
+  font-size: 1.15rem !important;
+  font-weight: 800 !important;
+  line-height: 1.25 !important;
+  margin: 0 !important;
+}
+
+.menu-card__desc,
+.menu-card--text-only .menu-card__desc {
+  color: #524239 !important;
+  font-size: 0.86rem !important;
+  font-weight: 500 !important;
+  line-height: 1.4 !important;
+  margin-top: 6px !important;
+}
+
+.menu-card__price,
+.menu-card--text-only .menu-card__price {
+  background: rgba(226, 55, 68, 0.1) !important;
+  color: #e23744 !important;
+  font-size: 1.1rem !important;
+  font-weight: 800 !important;
+  padding: 6px 14px !important;
+  border-radius: 999px !important;
+}
+
+.menu-card__story-btn {
+  color: #6a564c !important;
+  font-weight: 600 !important;
+  border: 1px solid rgba(100, 80, 70, 0.2) !important;
+  border-radius: 6px !important;
+  padding: 6px 12px !important;
+}
+
+.menu-card__story-btn:hover {
+  background: rgba(100, 80, 70, 0.08) !important;
+  color: #1a120e !important;
+}
+
+.menu-card__details {
+  background: #fbf8f5 !important;
+  color: #2b1d16 !important;
+  border-top: 1px solid rgba(0, 0, 0, 0.08) !important;
+}
+
+.menu-card__detail-block p {
+  color: #3e2f28 !important;
+}
+
+.menu-card__top-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding: 10px 16px 4px !important;
+}
+
+
+/* ==========================================================================
+   VARDHAN TECH NAVIGATION COLOR PALETTE (HIGH CONTRAST, SOLID, SHARP)
+   ========================================================================== */
+.hero .topbar {
+  background: rgba(18, 12, 9, 0.96) !important;
+  backdrop-filter: blur(16px) !important;
+  border-bottom: 2px solid #ffb150 !important;
+  padding: 14px 20px !important;
+  border-radius: 8px !important;
+  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.5) !important;
+}
+
+.brand-tech__name {
+  color: #ffffff !important;
+  font-size: 1.36rem !important;
+  letter-spacing: 0.02em !important;
+}
+
+.brand-tech__name::before {
+  background: #ffb150 !important;
+  box-shadow: 0 0 10px rgba(255, 177, 80, 0.8) !important;
+}
+
+.brand-tech__kicker {
+  color: #ffb150 !important;
+  font-size: 0.72rem !important;
+}
+
+.topbar-sub-row {
+  border-top: 1px solid rgba(255, 177, 80, 0.2) !important;
+  color: #d8cec8 !important;
+}
+
+.tech-breadcrumbs span {
+  color: #ffb150 !important;
+  font-weight: 700 !important;
+}
+
+/* Navigation Tier Buttons */
+.tech-tier-btn {
+  background: #201612 !important;
+  border: 1px solid rgba(255, 177, 80, 0.4) !important;
+  color: #ffffff !important;
+  font-size: 0.8rem !important;
+  font-weight: 700 !important;
+  padding: 8px 14px !important;
+}
+
+.tech-tier-btn:hover,
+.tech-tier-dropdown:hover .tech-tier-btn,
+.tech-tier-dropdown.is-open .tech-tier-btn {
+  background: #ffb150 !important;
+  border-color: #ffb150 !important;
+  color: #140d09 !important;
+}
+
+.tech-tier-btn:hover .toggle-icon,
+.tech-tier-dropdown:hover .tech-tier-btn .toggle-icon,
+.tech-tier-dropdown.is-open .tech-tier-btn .toggle-icon {
+  color: #140d09 !important;
+}
+
+.tech-tier-panel {
+  background: #140d09 !important;
+  border: 1px solid #ffb150 !important;
+  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.85) !important;
+}
+
+.tech-tier-panel__header {
+  border-bottom: 1px solid rgba(255, 177, 80, 0.25) !important;
+  color: #ffb150 !important;
+}
+
+.tech-tier-row {
+  background: rgba(255, 255, 255, 0.03) !important;
+  border: 1px solid rgba(255, 255, 255, 0.06) !important;
+}
+
+.tech-tier-row:hover {
+  background: rgba(255, 177, 80, 0.18) !important;
+  border-color: #ffb150 !important;
+}
+
+.tech-tier-row strong {
+  color: #ffffff !important;
+}
+
+.tech-tier-row small {
+  color: #beb2aa !important;
+}
+
+/* Action Buttons Colors */
+.tech-btn--wa {
+  background: #25d366 !important;
+  border-color: #25d366 !important;
+  color: #ffffff !important;
+  font-weight: 800 !important;
+  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.4) !important;
+}
+
+.tech-btn--wa:hover {
+  background: #20ba59 !important;
+  color: #ffffff !important;
+}
+
+.tech-btn--zomato {
+  background: #e23744 !important;
+  border-color: #e23744 !important;
+  color: #ffffff !important;
+  font-weight: 800 !important;
+  box-shadow: 0 4px 14px rgba(226, 55, 68, 0.35) !important;
+}
+
+.tech-btn--zomato:hover {
+  background: #cb202d !important;
+  color: #ffffff !important;
+}
+
+.tech-btn--swiggy {
+  background: #fc8019 !important;
+  border-color: #fc8019 !important;
+  color: #ffffff !important;
+  font-weight: 800 !important;
+  box-shadow: 0 4px 14px rgba(252, 128, 25, 0.35) !important;
+}
+
+.tech-btn--swiggy:hover {
+  background: #e06d0b !important;
+  color: #ffffff !important;
+}
+
+.tech-btn--call {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border-color: rgba(255, 255, 255, 0.25) !important;
+  color: #ffffff !important;
+  font-weight: 700 !important;
+}
+
+.tech-btn--call:hover {
+  background: rgba(255, 255, 255, 0.2) !important;
+  border-color: #ffffff !important;
 }
