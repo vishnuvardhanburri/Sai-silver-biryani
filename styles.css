@@ -5159,108 +5159,158 @@ textarea {
 
 
 /* ==========================================================================
-   VARDHAN TECH NAVIGATION COLOR PALETTE (HIGH CONTRAST, SOLID, SHARP)
+   LIGHT, ATTRACTIVE LUXURY NAVIGATION PALETTE (BRIGHT, APPETIZING, HIGH-CONTRAST)
    ========================================================================== */
 .hero .topbar {
-  background: rgba(18, 12, 9, 0.96) !important;
-  backdrop-filter: blur(16px) !important;
-  border-bottom: 2px solid #ffb150 !important;
-  padding: 14px 20px !important;
-  border-radius: 8px !important;
-  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.5) !important;
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(24px) saturate(190%) !important;
+  -webkit-backdrop-filter: blur(24px) saturate(190%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.8) !important;
+  border-bottom: 3px solid #ff7b25 !important;
+  padding: 14px 22px !important;
+  border-radius: 14px !important;
+  box-shadow: 0 16px 42px rgba(35, 18, 10, 0.22), 0 4px 16px rgba(255, 123, 37, 0.12) !important;
+}
+
+.brand-tech {
+  text-decoration: none !important;
 }
 
 .brand-tech__name {
-  color: #ffffff !important;
-  font-size: 1.36rem !important;
-  letter-spacing: 0.02em !important;
+  color: #1a0f0a !important;
+  font-size: 1.44rem !important;
+  font-weight: 900 !important;
+  letter-spacing: -0.01em !important;
+  text-shadow: none !important;
 }
 
 .brand-tech__name::before {
-  background: #ffb150 !important;
-  box-shadow: 0 0 10px rgba(255, 177, 80, 0.8) !important;
+  background: linear-gradient(135deg, #ff7b25, #e02438) !important;
+  box-shadow: 0 2px 8px rgba(224, 36, 56, 0.35) !important;
+  border-radius: 3px !important;
+  width: 9px !important;
+  height: 9px !important;
 }
 
 .brand-tech__kicker {
-  color: #ffb150 !important;
-  font-size: 0.72rem !important;
+  color: #c04e0a !important;
+  font-size: 0.74rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.08em !important;
 }
 
+/* Secondary Breadcrumb Sub-row */
 .topbar-sub-row {
-  border-top: 1px solid rgba(255, 177, 80, 0.2) !important;
-  color: #d8cec8 !important;
+  border-top: 1px solid rgba(0, 0, 0, 0.08) !important;
+  color: #634f44 !important;
+  padding-top: 10px !important;
+  font-weight: 600 !important;
+}
+
+.tech-breadcrumbs {
+  color: #634f44 !important;
 }
 
 .tech-breadcrumbs span {
-  color: #ffb150 !important;
+  color: #d35400 !important;
   font-weight: 700 !important;
 }
 
-/* Navigation Tier Buttons */
+.tech-breadcrumbs .crumb-sep {
+  color: #bbb !important;
+}
+
+/* Navigation Tier Buttons (Light, Attractive, Crisp) */
 .tech-tier-btn {
-  background: #201612 !important;
-  border: 1px solid rgba(255, 177, 80, 0.4) !important;
-  color: #ffffff !important;
-  font-size: 0.8rem !important;
-  font-weight: 700 !important;
-  padding: 8px 14px !important;
+  background: #ffffff !important;
+  border: 1px solid rgba(210, 185, 170, 0.85) !important;
+  color: #2b1810 !important;
+  font-size: 0.82rem !important;
+  font-weight: 800 !important;
+  padding: 8px 15px !important;
+  border-radius: 8px !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06) !important;
+  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.tech-tier-btn .toggle-icon {
+  color: #ff7b25 !important;
+  font-weight: 900 !important;
 }
 
 .tech-tier-btn:hover,
 .tech-tier-dropdown:hover .tech-tier-btn,
 .tech-tier-dropdown.is-open .tech-tier-btn {
-  background: #ffb150 !important;
-  border-color: #ffb150 !important;
-  color: #140d09 !important;
+  background: linear-gradient(135deg, #ff7b25 0%, #ff4d4d 100%) !important;
+  border-color: transparent !important;
+  color: #ffffff !important;
+  box-shadow: 0 6px 18px rgba(255, 123, 37, 0.4) !important;
+  transform: translateY(-2px) !important;
 }
 
 .tech-tier-btn:hover .toggle-icon,
 .tech-tier-dropdown:hover .tech-tier-btn .toggle-icon,
 .tech-tier-dropdown.is-open .tech-tier-btn .toggle-icon {
-  color: #140d09 !important;
-}
-
-.tech-tier-panel {
-  background: #140d09 !important;
-  border: 1px solid #ffb150 !important;
-  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.85) !important;
-}
-
-.tech-tier-panel__header {
-  border-bottom: 1px solid rgba(255, 177, 80, 0.25) !important;
-  color: #ffb150 !important;
-}
-
-.tech-tier-row {
-  background: rgba(255, 255, 255, 0.03) !important;
-  border: 1px solid rgba(255, 255, 255, 0.06) !important;
-}
-
-.tech-tier-row:hover {
-  background: rgba(255, 177, 80, 0.18) !important;
-  border-color: #ffb150 !important;
-}
-
-.tech-tier-row strong {
   color: #ffffff !important;
 }
 
-.tech-tier-row small {
-  color: #beb2aa !important;
+/* Dropdown Tier Panels (Crisp Light Card) */
+.tech-tier-panel {
+  background: #ffffff !important;
+  border: 2px solid #ff7b25 !important;
+  border-radius: 12px !important;
+  box-shadow: 0 22px 50px rgba(0, 0, 0, 0.22), 0 4px 14px rgba(255, 123, 37, 0.15) !important;
+  padding: 12px !important;
 }
 
-/* Action Buttons Colors */
+.tech-tier-panel__header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08) !important;
+  color: #d35400 !important;
+  font-weight: 800 !important;
+}
+
+.tech-tier-row {
+  background: #faf6f2 !important;
+  border: 1px solid rgba(0, 0, 0, 0.05) !important;
+  border-radius: 6px !important;
+  color: #2b1810 !important;
+}
+
+.tech-tier-row:hover {
+  background: #fff0e6 !important;
+  border-color: #ff7b25 !important;
+  color: #1a0f0a !important;
+  transform: translateX(4px) !important;
+}
+
+.tech-tier-row strong {
+  color: #1a0f0a !important;
+  font-size: 0.88rem !important;
+}
+
+.tech-tier-row small {
+  color: #6a584e !important;
+  font-size: 0.74rem !important;
+}
+
+.tech-tier-row .arrow-icon {
+  color: #e02438 !important;
+  font-weight: 800 !important;
+}
+
+/* Action Buttons in Topbar (Radiant, Crisp) */
 .tech-btn--wa {
   background: #25d366 !important;
   border-color: #25d366 !important;
   color: #ffffff !important;
   font-weight: 800 !important;
-  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.4) !important;
+  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.42) !important;
 }
 
 .tech-btn--wa:hover {
   background: #20ba59 !important;
   color: #ffffff !important;
+  transform: translateY(-1px) !important;
 }
 
 .tech-btn--zomato {
@@ -5268,12 +5318,13 @@ textarea {
   border-color: #e23744 !important;
   color: #ffffff !important;
   font-weight: 800 !important;
-  box-shadow: 0 4px 14px rgba(226, 55, 68, 0.35) !important;
+  box-shadow: 0 4px 14px rgba(226, 55, 68, 0.38) !important;
 }
 
 .tech-btn--zomato:hover {
   background: #cb202d !important;
   color: #ffffff !important;
+  transform: translateY(-1px) !important;
 }
 
 .tech-btn--swiggy {
@@ -5281,22 +5332,26 @@ textarea {
   border-color: #fc8019 !important;
   color: #ffffff !important;
   font-weight: 800 !important;
-  box-shadow: 0 4px 14px rgba(252, 128, 25, 0.35) !important;
+  box-shadow: 0 4px 14px rgba(252, 128, 25, 0.38) !important;
 }
 
 .tech-btn--swiggy:hover {
   background: #e06d0b !important;
   color: #ffffff !important;
+  transform: translateY(-1px) !important;
 }
 
 .tech-btn--call {
-  background: rgba(255, 255, 255, 0.08) !important;
-  border-color: rgba(255, 255, 255, 0.25) !important;
-  color: #ffffff !important;
-  font-weight: 700 !important;
+  background: #ffffff !important;
+  border: 1px solid rgba(220, 100, 50, 0.4) !important;
+  color: #c04e0a !important;
+  font-weight: 800 !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06) !important;
 }
 
 .tech-btn--call:hover {
-  background: rgba(255, 255, 255, 0.2) !important;
-  border-color: #ffffff !important;
+  background: #ff7b25 !important;
+  border-color: #ff7b25 !important;
+  color: #ffffff !important;
+  transform: translateY(-1px) !important;
 }
