@@ -5090,41 +5090,44 @@ textarea {
 
 
 /* ==========================================================================
-   CARD CONTRAST & VISIBILITY FIX (100% READABLE TEXT)
+   TRANSPARENT OVAL CARDS & PURE WHITE TEXT (ZERO SOLID BOXES)
    ========================================================================== */
 .menu-card,
 .menu-card--text-only {
-  background: #ffffff !important;
-  border: 1px solid rgba(200, 185, 175, 0.6) !important;
-  border-radius: 16px !important;
-  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.16) !important;
-  overflow: hidden;
-  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  background: rgba(18, 12, 10, 0.62) !important;
+  backdrop-filter: blur(18px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(18px) saturate(180%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.20) !important;
+  border-radius: 36px !important;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.40) !important;
+  overflow: hidden !important;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease !important;
 }
 
 .menu-card--text-only {
-  border-top: 4px solid #ffb150 !important;
+  border-top: 4px solid #ff7b25 !important;
   padding: 8px 4px 4px !important;
 }
 
 .menu-card__body {
-  background: #ffffff !important;
-  color: #1a120e !important;
-  padding: 20px 20px 18px !important;
+  background: transparent !important;
+  color: #ffffff !important;
+  padding: 20px 22px 18px !important;
 }
 
 .menu-card__title,
 .menu-card--text-only .menu-card__title {
-  color: #1a120e !important;
+  color: #ffffff !important;
   font-size: 1.15rem !important;
   font-weight: 800 !important;
   line-height: 1.25 !important;
   margin: 0 !important;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8) !important;
 }
 
 .menu-card__desc,
 .menu-card--text-only .menu-card__desc {
-  color: #524239 !important;
+  color: rgba(255, 255, 255, 0.88) !important;
   font-size: 0.86rem !important;
   font-weight: 500 !important;
   line-height: 1.4 !important;
@@ -5133,35 +5136,40 @@ textarea {
 
 .menu-card__price,
 .menu-card--text-only .menu-card__price {
-  background: rgba(226, 55, 68, 0.1) !important;
-  color: #e23744 !important;
-  font-size: 1.1rem !important;
-  font-weight: 800 !important;
-  padding: 6px 14px !important;
+  background: rgba(255, 123, 37, 0.22) !important;
+  border: 1px solid rgba(255, 177, 80, 0.40) !important;
+  color: #ffb150 !important;
+  font-size: 1.15rem !important;
+  font-weight: 900 !important;
+  padding: 6px 16px !important;
   border-radius: 999px !important;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.7) !important;
 }
 
 .menu-card__story-btn {
-  color: #6a564c !important;
-  font-weight: 600 !important;
-  border: 1px solid rgba(100, 80, 70, 0.2) !important;
-  border-radius: 6px !important;
-  padding: 6px 12px !important;
+  background: rgba(255, 255, 255, 0.12) !important;
+  border: 1px solid rgba(255, 255, 255, 0.30) !important;
+  color: #ffffff !important;
+  border-radius: 999px !important;
+  font-weight: 700 !important;
+  padding: 6px 14px !important;
+  transition: all 0.2s ease !important;
 }
 
 .menu-card__story-btn:hover {
-  background: rgba(100, 80, 70, 0.08) !important;
-  color: #1a120e !important;
+  background: #ff7b25 !important;
+  border-color: #ff7b25 !important;
+  color: #ffffff !important;
 }
 
 .menu-card__details {
-  background: #fbf8f5 !important;
-  color: #2b1d16 !important;
-  border-top: 1px solid rgba(0, 0, 0, 0.08) !important;
+  background: rgba(14, 9, 7, 0.85) !important;
+  color: #ffffff !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.14) !important;
 }
 
 .menu-card__detail-block p {
-  color: #3e2f28 !important;
+  color: rgba(255, 255, 255, 0.90) !important;
 }
 
 .menu-card__top-meta {
@@ -5490,87 +5498,127 @@ body {
 }
 
 .order-link--light {
-  background: #ffffff !important;
-  border: 1px solid rgba(226, 55, 68, 0.35) !important;
-  color: #e23744 !important;
+  background: rgba(226, 55, 68, 0.15) !important;
+  border: 1px solid rgba(226, 55, 68, 0.5) !important;
+  color: #ff707b !important;
+  border-radius: 999px !important;
   font-weight: 700 !important;
 }
 
 .order-link--accent {
-  background: #ffffff !important;
-  border: 1px solid rgba(252, 128, 25, 0.35) !important;
-  color: #fc8019 !important;
+  background: rgba(252, 128, 25, 0.15) !important;
+  border: 1px solid rgba(252, 128, 25, 0.5) !important;
+  color: #ff9d47 !important;
+  border-radius: 999px !important;
   font-weight: 700 !important;
 }
 
-/* Speed Navigation Bar */
+/* Speed Navigation Bar (Oval Stadium Capsule) */
 .speed-nav {
-  background: rgba(255, 255, 255, 0.98) !important;
-  backdrop-filter: blur(20px) !important;
-  border-bottom: 2px solid rgba(255, 123, 37, 0.25) !important;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07) !important;
+  background: rgba(18, 12, 10, 0.60) !important;
+  backdrop-filter: blur(18px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(18px) saturate(180%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.20) !important;
+  border-radius: 999px !important;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.40) !important;
+  padding: 10px 24px !important;
+  margin: 18px auto !important;
+  width: fit-content !important;
+  max-width: 95% !important;
 }
 
 .speed-nav__label {
-  color: #c04e0a !important;
+  color: #ffb150 !important;
   font-weight: 800 !important;
 }
 
 .speed-chip {
-  background: #fbf7f3 !important;
-  border: 1px solid rgba(210, 185, 170, 0.85) !important;
-  color: #2b1810 !important;
+  background: rgba(255, 255, 255, 0.12) !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  color: #ffffff !important;
+  border-radius: 999px !important;
   font-weight: 700 !important;
+  padding: 8px 16px !important;
+  transition: all 0.2s ease !important;
 }
 
 .speed-chip:hover {
   background: #ff7b25 !important;
   border-color: #ff7b25 !important;
   color: #ffffff !important;
+  transform: translateY(-2px) !important;
 }
 
-/* Headings and Copy Across Main Content Sections */
+/* Headings and Copy Across Main Content Sections (Pure White) */
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff !important;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.9) !important;
+}
+
+p, span, small, label {
+  color: #ffffff !important;
+}
+
 .section-copy h2 {
-  color: #1a0f0a !important;
+  color: #ffffff !important;
+  text-shadow: 0 3px 14px rgba(0, 0, 0, 0.95) !important;
 }
 
 .section-copy p {
-  color: #4a3a31 !important;
+  color: rgba(255, 255, 255, 0.92) !important;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.9) !important;
 }
 
 .badge-tag,
 .eyebrow-badge {
-  background: rgba(255, 123, 37, 0.12) !important;
-  color: #c04e0a !important;
-  border: 1px solid rgba(255, 123, 37, 0.3) !important;
+  background: rgba(0, 0, 0, 0.45) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  color: #ffb150 !important;
+  border: 1px solid rgba(255, 177, 80, 0.45) !important;
+  border-radius: 999px !important;
+  padding: 6px 16px !important;
+  font-weight: 700 !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8) !important;
 }
 
-/* KPI Cards */
+/* KPI Cards (Oval Pills) */
 .kpi-card {
-  background: #ffffff !important;
-  border: 1px solid rgba(210, 185, 170, 0.8) !important;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06) !important;
+  background: rgba(18, 12, 10, 0.60) !important;
+  backdrop-filter: blur(14px) !important;
+  -webkit-backdrop-filter: blur(14px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.20) !important;
+  border-radius: 999px !important;
+  padding: 16px 26px !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.30) !important;
 }
 
 .kpi-value {
-  color: #c04e0a !important;
+  color: #ffb150 !important;
+  font-weight: 900 !important;
 }
 
 .kpi-label {
-  color: #6a5245 !important;
+  color: #ffffff !important;
+  font-weight: 700 !important;
 }
 
-/* Group Portion Planner Box */
+/* Group Portion Planner Box (Smooth Pebble Curves) */
 .planner-box {
-  background: #ffffff !important;
-  border: 1px solid rgba(210, 185, 170, 0.8) !important;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08) !important;
+  background: rgba(18, 12, 10, 0.62) !important;
+  backdrop-filter: blur(18px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(18px) saturate(180%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.20) !important;
+  border-radius: 36px !important;
+  box-shadow: 0 16px 44px rgba(0, 0, 0, 0.40) !important;
+  color: #ffffff !important;
 }
 
 .planner-chip {
-  background: #fbf7f3 !important;
-  border: 1px solid rgba(210, 185, 170, 0.8) !important;
-  color: #2b1810 !important;
+  background: rgba(255, 255, 255, 0.12) !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  color: #ffffff !important;
+  border-radius: 999px !important;
   font-weight: 700 !important;
 }
 
@@ -5581,182 +5629,48 @@ body {
 }
 
 .planner-result-card {
-  background: #fdfaf7 !important;
-  border: 1px solid rgba(255, 123, 37, 0.3) !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+  border: 1px solid rgba(255, 177, 80, 0.35) !important;
+  border-radius: 28px !important;
 }
 
 .planner-result-combo h3 {
-  color: #1a0f0a !important;
+  color: #ffffff !important;
 }
 
 .price-big {
-  color: #e23744 !important;
+  color: #ffb150 !important;
 }
 
-/* Category Tabs Navigation */
+/* Category Tabs Navigation (Oval Pills) */
 .menu-tab-btn {
-  background: #ffffff !important;
-  border: 1px solid rgba(210, 185, 170, 0.8) !important;
-  color: #2b1810 !important;
-  font-weight: 700 !important;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05) !important;
-}
-
-.menu-tab-btn.is-active {
-  background: #ff7b25 !important;
-  border-color: #ff7b25 !important;
+  background: rgba(255, 255, 255, 0.12) !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
   color: #ffffff !important;
-  box-shadow: 0 4px 14px rgba(255, 123, 37, 0.35) !important;
-}
-
-.menu-tab-btn.is-active .menu-tab-count {
-  background: #ffffff !important;
-  color: #ff7b25 !important;
-}
-
-/* Search Bar & Dietary Filter Pills */
-.menu-search-box {
-  background: #ffffff !important;
-  border: 1px solid rgba(210, 185, 170, 0.8) !important;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06) !important;
-}
-
-.search-input,
-#menu-search-input {
-  color: #1a0f0a !important;
-}
-
-.filter-pill,
-.diet-pill {
-  background: #fbf7f4 !important;
-  border: 1px solid rgba(210, 185, 170, 0.8) !important;
-  color: #2b1810 !important;
-  font-weight: 700 !important;
-}
-
-.filter-pill.is-active,
-.diet-pill.is-active {
-  background: #ff7b25 !important;
-  border-color: #ff7b25 !important;
-  color: #ffffff !important;
-}
-
-
-/* ==========================================================================
-   SMOOTH HORIZONTAL TABS SLIDER & SPACIOUS SEARCH/FILTERS
-   ========================================================================== */
-.tabs-wrap {
-  display: flex !important;
-  justify-content: flex-start !important;
-}
-
-.tabs-slider-wrapper {
-  position: relative;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  margin-bottom: 28px;
-  gap: 10px;
-}
-
-.tabs-slide-arrow {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  background: #ffffff;
-  border: 1.5px solid rgba(255, 123, 37, 0.4);
-  box-shadow: 0 4px 14px rgba(35, 18, 10, 0.12);
-  color: #c04e0a;
-  cursor: pointer;
-  flex-shrink: 0;
-  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
-  z-index: 10;
-}
-
-.tabs-slide-arrow:hover {
-  background: #ff7b25;
-  color: #ffffff;
-  border-color: #ff7b25;
-  transform: scale(1.08);
-  box-shadow: 0 6px 18px rgba(255, 123, 37, 0.35);
-}
-
-.tabs-scroll-track,
-.menu-tabs-nav,
-.tabs-scroll-wrapper .tabs,
-#menu-tabs {
-  display: flex !important;
-  flex-wrap: nowrap !important;
-  overflow-x: auto !important;
-  scroll-behavior: smooth !important;
-  justify-content: flex-start !important;
-  align-items: center !important;
-  gap: 10px !important;
-  padding: 6px 4px 10px !important;
-  margin: 0 !important;
-  scrollbar-width: none !important;
-  -webkit-overflow-scrolling: touch !important;
-  width: 100% !important;
-  background: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
-}
-
-.tabs-scroll-track::-webkit-scrollbar,
-.menu-tabs-nav::-webkit-scrollbar,
-#menu-tabs::-webkit-scrollbar {
-  display: none !important;
-}
-
-.menu-tab-btn {
-  display: inline-flex !important;
-  align-items: center !important;
-  gap: 8px !important;
-  padding: 11px 20px !important;
   border-radius: 999px !important;
-  background: #ffffff !important;
-  border: 1.5px solid rgba(210, 185, 170, 0.85) !important;
-  color: #2b1810 !important;
-  font-family: inherit !important;
-  font-size: 0.9rem !important;
+  padding: 11px 22px !important;
   font-weight: 800 !important;
-  white-space: nowrap !important;
-  flex-shrink: 0 !important;
-  cursor: pointer !important;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06) !important;
-  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25) !important;
+  transition: all 0.2s ease !important;
 }
 
 .menu-tab-btn:hover {
-  background: #fff5ed !important;
-  border-color: #ff7b25 !important;
-  color: #c04e0a !important;
-  transform: translateY(-2px) !important;
+  background: rgba(255, 255, 255, 0.24) !important;
+  border-color: #ffb150 !important;
+  color: #ffffff !important;
 }
 
 .menu-tab-btn.is-active {
   background: linear-gradient(135deg, #ff7b25 0%, #ff4d4d 100%) !important;
   border-color: transparent !important;
   color: #ffffff !important;
-  box-shadow: 0 6px 20px rgba(255, 123, 37, 0.4) !important;
-  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 20px rgba(255, 123, 37, 0.5) !important;
 }
 
 .menu-tab-count {
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  min-width: 22px !important;
-  height: 22px !important;
-  padding: 0 7px !important;
+  background: rgba(255, 255, 255, 0.22) !important;
+  color: #ffffff !important;
   border-radius: 999px !important;
-  background: #f5ede6 !important;
-  color: #553e33 !important;
-  font-size: 0.74rem !important;
-  font-weight: 800 !important;
 }
 
 .menu-tab-btn.is-active .menu-tab-count {
@@ -5764,122 +5678,137 @@ body {
   color: #e02438 !important;
 }
 
-/* Spacious, Clean Search & Filter Bar */
-.menu-search-box {
-  background: #ffffff !important;
-  border: 1px solid rgba(210, 185, 170, 0.75) !important;
-  border-radius: 16px !important;
-  padding: 16px 20px !important;
-  box-shadow: 0 8px 24px rgba(35, 18, 10, 0.08) !important;
-  margin-bottom: 24px !important;
-  display: flex !important;
-  flex-direction: column !important;
-  gap: 14px !important;
+.tabs-slide-arrow {
+  background: rgba(0, 0, 0, 0.45) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.30) !important;
+  color: #ffffff !important;
+  border-radius: 50% !important;
 }
 
-.search-input-wrap {
-  position: relative !important;
-  display: flex !important;
-  align-items: center !important;
-  width: 100% !important;
+.tabs-slide-arrow:hover {
+  background: #ff7b25 !important;
+  border-color: #ff7b25 !important;
+  color: #ffffff !important;
+}
+
+/* Search Bar & Dietary Filter Pills (Oval Capsule Shape) */
+.menu-search-box {
+  background: rgba(18, 12, 10, 0.62) !important;
+  backdrop-filter: blur(20px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(20px) saturate(180%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.22) !important;
+  border-radius: 40px !important;
+  padding: 16px 24px !important;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.40) !important;
+  margin-bottom: 24px !important;
 }
 
 .search-input,
 .menu-search-box input[type="search"] {
-  width: 100% !important;
-  padding: 14px 44px 14px 44px !important;
-  border: 1px solid rgba(210, 185, 170, 0.7) !important;
-  border-radius: 12px !important;
-  background: #fdfbf9 !important;
-  font-size: 0.96rem !important;
+  background: rgba(0, 0, 0, 0.40) !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  border-radius: 999px !important;
+  color: #ffffff !important;
   font-weight: 600 !important;
-  color: #1a0f0a !important;
-  outline: none !important;
-  transition: all 0.2s ease !important;
-  box-sizing: border-box !important;
+}
+
+.search-input::placeholder,
+.menu-search-box input[type="search"]::placeholder {
+  color: rgba(255, 255, 255, 0.65) !important;
 }
 
 .search-input:focus,
 .menu-search-box input[type="search"]:focus {
-  background: #ffffff !important;
+  background: rgba(0, 0, 0, 0.60) !important;
   border-color: #ff7b25 !important;
-  box-shadow: 0 0 0 3px rgba(255, 123, 37, 0.16) !important;
+  box-shadow: 0 0 0 3px rgba(255, 123, 37, 0.35) !important;
 }
 
 .search-icon,
 .menu-search-icon {
-  position: absolute !important;
-  left: 14px !important;
-  top: 50% !important;
-  transform: translateY(-50%) !important;
-  color: #c04e0a !important;
-  pointer-events: none !important;
-}
-
-.search-clear-btn,
-.menu-search-clear {
-  position: absolute !important;
-  right: 14px !important;
-  top: 50% !important;
-  transform: translateY(-50%) !important;
-  background: rgba(0, 0, 0, 0.08) !important;
-  border: none !important;
-  border-radius: 50% !important;
-  width: 24px !important;
-  height: 24px !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  font-size: 0.8rem !important;
-  color: #553e33 !important;
-  cursor: pointer !important;
-}
-
-.diet-filter-pills,
-.menu-diet-filters {
-  display: flex !important;
-  align-items: center !important;
-  gap: 8px !important;
-  flex-wrap: wrap !important;
+  color: #ffb150 !important;
 }
 
 .diet-pill,
 .filter-pill {
-  display: inline-flex !important;
-  align-items: center !important;
-  gap: 6px !important;
-  padding: 8px 16px !important;
+  background: rgba(255, 255, 255, 0.12) !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  color: #ffffff !important;
   border-radius: 999px !important;
-  background: #fbf7f4 !important;
-  border: 1px solid rgba(210, 185, 170, 0.8) !important;
-  color: #2b1810 !important;
-  font-family: inherit !important;
-  font-size: 0.84rem !important;
   font-weight: 700 !important;
-  cursor: pointer !important;
+  padding: 8px 18px !important;
   transition: all 0.2s ease !important;
 }
 
 .diet-pill:hover,
 .filter-pill:hover {
-  background: #fff0e6 !important;
-  border-color: #ff7b25 !important;
-  color: #c04e0a !important;
-  transform: translateY(-1px) !important;
+  background: rgba(255, 255, 255, 0.22) !important;
+  border-color: #ffb150 !important;
+  color: #ffffff !important;
 }
 
 .diet-pill.is-active,
 .filter-pill.is-active {
-  background: #ff7b25 !important;
-  border-color: #ff7b25 !important;
+  background: linear-gradient(135deg, #ff7b25 0%, #ff4d4d 100%) !important;
+  border-color: transparent !important;
   color: #ffffff !important;
-  box-shadow: 0 4px 12px rgba(255, 123, 37, 0.35) !important;
+  box-shadow: 0 4px 14px rgba(255, 123, 37, 0.45) !important;
 }
 
+/* View Mode Toggles (Cards / Fast List) */
+.menu-view-mode-toggle {
+  background: rgba(0, 0, 0, 0.45) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  border-radius: 999px !important;
+  padding: 4px !important;
+}
 
-/* ==========================================================================
-   MENU-BOOK HERO TEXT & CARD VISIBILITY (TRANSPARENT FROSTED GLASS)
-   ========================================================================== */
+.view-mode-btn {
+  border-radius: 999px !important;
+  color: #ffffff !important;
+  padding: 6px 16px !important;
+}
+
+.view-mode-btn.is-active {
+  background: #ff7b25 !important;
+  color: #ffffff !important;
+}
+
+/* Video, Catering, Review, & Payment Cards (Smooth Pebble Curves) */
+.video-card,
+.catering-card,
+.review-card,
+.payment-card {
+  background: rgba(18, 12, 10, 0.62) !important;
+  backdrop-filter: blur(16px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(16px) saturate(180%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.20) !important;
+  border-radius: 36px !important;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.35) !important;
+  color: #ffffff !important;
+  overflow: hidden !important;
+}
+
+.video-card h3,
+.catering-card h3,
+.review-card h4,
+.payment-card h3 {
+  color: #ffffff !important;
+}
+
+.video-card p,
+.catering-card p,
+.catering-card li,
+.review-card p,
+.payment-card p {
+  color: rgba(255, 255, 255, 0.90) !important;
+}
+
+/* Menu Book Hero & Analytics */
 .menu-book-hero__topbar {
   background: transparent !important;
   backdrop-filter: none !important;
@@ -5896,6 +5825,7 @@ body {
   backdrop-filter: blur(8px) !important;
   -webkit-backdrop-filter: blur(8px) !important;
   border: 1.5px solid rgba(255, 255, 255, 0.50) !important;
+  border-radius: 999px !important;
   color: #ffffff !important;
   font-weight: 800 !important;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.9) !important;
@@ -5944,26 +5874,27 @@ body {
   -webkit-backdrop-filter: blur(8px) !important;
   color: #ffd08a !important;
   border: 1px solid rgba(255, 177, 80, 0.5) !important;
+  border-radius: 999px !important;
   width: fit-content !important;
   font-weight: 700 !important;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8) !important;
 }
 
 .menu-analytics-kpi-grid .kpi-card {
-  background: rgba(255, 255, 255, 0.94) !important;
-  backdrop-filter: blur(12px) !important;
-  -webkit-backdrop-filter: blur(12px) !important;
-  border: 1px solid rgba(255, 255, 255, 0.98) !important;
-  border-radius: 14px !important;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12) !important;
+  background: rgba(18, 12, 10, 0.60) !important;
+  backdrop-filter: blur(14px) !important;
+  -webkit-backdrop-filter: blur(14px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.20) !important;
+  border-radius: 999px !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.30) !important;
 }
 
 .menu-analytics-kpi-grid .kpi-value {
-  color: #d35400 !important;
+  color: #ffb150 !important;
   font-weight: 900 !important;
 }
 
 .menu-analytics-kpi-grid .kpi-label {
-  color: #4a3429 !important;
+  color: #ffffff !important;
   font-weight: 700 !important;
 }
