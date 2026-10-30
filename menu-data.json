@@ -1,0 +1,2123 @@
+{
+  "Signature Biryanis": [
+    {
+      "id": "ctl_749331660",
+      "name": "Biryani Rice",
+      "price": 299,
+      "description": "[Serves 1-2 person]",
+      "image": "https://b.zmtcdn.com/data/dish_photos/7d0/2884def54e40a84d9ad961ec255567d0.jpeg",
+      "isVeg": false,
+      "rating": 4.3,
+      "votes": "15 votes",
+      "portions": [
+        {
+          "name": "Single",
+          "price": 299
+        },
+        {
+          "name": "Couple Pack",
+          "price": 419
+        },
+        {
+          "name": "Family Pack",
+          "price": 699
+        }
+      ],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_749331661",
+      "name": "Chicken 65 Biryani",
+      "price": 449,
+      "description": "[Serves 1-2 person]",
+      "image": "https://b.zmtcdn.com/data/dish_photos/064/d92b46d58659e90df68bcee9e8fdf064.jpeg",
+      "isVeg": false,
+      "rating": 4.4,
+      "votes": "16 votes",
+      "portions": [
+        {
+          "name": "Single",
+          "price": 449
+        },
+        {
+          "name": "Couple Pack",
+          "price": 659
+        },
+        {
+          "name": "Family Pack",
+          "price": 949
+        }
+      ],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_749433042",
+      "name": "Chicken Dum Biryani",
+      "price": 320,
+      "description": "[Serves 1-2 person]",
+      "image": "https://b.zmtcdn.com/data/dish_photos/5c7/fedc6ea540ed5f1ee56528520f4a35c7.jpeg",
+      "isVeg": false,
+      "rating": 4.1,
+      "votes": "239 votes",
+      "portions": [
+        {
+          "name": "Mini Pack",
+          "price": 320
+        },
+        {
+          "name": "Single",
+          "price": 399
+        },
+        {
+          "name": "Couple Pack",
+          "price": 599
+        },
+        {
+          "name": "Family Pack",
+          "price": 930
+        }
+      ],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_749331663",
+      "name": "Chicken Fry Biryani",
+      "price": 320,
+      "description": "[Serves 1-2 person]",
+      "image": "https://b.zmtcdn.com/data/dish_photos/3ab/ba2dc1e1e5832a27aecc11d6beed53ab.jpeg",
+      "isVeg": false,
+      "rating": 3.8,
+      "votes": "253 votes",
+      "portions": [
+        {
+          "name": "Mini Pack",
+          "price": 320
+        },
+        {
+          "name": "Single",
+          "price": 409
+        },
+        {
+          "name": "Couple Pack",
+          "price": 599
+        },
+        {
+          "name": "Family Pack",
+          "price": 930
+        }
+      ],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_749331664",
+      "name": "Chicken Joint Biryani",
+      "price": 469,
+      "description": "[Serves 1-2  person]",
+      "image": "https://b.zmtcdn.com/data/dish_photos/a89/98c945cae68ee797f78481bd37624a89.jpeg",
+      "isVeg": false,
+      "rating": null,
+      "votes": "",
+      "portions": [
+        {
+          "name": "Single",
+          "price": 469
+        },
+        {
+          "name": "Couple Pack",
+          "price": 699
+        }
+      ],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_551317816",
+      "name": "Chicken Kalmi Biryani",
+      "price": 459,
+      "description": "[Serves 1-2 person]",
+      "image": "https://b.zmtcdn.com/data/dish_photos/067/29b915f3a9869ed5298ab731dda17067.jpeg",
+      "isVeg": false,
+      "rating": null,
+      "votes": "",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_749331665",
+      "name": "Chicken Lollypop Biryani",
+      "price": 440,
+      "description": "A flavorful biryani featuring 4 crispy chicken lollypop pieces served with fragrant, spiced basmati rice. Perfectly balanced with rich spices and tender chicken, this hearty meal serves 1-2 people.",
+      "image": "https://b.zmtcdn.com/data/dish_photos/d6c/559b62b41e3aef72acd4d9998744fd6c.jpeg",
+      "isVeg": false,
+      "rating": 4.0,
+      "votes": "50 votes",
+      "portions": [
+        {
+          "name": "Single",
+          "price": 440
+        },
+        {
+          "name": "Couple Pack",
+          "price": 680
+        },
+        {
+          "name": "Family Pack",
+          "price": 949
+        }
+      ],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_749331666",
+      "name": "Chicken Moghalai Biryani",
+      "price": 459,
+      "description": "[Serves 1-2 person]",
+      "image": "https://b.zmtcdn.com/data/dish_photos/b85/0e1f6f61739d634006ca7ae97a34bb85.jpeg",
+      "isVeg": false,
+      "rating": 3.9,
+      "votes": "29 votes",
+      "portions": [
+        {
+          "name": "Single",
+          "price": 459
+        },
+        {
+          "name": "Couple Pack",
+          "price": 659
+        },
+        {
+          "name": "Family Pack",
+          "price": 949
+        }
+      ],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_749331668",
+      "name": "Chicken Tikka Biryani",
+      "price": 459,
+      "description": "[Serves 1-2  person]",
+      "image": "https://b.zmtcdn.com/data/dish_photos/ca7/8b3d3629e19ed0f25fee89e8802aaca7.jpeg",
+      "isVeg": false,
+      "rating": null,
+      "votes": "",
+      "portions": [
+        {
+          "name": "Single",
+          "price": 459
+        },
+        {
+          "name": "Couple Pack",
+          "price": 659
+        }
+      ],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_749331670",
+      "name": "Chicken Wings Biryani",
+      "price": 449,
+      "description": "[Serves 1-2person]",
+      "image": "https://b.zmtcdn.com/data/dish_photos/e52/4f9be149ecbc87a72421fafbbec89e52.jpg",
+      "isVeg": false,
+      "rating": null,
+      "votes": "",
+      "portions": [
+        {
+          "name": "Single",
+          "price": 449
+        },
+        {
+          "name": "Couple Pack",
+          "price": 659
+        },
+        {
+          "name": "Family Pack",
+          "price": 949
+        }
+      ],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_614141789",
+      "name": "Dum Biryani 2 Pieces",
+      "price": 330,
+      "description": "[Non Veg Preparation] [serves 1 person]",
+      "image": "https://b.zmtcdn.com/data/dish_photos/5c7/fedc6ea540ed5f1ee56528520f4a35c7.jpeg",
+      "isVeg": false,
+      "rating": 3.7,
+      "votes": "32 votes",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_749331671",
+      "name": "Egg Biryani",
+      "price": 349,
+      "description": "[Serves 1-2 person]",
+      "image": "https://b.zmtcdn.com/data/dish_photos/c1a/0724bfa444d32437e5cabe99da111c1a.jpg",
+      "isVeg": false,
+      "rating": 4.7,
+      "votes": "5 votes",
+      "portions": [
+        {
+          "name": "Single",
+          "price": 349
+        },
+        {
+          "name": "Couple Pack",
+          "price": 400
+        },
+        {
+          "name": "Family Pack",
+          "price": 849
+        }
+      ],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_749331674",
+      "name": "Kaju Biryani",
+      "price": 439,
+      "description": "[Serves 1-2 person]",
+      "image": "https://b.zmtcdn.com/data/dish_photos/c38/64574b32fbb97541defab30db83c1c38.jpeg",
+      "isVeg": true,
+      "rating": 4.6,
+      "votes": "5 votes",
+      "portions": [
+        {
+          "name": "Single",
+          "price": 439
+        },
+        {
+          "name": "Couple Pack",
+          "price": 639
+        },
+        {
+          "name": "Family Pack",
+          "price": 949
+        }
+      ],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_794579278",
+      "name": "Kaju Paneer Biryani",
+      "price": 449,
+      "description": "A rich and aromatic biryani combining soft paneer cubes and crunchy cashews [kaju] with fragrant basmati rice and traditional spices. Creamy, nutty, and flavorful.",
+      "image": "https://b.zmtcdn.com/data/dish_photos/1e8/9ab1b5598b5de21457df24de3943a1e8.jpeg",
+      "isVeg": true,
+      "rating": 5,
+      "votes": "8 votes",
+      "portions": [
+        {
+          "name": "Single",
+          "price": 449
+        },
+        {
+          "name": "Couple Pack",
+          "price": 659
+        },
+        {
+          "name": "Family Pack",
+          "price": 929
+        }
+      ],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_625610749",
+      "name": "Mini Fry Biryani",
+      "price": 330,
+      "description": "[Non Veg Preparation] [serves 1 person]",
+      "image": "https://b.zmtcdn.com/data/dish_photos/3ab/ba2dc1e1e5832a27aecc11d6beed53ab.jpeg",
+      "isVeg": false,
+      "rating": 4.4,
+      "votes": "10 votes",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_749331675",
+      "name": "Mushroom Biriyani",
+      "price": 399,
+      "description": "[Serves 1-2 person]",
+      "image": "https://b.zmtcdn.com/data/dish_photos/2db/ab7c255db160d3d4429a4a1b67af62db.jpeg",
+      "isVeg": true,
+      "rating": 3.7,
+      "votes": "20 votes",
+      "portions": [
+        {
+          "name": "Single",
+          "price": 399
+        },
+        {
+          "name": "Couple Pack",
+          "price": 599
+        },
+        {
+          "name": "Family Pack",
+          "price": 889
+        }
+      ],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_749331676",
+      "name": "Panasakaya Dum Biryani",
+      "price": 399,
+      "description": "Delicious authentic panasakaya dum biryani prepared fresh at Sai Silver Dum Biryani.",
+      "image": "",
+      "isVeg": true,
+      "rating": 4.5,
+      "votes": "26 votes",
+      "portions": [
+        {
+          "name": "Single",
+          "price": 399
+        },
+        {
+          "name": "Couple Pack",
+          "price": 599
+        },
+        {
+          "name": "Family Pack",
+          "price": 889
+        }
+      ],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_749331677",
+      "name": "Paneer Biriyani",
+      "price": 299,
+      "description": "[Serves 1-2  person]",
+      "image": "https://b.zmtcdn.com/data/dish_photos/bbb/2686b9d9a784107d74922caac3bb9bbb.jpeg",
+      "isVeg": true,
+      "rating": 4.2,
+      "votes": "97 votes",
+      "portions": [
+        {
+          "name": "Mini Pack",
+          "price": 299
+        },
+        {
+          "name": "Single",
+          "price": 399
+        },
+        {
+          "name": "Couple Pack",
+          "price": 599
+        },
+        {
+          "name": "Family Pack",
+          "price": 889
+        }
+      ],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_749331679",
+      "name": "Sai Silver Chicken Spl Biryani",
+      "price": 449,
+      "description": "[Serves 1-2 person]",
+      "image": "",
+      "isVeg": false,
+      "rating": 4.2,
+      "votes": "39 votes",
+      "portions": [
+        {
+          "name": "Single",
+          "price": 449
+        },
+        {
+          "name": "Couple Pack",
+          "price": 659
+        },
+        {
+          "name": "Family Pack",
+          "price": 959
+        }
+      ],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_749331680",
+      "name": "Sai Silver Special Veg Biryani",
+      "price": 429,
+      "description": "[Serves 1-2 person]",
+      "image": "",
+      "isVeg": true,
+      "rating": 4.2,
+      "votes": "5 votes",
+      "portions": [
+        {
+          "name": "Single",
+          "price": 429
+        },
+        {
+          "name": "Couple Pack",
+          "price": 649
+        }
+      ],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_749331681",
+      "name": "Tandoori Chicken Biryani",
+      "price": 459,
+      "description": "[Serves 1-2 person]",
+      "image": "https://b.zmtcdn.com/data/dish_photos/de7/ab0a5823848acac5e91ac3392ef56de7.jpeg",
+      "isVeg": false,
+      "rating": null,
+      "votes": "",
+      "portions": [
+        {
+          "name": "Single",
+          "price": 459
+        },
+        {
+          "name": "Couple Pack",
+          "price": 659
+        }
+      ],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_749331682",
+      "name": "Veg Biryani",
+      "price": 279,
+      "description": "[Serves 1-2 person]",
+      "image": "https://b.zmtcdn.com/data/dish_photos/90a/604653396151d6fdd64884f2d2ee790a.jpeg",
+      "isVeg": true,
+      "rating": 4.3,
+      "votes": "46 votes",
+      "portions": [
+        {
+          "name": "Mini Pack",
+          "price": 279
+        },
+        {
+          "name": "Single",
+          "price": 359
+        },
+        {
+          "name": "Couple Pack",
+          "price": 499
+        },
+        {
+          "name": "Family Pack",
+          "price": 859
+        }
+      ],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    }
+  ],
+  "Soups": [
+    {
+      "id": "ctl_551317807",
+      "name": "Egg Mushroom Soup",
+      "price": 150,
+      "description": "Delicious authentic egg mushroom soup prepared fresh at Sai Silver Dum Biryani.",
+      "image": "",
+      "isVeg": false,
+      "rating": null,
+      "votes": "",
+      "portions": [
+        {
+          "name": "Single",
+          "price": 150
+        },
+        {
+          "name": "1/2 [Size]",
+          "price": 190
+        }
+      ],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_551317808",
+      "name": "Sweet Corn Soup",
+      "price": 150,
+      "description": "Delicious authentic sweet corn soup prepared fresh at Sai Silver Dum Biryani.",
+      "image": "",
+      "isVeg": true,
+      "rating": 4.0,
+      "votes": "5 votes",
+      "portions": [
+        {
+          "name": "Single",
+          "price": 150
+        },
+        {
+          "name": "1/2 [Size]",
+          "price": 190
+        }
+      ],
+      "spiceLevel": "Mild",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_551317809",
+      "name": "Veg Hot & Sour Soup",
+      "price": 160,
+      "description": "Delicious authentic veg hot & sour soup prepared fresh at Sai Silver Dum Biryani.",
+      "image": "https://b.zmtcdn.com/data/dish_photos/5c6/e7c5c26298d25cf41c0856b93d2ca5c6.jpeg",
+      "isVeg": true,
+      "rating": 4.3,
+      "votes": "6 votes",
+      "portions": [
+        {
+          "name": "Single",
+          "price": 160
+        },
+        {
+          "name": "1/2 [Size]",
+          "price": 190
+        }
+      ],
+      "spiceLevel": "Spicy",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_551317810",
+      "name": "Veg Manchow Soup",
+      "price": 150,
+      "description": "Delicious authentic veg manchow soup prepared fresh at Sai Silver Dum Biryani.",
+      "image": "",
+      "isVeg": true,
+      "rating": null,
+      "votes": "",
+      "portions": [
+        {
+          "name": "Single",
+          "price": 150
+        },
+        {
+          "name": "1/2 [Size]",
+          "price": 190
+        }
+      ],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_551317811",
+      "name": "Chicken Corn Soup",
+      "price": 180,
+      "description": "Delicious authentic chicken corn soup prepared fresh at Sai Silver Dum Biryani.",
+      "image": "",
+      "isVeg": false,
+      "rating": null,
+      "votes": "",
+      "portions": [
+        {
+          "name": "Single",
+          "price": 180
+        },
+        {
+          "name": "1/2 [Size]",
+          "price": 199
+        }
+      ],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_551317812",
+      "name": "Chicken Hot & Sour Soup",
+      "price": 180,
+      "description": "Delicious authentic chicken hot & sour soup prepared fresh at Sai Silver Dum Biryani.",
+      "image": "https://b.zmtcdn.com/data/dish_photos/d02/3063f210cdeb701d44545544daf6ad02.jpeg",
+      "isVeg": false,
+      "rating": 4,
+      "votes": "5 votes",
+      "portions": [
+        {
+          "name": "Single",
+          "price": 180
+        },
+        {
+          "name": "1/2 [Size]",
+          "price": 199
+        }
+      ],
+      "spiceLevel": "Spicy",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_551317813",
+      "name": "Chicken Manchow",
+      "price": 180,
+      "description": "Delicious authentic chicken manchow prepared fresh at Sai Silver Dum Biryani.",
+      "image": "",
+      "isVeg": false,
+      "rating": 4.6,
+      "votes": "13 votes",
+      "portions": [
+        {
+          "name": "Single",
+          "price": 180
+        },
+        {
+          "name": "1/2 [Size]",
+          "price": 199
+        }
+      ],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    }
+  ],
+  "Chicken Starters": [
+    {
+      "id": "ctl_537793260",
+      "name": "Chicken 555",
+      "price": 359,
+      "description": "Delicious authentic chicken 555 prepared fresh at Sai Silver Dum Biryani.",
+      "image": "https://b.zmtcdn.com/data/dish_photos/470/0c724967d019d285c315018bc4428470.jpeg",
+      "isVeg": false,
+      "rating": 4.4,
+      "votes": "6 votes",
+      "portions": [],
+      "spiceLevel": "Spicy",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_537793261",
+      "name": "Chicken 65",
+      "price": 359,
+      "description": "Delicious authentic chicken 65 prepared fresh at Sai Silver Dum Biryani.",
+      "image": "https://b.zmtcdn.com/data/dish_photos/ac1/56a45e821fb43826e925305042f97ac1.jpeg",
+      "isVeg": false,
+      "rating": null,
+      "votes": "",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_782005437",
+      "name": "Chicken Five Spicy",
+      "price": 369,
+      "description": "Delicious authentic chicken five spicy prepared fresh at Sai Silver Dum Biryani.",
+      "image": "",
+      "isVeg": false,
+      "rating": null,
+      "votes": "",
+      "portions": [],
+      "spiceLevel": "Spicy",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_537793262",
+      "name": "Chicken Fry",
+      "price": 339,
+      "description": "Delicious authentic chicken fry prepared fresh at Sai Silver Dum Biryani.",
+      "image": "https://b.zmtcdn.com/data/dish_photos/554/6f9cc87744cb495c5f84d71d05527554.jpeg",
+      "isVeg": false,
+      "rating": 3.6,
+      "votes": "15 votes",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_537793263",
+      "name": "Chicken Lollypops",
+      "price": 359,
+      "description": "Chicken Lollipop",
+      "image": "https://b.zmtcdn.com/data/dish_photos/dc1/31e5152cff565c04e5a07dfcea5d5dc1.jpeg",
+      "isVeg": false,
+      "rating": 3.9,
+      "votes": "17 votes",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_537793264",
+      "name": "Chicken Majestick",
+      "price": 359,
+      "description": "Delicious authentic chicken majestick prepared fresh at Sai Silver Dum Biryani.",
+      "image": "https://b.zmtcdn.com/data/dish_photos/47c/136998d05b0f8f666580f347417b347c.jpeg",
+      "isVeg": false,
+      "rating": 3.5,
+      "votes": "10 votes",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_551317826",
+      "name": "Chicken Manchuria",
+      "price": 359,
+      "description": "Delicious authentic chicken manchuria prepared fresh at Sai Silver Dum Biryani.",
+      "image": "",
+      "isVeg": false,
+      "rating": null,
+      "votes": "",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_537793266",
+      "name": "Chicken Pakodi",
+      "price": 359,
+      "description": "Delicious authentic chicken pakodi prepared fresh at Sai Silver Dum Biryani.",
+      "image": "https://b.zmtcdn.com/data/dish_photos/7b5/f895c0fa56884953ae28fd40551077b5.jpeg",
+      "isVeg": false,
+      "rating": 4.1,
+      "votes": "8 votes",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_537793267",
+      "name": "Chicken Wings (5pc)",
+      "price": 349,
+      "description": "Delicious authentic chicken wings (5pc) prepared fresh at Sai Silver Dum Biryani.",
+      "image": "https://b.zmtcdn.com/data/dish_photos/bf5/74db869a346ebed3d1f388b8abeebbf5.jpeg",
+      "isVeg": false,
+      "rating": 4.6,
+      "votes": "6 votes",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_537793268",
+      "name": "Chilli Chicken",
+      "price": 359,
+      "description": "Delicious authentic chilli chicken prepared fresh at Sai Silver Dum Biryani.",
+      "image": "https://b.zmtcdn.com/data/dish_photos/9f8/f639dcb9209366ac0d8a34ac88c499f8.jpeg",
+      "isVeg": false,
+      "rating": 4.5,
+      "votes": "12 votes",
+      "portions": [],
+      "spiceLevel": "Spicy",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_551317827",
+      "name": "Diamond Chicken",
+      "price": 369,
+      "description": "Delicious authentic diamond chicken prepared fresh at Sai Silver Dum Biryani.",
+      "image": "",
+      "isVeg": false,
+      "rating": null,
+      "votes": "",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_537793269",
+      "name": "Dragon Chicken",
+      "price": 349,
+      "description": "Delicious authentic dragon chicken prepared fresh at Sai Silver Dum Biryani.",
+      "image": "",
+      "isVeg": false,
+      "rating": null,
+      "votes": "",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_551317828",
+      "name": "Garlic Chicken",
+      "price": 359,
+      "description": "Delicious authentic garlic chicken prepared fresh at Sai Silver Dum Biryani.",
+      "image": "https://b.zmtcdn.com/data/dish_photos/67c/e332379aedd22cb82019826f5a6aa67c.jpeg",
+      "isVeg": false,
+      "rating": 4.4,
+      "votes": "21 votes",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_537793270",
+      "name": "Kaju Chicken",
+      "price": 389,
+      "description": "Delicious authentic kaju chicken prepared fresh at Sai Silver Dum Biryani.",
+      "image": "",
+      "isVeg": false,
+      "rating": null,
+      "votes": "",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_617277519",
+      "name": "Kariveypaku Chicken",
+      "price": 369,
+      "description": "Delicious authentic kariveypaku chicken prepared fresh at Sai Silver Dum Biryani.",
+      "image": "",
+      "isVeg": false,
+      "rating": null,
+      "votes": "",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_708157633",
+      "name": "Lemon Chicken",
+      "price": 369,
+      "description": "Delicious authentic lemon chicken prepared fresh at Sai Silver Dum Biryani.",
+      "image": "https://b.zmtcdn.com/data/dish_photos/37f/d4fc0ed348d1f096b535b6784c97137f.jpeg",
+      "isVeg": false,
+      "rating": null,
+      "votes": "",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_537793271",
+      "name": "Pepper Chicken",
+      "price": 359,
+      "description": "Delicious authentic pepper chicken prepared fresh at Sai Silver Dum Biryani.",
+      "image": "https://b.zmtcdn.com/data/dish_photos/96f/8f66ac4800c7acfeb5a53b9c8d55696f.jpeg",
+      "isVeg": false,
+      "rating": null,
+      "votes": "",
+      "portions": [],
+      "spiceLevel": "Spicy",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_617277029",
+      "name": "Podeena Chicken",
+      "price": 369,
+      "description": "Delicious authentic podeena chicken prepared fresh at Sai Silver Dum Biryani.",
+      "image": "",
+      "isVeg": false,
+      "rating": null,
+      "votes": "",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_551317829",
+      "name": "Stick Chicken",
+      "price": 369,
+      "description": "Delicious authentic stick chicken prepared fresh at Sai Silver Dum Biryani.",
+      "image": "",
+      "isVeg": false,
+      "rating": null,
+      "votes": "",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    }
+  ],
+  "Veg Starters": [
+    {
+      "id": "ctl_551317830",
+      "name": "Baby Corn 65",
+      "price": 309,
+      "description": "Delicious authentic baby corn 65 prepared fresh at Sai Silver Dum Biryani.",
+      "image": "",
+      "isVeg": true,
+      "rating": null,
+      "votes": "",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_708157634",
+      "name": "Five Spicy Baby Corn",
+      "price": 299,
+      "description": "Delicious authentic five spicy baby corn prepared fresh at Sai Silver Dum Biryani.",
+      "image": "",
+      "isVeg": true,
+      "rating": null,
+      "votes": "",
+      "portions": [],
+      "spiceLevel": "Spicy",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_537793301",
+      "name": "Chilli Mushroom",
+      "price": 329,
+      "description": "Delicious authentic chilli mushroom prepared fresh at Sai Silver Dum Biryani.",
+      "image": "",
+      "isVeg": true,
+      "rating": null,
+      "votes": "",
+      "portions": [],
+      "spiceLevel": "Spicy",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_551317831",
+      "name": "Chilli Paneer",
+      "price": 329,
+      "description": "Delicious authentic chilli paneer prepared fresh at Sai Silver Dum Biryani.",
+      "image": "https://b.zmtcdn.com/data/dish_photos/96a/6787f979648bf2b28f6a435b34cf196a.jpeg",
+      "isVeg": true,
+      "rating": null,
+      "votes": "",
+      "portions": [],
+      "spiceLevel": "Spicy",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_551317832",
+      "name": "Crispy Baby Corn",
+      "price": 309,
+      "description": "Delicious authentic crispy baby corn prepared fresh at Sai Silver Dum Biryani.",
+      "image": "",
+      "isVeg": true,
+      "rating": null,
+      "votes": "",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_537793303",
+      "name": "Mushroom 65",
+      "price": 329,
+      "description": "Delicious authentic mushroom 65 prepared fresh at Sai Silver Dum Biryani.",
+      "image": "https://b.zmtcdn.com/data/dish_photos/364/116b160f5bc2a795e1ff8099ddab2364.jpeg",
+      "isVeg": true,
+      "rating": null,
+      "votes": "",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_537793304",
+      "name": "Mushroom Manchuria",
+      "price": 329,
+      "description": "Delicious authentic mushroom manchuria prepared fresh at Sai Silver Dum Biryani.",
+      "image": "",
+      "isVeg": true,
+      "rating": null,
+      "votes": "",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_552353501",
+      "name": "Mushroom Manchurian",
+      "price": 329,
+      "description": "Delicious authentic mushroom manchurian prepared fresh at Sai Silver Dum Biryani.",
+      "image": "",
+      "isVeg": true,
+      "rating": null,
+      "votes": "",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_537793306",
+      "name": "Paneer 65",
+      "price": 329,
+      "description": "Delicious authentic paneer 65 prepared fresh at Sai Silver Dum Biryani.",
+      "image": "https://b.zmtcdn.com/data/dish_photos/7e2/95d701b2f35ad1b217a4f21bdcfc17e2.jpeg",
+      "isVeg": true,
+      "rating": null,
+      "votes": "",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_551317836",
+      "name": "Paneer Majestick",
+      "price": 329,
+      "description": "Delicious authentic paneer majestick prepared fresh at Sai Silver Dum Biryani.",
+      "image": "https://b.zmtcdn.com/data/dish_photos/88a/368375b433cbed54e95b5d200b77f88a.jpeg",
+      "isVeg": true,
+      "rating": null,
+      "votes": "",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_537793307",
+      "name": "Panner Manchuria",
+      "price": 329,
+      "description": "Delicious authentic panner manchuria prepared fresh at Sai Silver Dum Biryani.",
+      "image": "",
+      "isVeg": true,
+      "rating": null,
+      "votes": "",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_537793308",
+      "name": "Veg Manchuria",
+      "price": 269,
+      "description": "Delicious authentic veg manchuria prepared fresh at Sai Silver Dum Biryani.",
+      "image": "https://b.zmtcdn.com/data/dish_photos/e29/b9d852c1cae6ca6640700cbb4a8dce29.jpeg",
+      "isVeg": true,
+      "rating": 4.2,
+      "votes": "8 votes",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    }
+  ],
+  "Seafood Specials": [
+    {
+      "id": "ctl_537793315",
+      "name": "Appolo Fish",
+      "price": 409,
+      "description": "Delicious authentic appolo fish prepared fresh at Sai Silver Dum Biryani.",
+      "image": "https://b.zmtcdn.com/data/dish_photos/bba/9b943c70ba917ac23f017058ceb46bba.jpeg",
+      "isVeg": false,
+      "rating": 3.9,
+      "votes": "5 votes",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_551317839",
+      "name": "Chilli Fish",
+      "price": 409,
+      "description": "Delicious authentic chilli fish prepared fresh at Sai Silver Dum Biryani.",
+      "image": "",
+      "isVeg": false,
+      "rating": null,
+      "votes": "",
+      "portions": [],
+      "spiceLevel": "Spicy",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_618577751",
+      "name": "Chilli Prawns",
+      "price": 449,
+      "description": "Delicious authentic chilli prawns prepared fresh at Sai Silver Dum Biryani.",
+      "image": "",
+      "isVeg": false,
+      "rating": null,
+      "votes": "",
+      "portions": [],
+      "spiceLevel": "Spicy",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_551317841",
+      "name": "Fish 65",
+      "price": 409,
+      "description": "Delicious authentic fish 65 prepared fresh at Sai Silver Dum Biryani.",
+      "image": "",
+      "isVeg": false,
+      "rating": null,
+      "votes": "",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_749331684",
+      "name": "Fish Biryani",
+      "price": 559,
+      "description": "[Serves 1-2  person]",
+      "image": "",
+      "isVeg": false,
+      "rating": null,
+      "votes": "",
+      "portions": [
+        {
+          "name": "Single",
+          "price": 559
+        },
+        {
+          "name": "Couple Pack",
+          "price": 779
+        },
+        {
+          "name": "Family Pack",
+          "price": 1100
+        }
+      ],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_551317844",
+      "name": "Fish Finger",
+      "price": 419,
+      "description": "Delicious authentic fish finger prepared fresh at Sai Silver Dum Biryani.",
+      "image": "",
+      "isVeg": false,
+      "rating": null,
+      "votes": "",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_551317845",
+      "name": "Loose Prawn",
+      "price": 459,
+      "description": "Delicious authentic loose prawn prepared fresh at Sai Silver Dum Biryani.",
+      "image": "https://b.zmtcdn.com/data/dish_photos/7b3/bf604a0d1c9231b639fb82aa77fec7b3.jpeg",
+      "isVeg": false,
+      "rating": null,
+      "votes": "",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_749331685",
+      "name": "Prawn Biryani",
+      "price": 549,
+      "description": "[Serves1-2  person]",
+      "image": "https://b.zmtcdn.com/data/dish_photos/9f4/7c92ff8a7b8f7453f59b03cd7a7d69f4.png",
+      "isVeg": false,
+      "rating": 4.3,
+      "votes": "9 votes",
+      "portions": [
+        {
+          "name": "Single",
+          "price": 549
+        },
+        {
+          "name": "Couple Pack",
+          "price": 779
+        },
+        {
+          "name": "Family Pack",
+          "price": 1100
+        }
+      ],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_551317848",
+      "name": "Prawns 65",
+      "price": 449,
+      "description": "Delicious authentic prawns 65 prepared fresh at Sai Silver Dum Biryani.",
+      "image": "",
+      "isVeg": false,
+      "rating": null,
+      "votes": "",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    }
+  ],
+  "Veg Curries": [
+    {
+      "id": "ctl_708157636",
+      "name": "Kaju Curry",
+      "price": 379,
+      "description": "Delicious authentic kaju curry prepared fresh at Sai Silver Dum Biryani.",
+      "image": "https://b.zmtcdn.com/data/dish_photos/b49/21a0d7ee5cb9fed8187029706fa00b49.jpeg",
+      "isVeg": true,
+      "rating": null,
+      "votes": "",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_708157637",
+      "name": "Kaju Mushroom Curry",
+      "price": 369,
+      "description": "Delicious authentic kaju mushroom curry prepared fresh at Sai Silver Dum Biryani.",
+      "image": "",
+      "isVeg": true,
+      "rating": null,
+      "votes": "",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_708157638",
+      "name": "Kaju Paneer Curry",
+      "price": 369,
+      "description": "Delicious authentic kaju paneer curry prepared fresh at Sai Silver Dum Biryani.",
+      "image": "https://b.zmtcdn.com/data/dish_photos/173/c7c86fef34650b920d97b35824bb6173.jpeg",
+      "isVeg": true,
+      "rating": 4.2,
+      "votes": "10 votes",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_708157639",
+      "name": "Kaju Tamato (single)",
+      "price": 369,
+      "description": "Palak Paneer",
+      "image": "https://b.zmtcdn.com/data/dish_photos/e05/efc4c893950276d34d43bdfe18590e05.png",
+      "isVeg": true,
+      "rating": null,
+      "votes": "",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_708157640",
+      "name": "Mixed Veg Curry",
+      "price": 339,
+      "description": "Delicious authentic mixed veg curry prepared fresh at Sai Silver Dum Biryani.",
+      "image": "https://b.zmtcdn.com/data/dish_photos/a84/8878899c2ada2a858bdc7f0e02b3ba84.jpeg",
+      "isVeg": true,
+      "rating": null,
+      "votes": "",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_551317853",
+      "name": "Mushroom Masala",
+      "price": 339,
+      "description": "Delicious authentic mushroom masala prepared fresh at Sai Silver Dum Biryani.",
+      "image": "https://b.zmtcdn.com/data/dish_photos/bb0/3bec808f096d63d3b083730398fddbb0.jpeg",
+      "isVeg": true,
+      "rating": 3.0,
+      "votes": "5 votes",
+      "portions": [
+        {
+          "name": "Single",
+          "price": 339
+        }
+      ],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_551317855",
+      "name": "Paneer Butter Masala",
+      "price": 339,
+      "description": "Delicious authentic paneer butter masala prepared fresh at Sai Silver Dum Biryani.",
+      "image": "https://b.zmtcdn.com/data/dish_photos/eea/578c58f4a3ccdbd02c8b7c1ab1e0ceea.jpeg",
+      "isVeg": true,
+      "rating": 4.4,
+      "votes": "24 votes",
+      "portions": [
+        {
+          "name": "Single",
+          "price": 339
+        }
+      ],
+      "spiceLevel": "Mild",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    }
+  ],
+  "Non-Veg Curries": [
+    {
+      "id": "ctl_551317858",
+      "name": "Butter Chicken",
+      "price": 369,
+      "description": "Delicious authentic butter chicken prepared fresh at Sai Silver Dum Biryani.",
+      "image": "https://b.zmtcdn.com/data/dish_photos/c35/f0d58820e053cf45eae8948a5bba8c35.jpeg",
+      "isVeg": false,
+      "rating": 3.9,
+      "votes": "7 votes",
+      "portions": [],
+      "spiceLevel": "Mild",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_551317859",
+      "name": "Chicken Bonless Curry (single)",
+      "price": 299,
+      "description": "Delicious authentic chicken bonless curry (single) prepared fresh at Sai Silver Dum Biryani.",
+      "image": "https://b.zmtcdn.com/data/dish_photos/42c/4030d57e4fd4bdba2cc11bf57a6f842c.jpeg",
+      "isVeg": false,
+      "rating": 3.9,
+      "votes": "13 votes",
+      "portions": [
+        {
+          "name": "1/2 [Size]",
+          "price": 299
+        },
+        {
+          "name": "Single",
+          "price": 399
+        }
+      ],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_551317860",
+      "name": "Chicken Curry (bons)",
+      "price": 299,
+      "description": "Delicious authentic chicken curry (bons) prepared fresh at Sai Silver Dum Biryani.",
+      "image": "https://b.zmtcdn.com/data/dish_photos/1bf/f45b01802b3c170f3b809d7b10bd51bf.jpeg",
+      "isVeg": false,
+      "rating": null,
+      "votes": "",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_708157642",
+      "name": "Chicken Kaju Curry",
+      "price": 379,
+      "description": "Delicious authentic chicken kaju curry prepared fresh at Sai Silver Dum Biryani.",
+      "image": "",
+      "isVeg": false,
+      "rating": null,
+      "votes": "",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_551317862",
+      "name": "Chicken Mogalai Curry",
+      "price": 369,
+      "description": "Delicious authentic chicken mogalai curry prepared fresh at Sai Silver Dum Biryani.",
+      "image": "https://b.zmtcdn.com/data/dish_photos/a0c/9dcab328a2f873cde05c6cd6edf03a0c.jpg",
+      "isVeg": false,
+      "rating": null,
+      "votes": "",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_551317863",
+      "name": "Chicken Tikka Masala",
+      "price": 379,
+      "description": "Delicious authentic chicken tikka masala prepared fresh at Sai Silver Dum Biryani.",
+      "image": "",
+      "isVeg": false,
+      "rating": null,
+      "votes": "",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_708157643",
+      "name": "Egg Bhurji",
+      "price": 299,
+      "description": "Delicious authentic egg bhurji prepared fresh at Sai Silver Dum Biryani.",
+      "image": "",
+      "isVeg": false,
+      "rating": null,
+      "votes": "",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_708157644",
+      "name": "Egg Curry",
+      "price": 299,
+      "description": "Delicious authentic egg curry prepared fresh at Sai Silver Dum Biryani.",
+      "image": "",
+      "isVeg": false,
+      "rating": null,
+      "votes": "",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_551317864",
+      "name": "Fish Curry",
+      "price": 399,
+      "description": "Delicious authentic fish curry prepared fresh at Sai Silver Dum Biryani.",
+      "image": "",
+      "isVeg": false,
+      "rating": null,
+      "votes": "",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_551317867",
+      "name": "Kadai Chicken",
+      "price": 369,
+      "description": "Delicious authentic kadai chicken prepared fresh at Sai Silver Dum Biryani.",
+      "image": "",
+      "isVeg": false,
+      "rating": null,
+      "votes": "",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_551317870",
+      "name": "Prowns Curry",
+      "price": 300,
+      "description": "Delicious authentic prowns curry prepared fresh at Sai Silver Dum Biryani.",
+      "image": "",
+      "isVeg": false,
+      "rating": null,
+      "votes": "",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    }
+  ],
+  "Couple & Family Packs": [
+    {
+      "id": "ctl_766308370",
+      "name": "Chicken Dum Biryani Couple Pack",
+      "price": 599,
+      "description": "[Serves 2-3 persons]",
+      "image": "https://b.zmtcdn.com/data/dish_photos/5c7/fedc6ea540ed5f1ee56528520f4a35c7.jpeg",
+      "isVeg": false,
+      "rating": 4.0,
+      "votes": "36 votes",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_766308371",
+      "name": "Chicken Fry Biryani Couple Pack",
+      "price": 599,
+      "description": "[Serves 2-3 persons]",
+      "image": "https://b.zmtcdn.com/data/dish_photos/3ab/ba2dc1e1e5832a27aecc11d6beed53ab.jpeg",
+      "isVeg": false,
+      "rating": 4.6,
+      "votes": "18 votes",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_766308373",
+      "name": "Chicken Joint Couple Pack",
+      "price": 649,
+      "description": "[Serves 2-3 persons]",
+      "image": "",
+      "isVeg": false,
+      "rating": null,
+      "votes": "",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_766308374",
+      "name": "Chicken Lollypop Biryani Couple Pack",
+      "price": 649,
+      "description": "[Serves 2-3 persons]",
+      "image": "",
+      "isVeg": false,
+      "rating": null,
+      "votes": "",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_766308375",
+      "name": "Chicken Mogalai Biryani Couple Pack",
+      "price": 649,
+      "description": "[Serves 2-3 persons]",
+      "image": "https://b.zmtcdn.com/data/dish_photos/ecf/a0e956ad1479d0130286c698b0ebcecf.jpeg",
+      "isVeg": false,
+      "rating": null,
+      "votes": "",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_766308377",
+      "name": "Chicken Tikka Couple Pack",
+      "price": 679,
+      "description": "[Serves 2-3 persons]",
+      "image": "https://b.zmtcdn.com/data/dish_photos/ca7/8b3d3629e19ed0f25fee89e8802aaca7.jpeg",
+      "isVeg": false,
+      "rating": null,
+      "votes": "",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_766308379",
+      "name": "Chicken Wings Biryani Couple Pack",
+      "price": 649,
+      "description": "[Serves 2-3 persons]",
+      "image": "",
+      "isVeg": false,
+      "rating": null,
+      "votes": "",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_766308380",
+      "name": "COUPLE PACK Tandouri Chicken Biryani",
+      "price": 649,
+      "description": "[Serves 2-3 persons]",
+      "image": "https://b.zmtcdn.com/data/dish_photos/de7/ab0a5823848acac5e91ac3392ef56de7.jpeg",
+      "isVeg": false,
+      "rating": null,
+      "votes": "",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_766308381",
+      "name": "Sai Silver Sp Chicken Couple Pack",
+      "price": 649,
+      "description": "[Serves 2-3 persons]",
+      "image": "",
+      "isVeg": false,
+      "rating": 4.2,
+      "votes": "8 votes",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    }
+  ],
+  "Tandoori & Kebabs": [
+    {
+      "id": "ctl_551317894",
+      "name": "Chicken Malai Tikka",
+      "price": 399,
+      "description": "Delicious authentic chicken malai tikka prepared fresh at Sai Silver Dum Biryani.",
+      "image": "",
+      "isVeg": false,
+      "rating": null,
+      "votes": "",
+      "portions": [],
+      "spiceLevel": "Mild",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_537793311",
+      "name": "Chicken Tikka (8pc)",
+      "price": 399,
+      "description": "Delicious authentic chicken tikka (8pc) prepared fresh at Sai Silver Dum Biryani.",
+      "image": "https://b.zmtcdn.com/data/dish_photos/80a/248c18a1d4ea135801069842f6de480a.jpeg",
+      "isVeg": false,
+      "rating": null,
+      "votes": "",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_537793312",
+      "name": "Kalami Kabab (4pc)",
+      "price": 399,
+      "description": "Non-Veg preparation",
+      "image": "https://b.zmtcdn.com/data/dish_photos/4a7/331e755b9f6871dfa9beaeb113c864a7.jpeg",
+      "isVeg": false,
+      "rating": null,
+      "votes": "",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_551317895",
+      "name": "Malai Paneer Tikka",
+      "price": 359,
+      "description": "Delicious authentic malai paneer tikka prepared fresh at Sai Silver Dum Biryani.",
+      "image": "",
+      "isVeg": true,
+      "rating": null,
+      "votes": "",
+      "portions": [],
+      "spiceLevel": "Mild",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_551317896",
+      "name": "Paneer Tikka",
+      "price": 359,
+      "description": "Delicious authentic paneer tikka prepared fresh at Sai Silver Dum Biryani.",
+      "image": "https://b.zmtcdn.com/data/dish_photos/9a2/c8e1eb6d025d95cea670e811c429a9a2.jpeg",
+      "isVeg": true,
+      "rating": null,
+      "votes": "",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_551317897",
+      "name": "Reshmi Kabab",
+      "price": 440,
+      "description": "Chicken",
+      "image": "https://b.zmtcdn.com/data/dish_photos/1ea/bf33d48d4add9c129e6b851fd17731ea.jpeg",
+      "isVeg": false,
+      "rating": null,
+      "votes": "",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_537793313",
+      "name": "Tandoori Chicken Full",
+      "price": 579,
+      "description": "Delicious authentic tandoori chicken full prepared fresh at Sai Silver Dum Biryani.",
+      "image": "https://b.zmtcdn.com/data/dish_photos/834/02aee76b8634e769020da424d7c9d834.jpeg",
+      "isVeg": false,
+      "rating": null,
+      "votes": "",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_537793314",
+      "name": "Tandoori Chicken Half",
+      "price": 399,
+      "description": "Delicious authentic tandoori chicken half prepared fresh at Sai Silver Dum Biryani.",
+      "image": "https://b.zmtcdn.com/data/dish_photos/834/02aee76b8634e769020da424d7c9d834.jpeg",
+      "isVeg": false,
+      "rating": null,
+      "votes": "",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_551317898",
+      "name": "Tangidi Kabab (4pc)",
+      "price": 379,
+      "description": "Chicken",
+      "image": "https://b.zmtcdn.com/data/dish_photos/349/078700b6906d2af927286bdd5bbc2349.jpeg",
+      "isVeg": false,
+      "rating": null,
+      "votes": "",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    }
+  ],
+  "Fried Rice": [
+    {
+      "id": "ctl_537793293",
+      "name": "Chicken Fried Rice",
+      "price": 329,
+      "description": "Delicious authentic chicken fried rice prepared fresh at Sai Silver Dum Biryani.",
+      "image": "https://b.zmtcdn.com/data/dish_photos/ebd/68fd91a9ac8e5d62c7f2d35a5736cebd.jpeg",
+      "isVeg": false,
+      "rating": 4.4,
+      "votes": "61 votes",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_708157667",
+      "name": "Chicken Schezwan Fried Rice",
+      "price": 379,
+      "description": "Delicious authentic chicken schezwan fried rice prepared fresh at Sai Silver Dum Biryani.",
+      "image": "",
+      "isVeg": false,
+      "rating": null,
+      "votes": "",
+      "portions": [],
+      "spiceLevel": "Spicy",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_537793294",
+      "name": "Egg Fried Rice",
+      "price": 299,
+      "description": "Delicious authentic egg fried rice prepared fresh at Sai Silver Dum Biryani.",
+      "image": "https://b.zmtcdn.com/data/dish_photos/a02/3905cfe679ac1c1696ebfdedd3a6fa02.jpeg",
+      "isVeg": false,
+      "rating": 4.0,
+      "votes": "13 votes",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_551317899",
+      "name": "Kaju Fried Rice",
+      "price": 349,
+      "description": "Delicious authentic kaju fried rice prepared fresh at Sai Silver Dum Biryani.",
+      "image": "https://b.zmtcdn.com/data/dish_photos/792/db1234a88f03e4b4e47e53e5b9d13792.jpeg",
+      "isVeg": true,
+      "rating": 4.0,
+      "votes": "6 votes",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_537793295",
+      "name": "Mushroom Fried Rice",
+      "price": 329,
+      "description": "Delicious authentic mushroom fried rice prepared fresh at Sai Silver Dum Biryani.",
+      "image": "",
+      "isVeg": true,
+      "rating": null,
+      "votes": "",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_537793296",
+      "name": "Paneer Fried Rice",
+      "price": 329,
+      "description": "Delicious authentic paneer fried rice prepared fresh at Sai Silver Dum Biryani.",
+      "image": "",
+      "isVeg": true,
+      "rating": 4.4,
+      "votes": "6 votes",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_551317900",
+      "name": "Prawn Fried Rice",
+      "price": 379,
+      "description": "Delicious authentic prawn fried rice prepared fresh at Sai Silver Dum Biryani.",
+      "image": "",
+      "isVeg": false,
+      "rating": null,
+      "votes": "",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_620176885",
+      "name": "Sai Silver Sp Veg Fried Rice",
+      "price": 399,
+      "description": "Delicious authentic sai silver sp veg fried rice prepared fresh at Sai Silver Dum Biryani.",
+      "image": "",
+      "isVeg": true,
+      "rating": null,
+      "votes": "",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_537793297",
+      "name": "Sai Silver Spl Fried Rice",
+      "price": 399,
+      "description": "Sai Silver Special Chicken Fried Rice",
+      "image": "https://b.zmtcdn.com/data/dish_photos/2b5/74b6e0e998365db1d53cc091616402b5.png",
+      "isVeg": false,
+      "rating": 4.5,
+      "votes": "6 votes",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_537793298",
+      "name": "Veg Fried Rice",
+      "price": 279,
+      "description": "Delicious authentic veg fried rice prepared fresh at Sai Silver Dum Biryani.",
+      "image": "https://b.zmtcdn.com/data/dish_photos/eb4/1e1e41662d54b3ebae6b955297f0eeb4.jpeg",
+      "isVeg": true,
+      "rating": 4.2,
+      "votes": "36 votes",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_708157668",
+      "name": "Veg Schezwan Fried Rice",
+      "price": 299,
+      "description": "Delicious authentic veg schezwan fried rice prepared fresh at Sai Silver Dum Biryani.",
+      "image": "",
+      "isVeg": true,
+      "rating": null,
+      "votes": "",
+      "portions": [],
+      "spiceLevel": "Spicy",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    }
+  ],
+  "Rotis & Breads": [
+    {
+      "id": "ctl_632119302",
+      "name": "2 Butter Naan With Paneer Butter Masala",
+      "price": 199,
+      "description": "Delicious authentic 2 butter naan with paneer butter masala prepared fresh at Sai Silver Dum Biryani.",
+      "image": "https://b.zmtcdn.com/data/dish_photos/cb3/2533d43897c7810d01d7a656308efcb3.jpeg",
+      "isVeg": true,
+      "rating": 4.2,
+      "votes": "83 votes",
+      "portions": [],
+      "spiceLevel": "Mild",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_632119304",
+      "name": "4 Pulkas With Paneer Butter Masala",
+      "price": 199,
+      "description": "Delicious authentic 4 pulkas with paneer butter masala prepared fresh at Sai Silver Dum Biryani.",
+      "image": "https://b.zmtcdn.com/data/dish_photos/2a7/bf59a09701d5ded4361ffb472cada2a7.jpeg",
+      "isVeg": true,
+      "rating": 4.2,
+      "votes": "17 votes",
+      "portions": [],
+      "spiceLevel": "Mild",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_627602799",
+      "name": "Chapathi",
+      "price": 50,
+      "description": "Delicious authentic chapathi prepared fresh at Sai Silver Dum Biryani.",
+      "image": "https://b.zmtcdn.com/data/dish_photos/a7c/3b569c2a75e0d30aa22c23b2ec0d3a7c.jpeg",
+      "isVeg": true,
+      "rating": null,
+      "votes": "",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_551317901",
+      "name": "Butter Naan",
+      "price": 70,
+      "description": "Delicious authentic butter naan prepared fresh at Sai Silver Dum Biryani.",
+      "image": "https://b.zmtcdn.com/data/dish_photos/dc4/04bce3b77d6a3b0f761e35a42eb69dc4.jpeg",
+      "isVeg": true,
+      "rating": 4.2,
+      "votes": "54 votes",
+      "portions": [],
+      "spiceLevel": "Mild",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_551317902",
+      "name": "Butter Roti",
+      "price": 50,
+      "description": "Delicious authentic butter roti prepared fresh at Sai Silver Dum Biryani.",
+      "image": "https://b.zmtcdn.com/data/dish_photos/3aa/a3eee5991a22ea3ea341cf721ccf63aa.jpeg",
+      "isVeg": true,
+      "rating": 4.6,
+      "votes": "8 votes",
+      "portions": [],
+      "spiceLevel": "Mild",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_794667093",
+      "name": "Garlic Non",
+      "price": 75,
+      "description": "Delicious authentic garlic non prepared fresh at Sai Silver Dum Biryani.",
+      "image": "",
+      "isVeg": true,
+      "rating": null,
+      "votes": "",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_551317903",
+      "name": "Masala Kulcha",
+      "price": 85,
+      "description": "Delicious authentic masala kulcha prepared fresh at Sai Silver Dum Biryani.",
+      "image": "https://b.zmtcdn.com/data/dish_photos/83b/4cf5fcf589ceb06f6a883219c716d83b.jpeg",
+      "isVeg": true,
+      "rating": 4.2,
+      "votes": "7 votes",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_551317904",
+      "name": "Phulka",
+      "price": 20,
+      "description": "Delicious authentic phulka prepared fresh at Sai Silver Dum Biryani.",
+      "image": "https://b.zmtcdn.com/data/dish_photos/0dc/d10da5a851220bf04cc54bfa1775e0dc.jpeg",
+      "isVeg": true,
+      "rating": 3.9,
+      "votes": "76 votes",
+      "portions": [],
+      "spiceLevel": "Mild",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_551317905",
+      "name": "Plane Naan",
+      "price": 50,
+      "description": "Delicious authentic plane naan prepared fresh at Sai Silver Dum Biryani.",
+      "image": "https://b.zmtcdn.com/data/dish_photos/d28/e26f74fef139b3539d52262798105d28.jpeg",
+      "isVeg": true,
+      "rating": 4.6,
+      "votes": "9 votes",
+      "portions": [],
+      "spiceLevel": "Mild",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_551317906",
+      "name": "Plane Roti",
+      "price": 40,
+      "description": "Delicious authentic plane roti prepared fresh at Sai Silver Dum Biryani.",
+      "image": "https://b.zmtcdn.com/data/dish_photos/648/e4c8482aae93b01cbff832a76ca5b648.jpeg",
+      "isVeg": true,
+      "rating": 1.9,
+      "votes": "8 votes",
+      "portions": [],
+      "spiceLevel": "Mild",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    }
+  ],
+  "Accompaniments & Addons": [
+    {
+      "id": "ctl_708157669",
+      "name": "Chicken Dum 1 Piece",
+      "price": 60,
+      "description": "Delicious authentic chicken dum 1 piece prepared fresh at Sai Silver Dum Biryani.",
+      "image": "",
+      "isVeg": false,
+      "rating": 4.3,
+      "votes": "8 votes",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_708157670",
+      "name": "Chicken Lollipop (1 Piece)",
+      "price": 70,
+      "description": "Delicious authentic chicken lollipop (1 piece) prepared fresh at Sai Silver Dum Biryani.",
+      "image": "",
+      "isVeg": false,
+      "rating": 4.2,
+      "votes": "23 votes",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_708157671",
+      "name": "Chicken Wings (1 Piece)",
+      "price": 70,
+      "description": "Delicious authentic chicken wings (1 piece) prepared fresh at Sai Silver Dum Biryani.",
+      "image": "",
+      "isVeg": false,
+      "rating": 4.3,
+      "votes": "6 votes",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_708157672",
+      "name": "Double Masala Rice",
+      "price": 40,
+      "description": "Delicious authentic double masala rice prepared fresh at Sai Silver Dum Biryani.",
+      "image": "",
+      "isVeg": true,
+      "rating": 4.5,
+      "votes": "13 votes",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_708157673",
+      "name": "Katta Extra",
+      "price": 20,
+      "description": "Delicious authentic katta extra prepared fresh at Sai Silver Dum Biryani.",
+      "image": "https://b.zmtcdn.com/data/dish_photos/9bd/0946162aa45f7255058e0b72a4ecd9bd.jpeg",
+      "isVeg": true,
+      "rating": null,
+      "votes": "",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_708157674",
+      "name": "Onion, Lemon Extra",
+      "price": 20,
+      "description": "Delicious authentic onion, lemon extra prepared fresh at Sai Silver Dum Biryani.",
+      "image": "https://b.zmtcdn.com/data/dish_photos/f7c/8c87c8e114714dc83b535d00a791cf7c.jpeg",
+      "isVeg": true,
+      "rating": 3.4,
+      "votes": "6 votes",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_708157675",
+      "name": "Raita Extra",
+      "price": 20,
+      "description": "Delicious authentic raita extra prepared fresh at Sai Silver Dum Biryani.",
+      "image": "https://b.zmtcdn.com/data/dish_photos/859/5b4120210f17e3add4605b1fbf9f8859.jpeg",
+      "isVeg": true,
+      "rating": null,
+      "votes": "",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    },
+    {
+      "id": "ctl_708157676",
+      "name": "Thumsup (250 Ml)",
+      "price": 30,
+      "description": "Delicious authentic thumsup (250 ml) prepared fresh at Sai Silver Dum Biryani.",
+      "image": "",
+      "isVeg": true,
+      "rating": 3.7,
+      "votes": "17 votes",
+      "portions": [],
+      "spiceLevel": "Medium",
+      "orderUrl": "https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+    }
+  ]
+}

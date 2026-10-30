@@ -26,12 +26,32 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css?v=3.3" />
+    <link rel="stylesheet" href="./styles.css?v=3.5" />
   </head>
   <body class="menu-book-page">
     <div class="site-background" aria-hidden="true">
-      <div class="site-background__pattern"></div>
-      <div class="site-background__glow"></div>
+      <video
+        class="site-background__video site-background__video--desktop"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="metadata"
+        poster="./media/gallery/signature-chicken-dum.jpeg"
+      >
+        <source src="./media/videos/desktop-hero-biryani.mp4" type="video/mp4" />
+      </video>
+      <video
+        class="site-background__video site-background__video--mobile"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="metadata"
+        poster="./media/gallery/signature-chicken-dum.jpeg"
+      >
+        <source src="./media/videos/mobile-hero-biryani.mp4" type="video/mp4" />
+      </video>
       <div class="site-background__veil"></div>
     </div>
 
