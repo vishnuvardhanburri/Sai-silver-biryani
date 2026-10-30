@@ -31,7 +31,7 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./styles.css?v=2.2" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -266,13 +266,15 @@
             <nav class="nav-links" aria-label="Primary">
               <button type="button" data-scroll-target="about">About</button>
               <button type="button" data-scroll-target="menu">Menu</button>
-              <button type="button" data-scroll-target="offers">Offers</button>
-              <button type="button" data-scroll-target="videos">Videos</button>
-              <button type="button" data-scroll-target="reviews">Reviews</button>
+              <button type="button" data-scroll-target="videos">Podcast</button>
+              <button type="button" data-scroll-target="payments">Payments</button>
               <button type="button" data-scroll-target="catering">Catering</button>
               <button type="button" data-scroll-target="contact">Contact</button>
               <a class="nav-link-anchor" href="./links/">Links</a>
-              <a class="button button--solid" href="tel:08919443535">Call Now</a>
+              <a class="button button--solid button--zomato-nav" target="_blank" rel="noreferrer" href="https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order">Zomato</a>
+              <a class="button button--solid button--swiggy-nav" target="_blank" rel="noreferrer" href="https://www.swiggy.com/city/vijayawada/sai-silver-dum-biryani-mogalrajapuram-benz-circle-and-auto-nagar-rest809458">Swiggy</a>
+              <a class="button button--solid" target="_blank" rel="noreferrer" href="https://wa.me/918919443535?text=Hi%20Sai%20Silver%20Dum%20Biryani,%20I%20would%20like%20to%20order" style="background:#25d366;color:#ffffff;border:0;">WhatsApp</a>
+              <a class="button button--ghost" href="tel:08919443535">Call: 089194 43535</a>
             </nav>
           </div>
 
@@ -292,11 +294,16 @@
             </div>
 
             <div class="hero-actions">
-              <button type="button" class="button button--solid" data-scroll-target="contact">
-                Reserve a Table
-              </button>
+              <a class="button button--solid button--zomato-hero" target="_blank" rel="noreferrer" href="https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14.5v-9l6 4.5-6 4.5z"/></svg>
+                Order on Zomato
+              </a>
+              <a class="button button--solid button--swiggy-hero" target="_blank" rel="noreferrer" href="https://www.swiggy.com/city/vijayawada/sai-silver-dum-biryani-mogalrajapuram-benz-circle-and-auto-nagar-rest809458">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-10 10c0 5.52 4.48 10 10 10s10-4.48 10-10A10 10 0 0 0 12 2zm1 14.5h-2v-2h2v2zm0-4h-2V7h2v5.5z"/></svg>
+                Order on Swiggy
+              </a>
               <button type="button" class="button button--ghost" data-scroll-target="menu">
-                View Menu
+                Explore Menu
               </button>
               <a class="button button--ghost button--book" href="./menu-book.html">
                 Open Menu Book
@@ -304,10 +311,10 @@
             </div>
 
             <div class="order-strip">
-              <p>Order Online Via</p>
+              <p>Direct Delivery Via</p>
               <div class="order-links">
-                <a class="order-link order-link--light" target="_blank" rel="noreferrer" href="https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar">Zomato</a>
-                <a class="order-link order-link--accent" target="_blank" rel="noreferrer" href="https://www.swiggy.com/city/vijayawada/sai-silver-dum-biryani-mogalrajapuram-benz-circle-and-auto-nagar-rest809458">Swiggy</a>
+                <a class="order-link order-link--light" target="_blank" rel="noreferrer" href="https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order">Zomato Order</a>
+                <a class="order-link order-link--accent" target="_blank" rel="noreferrer" href="https://www.swiggy.com/city/vijayawada/sai-silver-dum-biryani-mogalrajapuram-benz-circle-and-auto-nagar-rest809458">Swiggy Order</a>
               </div>
             </div>
 
@@ -315,6 +322,36 @@
           </div>
         </div>
       </header>
+
+      <!-- HIGH-SPEED CATEGORY QUICK JUMP & FAST CONTACT STRIP -->
+      <nav class="speed-nav" aria-label="High-Speed Category Jump">
+        <div class="container speed-nav__inner">
+          <div class="speed-nav__left">
+            <span class="speed-nav__label">Quick Jump:</span>
+            <button type="button" class="speed-chip" data-speed-cat="Signature Biryanis" data-scroll-target="menu">Dum Biryanis (22)</button>
+            <button type="button" class="speed-chip" data-speed-cat="Couple &amp; Family Packs" data-scroll-target="menu">Family Packs (9)</button>
+            <button type="button" class="speed-chip" data-speed-cat="Chicken Starters" data-scroll-target="menu">Chicken Starters (19)</button>
+            <button type="button" class="speed-chip" data-speed-cat="Tandoori &amp; Kebabs" data-scroll-target="menu">Tandoori &amp; Kebabs (9)</button>
+            <button type="button" class="speed-chip" data-speed-cat="Veg Starters" data-scroll-target="menu">Veg Starters (12)</button>
+            <button type="button" class="speed-chip" data-speed-cat="Seafood Specials" data-scroll-target="menu">Seafood (9)</button>
+            <button type="button" class="speed-chip" data-speed-cat="Non-Veg Curries" data-scroll-target="menu">Curries (18)</button>
+            <button type="button" class="speed-chip" data-speed-cat="Rotis &amp; Breads" data-scroll-target="menu">Breads (10)</button>
+            <button type="button" class="speed-chip" data-speed-cat="Fried Rice" data-scroll-target="menu">Fried Rice (11)</button>
+            <button type="button" class="speed-chip" data-speed-cat="Soups" data-scroll-target="menu">Soups (7)</button>
+            <button type="button" class="speed-chip" data-speed-cat="Accompaniments &amp; Addons" data-scroll-target="menu">Addons (8)</button>
+          </div>
+          <div class="speed-nav__right">
+            <a href="https://wa.me/918919443535?text=Hi%20Sai%20Silver%20Dum%20Biryani,%20I%20would%20like%20to%20order" target="_blank" rel="noreferrer" class="speed-chip speed-chip--wa">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 6.46 17.5 2 12.04 2M12.05 3.67C16.58 3.67 20.28 7.37 20.28 11.92C20.28 16.46 16.58 20.17 12.05 20.17C10.57 20.17 9.15 19.78 7.9 19.04L7.6 18.86L4.48 19.68L5.31 16.64L5.12 16.33C4.33 15.07 3.91 13.51 3.91 11.91C3.91 7.36 7.61 3.67 12.05 3.67M9.06 6.94C8.91 6.94 8.67 6.99 8.46 7.22C8.25 7.45 7.66 8 7.66 9.21C7.66 10.42 8.54 11.59 8.67 11.75C8.79 11.91 10.37 14.35 12.8 15.41C13.38 15.66 13.83 15.81 14.19 15.92C14.78 16.11 15.32 16.08 15.75 16.02C16.23 15.95 17.22 15.42 17.43 14.83C17.64 14.25 17.64 13.75 17.58 13.64C17.51 13.54 17.36 13.48 17.14 13.37C16.92 13.26 15.83 12.72 15.63 12.65C15.42 12.57 15.27 12.54 15.13 12.76C14.98 12.98 14.56 13.48 14.43 13.63C14.31 13.78 14.18 13.8 13.97 13.69C13.75 13.59 13.04 13.35 12.21 12.61C11.55 12.02 11.11 11.3 10.98 11.08C10.86 10.86 10.97 10.74 11.08 10.63C11.18 10.53 11.3 10.37 11.41 10.24C11.52 10.11 11.56 10.02 11.63 9.87C11.7 9.73 11.67 9.6 11.61 9.49C11.56 9.38 11.11 8.28 10.93 7.83C10.74 7.39 10.56 7.45 10.42 7.45C10.29 7.45 10.14 7.44 10 7.44C9.85 7.44 9.61 7.5 9.43 7.7C9.25 7.9 8.76 8.36 8.76 9.32"/></svg>
+              <span>WhatsApp: 89194 43535</span>
+            </a>
+            <a href="tel:08919443535" class="speed-chip speed-chip--call">
+              <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1.02l-2.2 2.2z"/></svg>
+              <span>Call</span>
+            </a>
+          </div>
+        </div>
+      </nav>
 
       <main>
         <section class="section section--about" id="about">
@@ -393,17 +430,134 @@
         <section class="section" id="menu">
           <div class="container">
             <div class="section-copy section-copy--center">
-              <h2>Our Menu</h2>
+              <span class="eyebrow-badge"><span class="live-dot"></span> Live Kitchen Menu &amp; Delivery Pricing</span>
+              <h2>Our Complete Menu</h2>
               <p>
-                Discover our selection of authentic Hyderabadi biryanis and
-                delicious accompaniments, all prepared with premium ingredients
+                Authentic Hyderabadi dum biryanis, sizzled tandoori kebabs, spicy starters,
+                and rich curries. All items and prices match our official kitchen on Zomato and Swiggy.
               </p>
               <div class="section-copy__actions">
-                <a class="button button--solid button--book" href="./menu-book.html">
+                <a class="button button--solid button--zomato-hero" target="_blank" rel="noreferrer" href="https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14.5v-9l6 4.5-6 4.5z"/></svg>
+                  Order on Zomato
+                </a>
+                <a class="button button--solid button--swiggy-hero" target="_blank" rel="noreferrer" href="https://www.swiggy.com/city/vijayawada/sai-silver-dum-biryani-mogalrajapuram-benz-circle-and-auto-nagar-rest809458">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-10 10c0 5.52 4.48 10 10 10s10-4.48 10-10A10 10 0 0 0 12 2zm1 14.5h-2v-2h2v2zm0-4h-2V7h2v5.5z"/></svg>
+                  Order on Swiggy
+                </a>
+                <a class="button button--ghost button--book" href="./menu-book.html">
                   Open Menu Book
                 </a>
               </div>
             </div>
+
+            <!-- Live Analytics KPI Strip -->
+            <div class="menu-analytics-kpi-grid">
+              <div class="kpi-card">
+                <span class="kpi-value">134</span>
+                <span class="kpi-label">Dishes Listed</span>
+              </div>
+              <div class="kpi-card">
+                <span class="kpi-value">&#8377;20 – &#8377;949</span>
+                <span class="kpi-label">Price Range</span>
+              </div>
+              <div class="kpi-card">
+                <span class="kpi-value">4.4 &#9733;</span>
+                <span class="kpi-label">Diner Score</span>
+              </div>
+              <div class="kpi-card">
+                <span class="kpi-value">Up to 28%</span>
+                <span class="kpi-label">Family Pack Savings</span>
+              </div>
+            </div>
+
+            <!-- Smart Group Portion & Budget Calculator -->
+            <div class="planner-box">
+              <div class="planner-header">
+                <span class="badge-tag">Smart Ordering Tool</span>
+                <h2>Group Portion &amp; Meal Calculator</h2>
+                <p>Planning for yourself, family, or an office group? Select guest count to view recommended orders, yield, and best value savings.</p>
+              </div>
+              <div class="planner-selectors" role="group" aria-label="Select guest count">
+                <button type="button" class="planner-chip is-active" data-group="solo">Solo Diner (1 Person)</button>
+                <button type="button" class="planner-chip" data-group="couple">Couple / Duo (2–3 Persons)</button>
+                <button type="button" class="planner-chip" data-group="family">Family (4–5 Persons)</button>
+                <button type="button" class="planner-chip" data-group="party">Party (8–10+ Persons)</button>
+              </div>
+              <div class="planner-result-card" id="home-planner-result">
+                <div class="planner-result-header">
+                  <div class="planner-result-combo">
+                    <h3 id="home-planner-title">Solo Feast: Chicken Dum Biryani</h3>
+                    <p id="home-planner-desc">Ideal single portion with slow-dum basmati rice, tender chicken pieces, raita, and spicy mirchi salan (katta).</p>
+                  </div>
+                  <div class="planner-result-price">
+                    <span class="price-big" id="home-planner-price">&#8377; 320 – &#8377; 399</span>
+                    <span class="price-sub" id="home-planner-sub">&#8377; 320 per person</span>
+                  </div>
+                </div>
+                <div class="planner-items-list" id="home-planner-items">
+                  <span>1x Chicken Dum Biryani (Mini &#8377;320 / Single &#8377;399)</span>
+                  <span>1x Mirchi ka Salan &amp; Fresh Raita</span>
+                  <span>Serves: 1 Person (~500g yield)</span>
+                </div>
+                <div class="planner-actions">
+                  <a href="https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order" target="_blank" rel="noreferrer" class="button button--zomato-card">
+                    Order on Zomato
+                  </a>
+                  <a href="https://www.swiggy.com/city/vijayawada/sai-silver-dum-biryani-mogalrajapuram-benz-circle-and-auto-nagar-rest809458" target="_blank" rel="noreferrer" class="button button--swiggy-card">
+                    Order on Swiggy
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Interactive Menu Search & Dietary Filter Bar -->
+            <div class="menu-filter-bar">
+              <div class="menu-controls-bar">
+            <div class="menu-view-mode-toggle" role="group" aria-label="Menu display mode">
+              <button type="button" class="view-mode-btn is-active" data-view-mode="grid" aria-pressed="true" title="Card View">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+                <span>Cards</span>
+              </button>
+              <button type="button" class="view-mode-btn" data-view-mode="list" aria-pressed="false" title="High-Speed Compact List">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+                <span>Fast List</span>
+              </button>
+            </div>
+
+            <a class="button button--ghost" href="./menu-book.html" style="font-size:0.85rem;padding:8px 16px;">
+              <span>Open Dedicated Menu Book (134 Items)</span> &rarr;
+            </a>
+          </div>
+
+          <div class="menu-search-box">
+                <span class="menu-search-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                </span>
+                <input
+                  type="search"
+                  id="menu-search-input"
+                  placeholder="Search biryani, starters, tandoori, curries, rotis..."
+                  aria-label="Search all menu items"
+                />
+                <button type="button" id="menu-search-clear" class="menu-search-clear" aria-label="Clear search" hidden>×</button>
+              </div>
+              <div class="menu-diet-filters" role="group" aria-label="Dietary filters">
+                <button type="button" class="filter-pill is-active" data-filter="all">All Items (134)</button>
+                <button type="button" class="filter-pill" data-filter="non-veg"><span class="diet-dot diet-dot--non-veg"></span> Non-Veg</button>
+                <button type="button" class="filter-pill" data-filter="veg"><span class="diet-dot diet-dot--veg"></span> Pure Veg</button>
+                <button type="button" class="filter-pill" data-filter="popular">Top Rated</button>
+                <button type="button" class="filter-pill" data-filter="family">Couple &amp; Family Packs</button>
+              </div>
+            </div>
+
+            <!-- Categories Scrollable Tabs -->
+            <div class="tabs-scroll-wrapper">
+              <div class="tabs" id="menu-tabs" role="tablist" aria-label="Menu categories"></div>
+            </div>
+
+            <div class="menu-results-info" id="menu-results-info" aria-live="polite" hidden></div>
+            <div class="menu-grid" id="menu-grid"></div>
 
             <article class="menu-book-promo">
               <div class="menu-book-promo__visual">
@@ -429,8 +583,8 @@
                 <h3>See the complete menu as a premium book</h3>
                 <p>
                   Explore dum biryanis, family packs, starters, tandoori grills,
-                  curries, rotis, and drinks in one clean book-style view built
-                  from the in-store menu pages you shared.
+                  curries, rotis, and drinks in one clean book-style view synchronized
+                  with in-store and online delivery items.
                 </p>
                 <div class="menu-book-promo__actions">
                   <a class="button button--solid button--book" href="./menu-book.html">
@@ -448,21 +602,31 @@
               </div>
             </article>
 
-            <div class="tabs" id="menu-tabs" role="tablist" aria-label="Menu categories"></div>
-            <div class="menu-grid" id="menu-grid"></div>
-
             <div class="pricing-note">
-              <h3>Transparent Pricing</h3>
-              <p>All prices include taxes. No hidden charges. What you see is what you pay.</p>
+              <h3>Direct Kitchen &amp; Online Delivery</h3>
+              <p>Prices and portions match Zomato &amp; Swiggy delivery. Live kitchen in Auto Nagar, Vijayawada.</p>
             </div>
 
             <div class="cta-center">
-              <button type="button" class="button button--solid" data-scroll-target="contact">
-                Reserve a Table
-              </button>
-              <button type="button" class="button button--ghost" data-scroll-target="catering">
-                Ask About Catering
-              </button>
+              <a
+                class="button button--solid button--zomato-hero"
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+              >
+                Order on Zomato
+              </a>
+              <a
+                class="button button--solid button--swiggy-hero"
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.swiggy.com/city/vijayawada/sai-silver-dum-biryani-mogalrajapuram-benz-circle-and-auto-nagar-rest809458"
+              >
+                Order on Swiggy
+              </a>
+              <a class="button button--ghost" href="tel:08919443535">
+                Call Kitchen: 089194 43535
+              </a>
             </div>
           </div>
         </section>
@@ -563,17 +727,73 @@
         <section class="section" id="videos">
           <div class="container">
             <div class="section-copy section-copy--center">
-              <h2>Podcast &amp; Kitchen Videos</h2>
+              <span class="eyebrow-badge"><span class="live-dot"></span> Founder &amp; Kitchen Story</span>
+              <h2>Founder Podcast &amp; Kitchen Videos</h2>
               <p>
-                Hear Krishna's story, watch the kitchen movement, and see how
-                Sai Silver Dum Biryani comes alive behind the counter
+                Hear Krishna's journey building Sai Silver Dum Biryani in Vijayawada,
+                and watch the authentic dum handi preparation behind our kitchen counter.
               </p>
             </div>
 
+            <!-- Founder Spotlight: Krishna Interview -->
+            <article class="founder-spotlight">
+              <div class="founder-spotlight__media">
+                <video
+                  class="founder-spotlight__video"
+                  controls
+                  playsinline
+                  preload="metadata"
+                  poster="./media/gallery/podcast-cover.jpeg"
+                >
+                  <source src="./media/videos/krishna-podcast.mp4" type="video/mp4" />
+                </video>
+                <div class="founder-spotlight__badge">
+                  <span>Founder Interview</span>
+                  <span class="video-duration">3:02</span>
+                </div>
+              </div>
+              <div class="founder-spotlight__content">
+                <span class="founder-spotlight__tag">The Story Behind the Flavor</span>
+                <h3>Meet Krishna: Crafting Vijayawada's True Handi Dum Taste</h3>
+                <blockquote class="founder-spotlight__quote">
+                  "Every single handi of dum biryani we seal has to carry that exact aroma, tender meat tenderness, and natural spice layering. We built Sai Silver with zero compromise on dum quality."
+                </blockquote>
+                <p class="founder-spotlight__desc">
+                  In this featured podcast conversation, Krishna shares how Sai Silver Dum Biryani was born in Auto Nagar, the early morning spice grinding rituals, and the passion that turned a local kitchen into a beloved Vijayawada biryani destination.
+                </p>
+                <div class="founder-spotlight__actions">
+                  <a
+                    class="button button--solid button--zomato-hero"
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
+                  >
+                    Order on Zomato
+                  </a>
+                  <a
+                    class="button button--solid button--swiggy-hero"
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://www.swiggy.com/city/vijayawada/sai-silver-dum-biryani-mogalrajapuram-benz-circle-and-auto-nagar-rest809458"
+                  >
+                    Order on Swiggy
+                  </a>
+                  <a
+                    class="button button--ghost"
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://youtube.com/@saisilverdumbiryani-b1w"
+                  >
+                    Watch on YouTube
+                  </a>
+                </div>
+              </div>
+            </article>
+
             <div class="media-pills media-pills--warm" aria-label="Video highlights">
-              <span>Owner podcast</span>
-              <span>Preparation clips</span>
-              <span>Fresh serving moments</span>
+              <span>Kitchen clips</span>
+              <span>Fresh plating</span>
+              <span>Fast service reels</span>
             </div>
 
             <div class="video-grid" id="video-grid"></div>
@@ -613,6 +833,101 @@
                 >
                   Facebook
                 </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Payment & Ordering Methods Section -->
+        <section class="section section--payments" id="payments">
+          <div class="container">
+            <div class="section-copy section-copy--center">
+              <span class="eyebrow-badge"><span class="live-dot"></span> Seamless Checkout</span>
+              <h2>Payment &amp; Ordering Options</h2>
+              <p>
+                Transparent prices with zero hidden charges. We accept all major payment modes
+                across delivery apps, direct takeaway, and event catering.
+              </p>
+            </div>
+
+            <div class="payments-grid">
+              <!-- Mode 1: Online Delivery -->
+              <div class="payment-card">
+                <div class="payment-card__header">
+                  <div class="payment-card__icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14.5v-9l6 4.5-6 4.5z"/></svg>
+                  </div>
+                  <div>
+                    <h3>Online Delivery Apps</h3>
+                    <span class="payment-card__badge">Live GPS Tracking</span>
+                  </div>
+                </div>
+                <p>
+                  Order straight from Zomato or Swiggy for contact-free home delivery across Auto Nagar, Benz Circle, Sanath Nagar, and Mogalrajapuram.
+                </p>
+                <div class="payment-tags">
+                  <span>Google Pay</span>
+                  <span>PhonePe</span>
+                  <span>Paytm UPI</span>
+                  <span>Credit / Debit Cards</span>
+                  <span>NetBanking</span>
+                  <span>Cash on Delivery</span>
+                </div>
+                <div class="payment-card__actions">
+                  <a href="https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order" target="_blank" rel="noreferrer" class="button button--zomato-card">Order on Zomato</a>
+                  <a href="https://www.swiggy.com/city/vijayawada/sai-silver-dum-biryani-mogalrajapuram-benz-circle-and-auto-nagar-rest809458" target="_blank" rel="noreferrer" class="button button--swiggy-card">Order on Swiggy</a>
+                </div>
+              </div>
+
+              <!-- Mode 2: Direct Kitchen Takeaway -->
+              <div class="payment-card">
+                <div class="payment-card__header">
+                  <div class="payment-card__icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M7 15h0M2 10h20"/></svg>
+                  </div>
+                  <div>
+                    <h3>Takeaway &amp; In-Store UPI</h3>
+                    <span class="payment-card__badge">Ready in 15 mins</span>
+                  </div>
+                </div>
+                <p>
+                  Pick up hot handi biryani directly at our Sanath Nagar counter. Pay in seconds via UPI QR Code or card swipe.
+                </p>
+                <div class="payment-tags">
+                  <span>Instant UPI QR</span>
+                  <span>GPay / PhonePe: 089194 43535</span>
+                  <span>Card Swipe POS</span>
+                  <span>Cash at Counter</span>
+                </div>
+                <div class="payment-card__actions">
+                  <a href="tel:08919443535" class="button button--solid">Call Kitchen: 089194 43535</a>
+                  <a href="https://www.google.com/maps/place/Sai+Silver+Dum+Biryani/" target="_blank" rel="noreferrer" class="button button--ghost">Get Directions</a>
+                </div>
+              </div>
+
+              <!-- Mode 3: Bulk & Catering Advance -->
+              <div class="payment-card">
+                <div class="payment-card__header">
+                  <div class="payment-card__icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                  </div>
+                  <div>
+                    <h3>Event &amp; Bulk Catering</h3>
+                    <span class="payment-card__badge">20 to 500+ Guests</span>
+                  </div>
+                </div>
+                <p>
+                  Special party portions with live counter options. Secure 50% advance booking with complete digital GST invoice and balance on delivery.
+                </p>
+                <div class="payment-tags">
+                  <span>50% Advance Booking</span>
+                  <span>Bank NEFT / IMPS</span>
+                  <span>Official GST Receipt</span>
+                  <span>Balance upon Setup</span>
+                </div>
+                <div class="payment-card__actions">
+                  <button type="button" class="button button--solid" data-scroll-target="catering">Plan Catering Package</button>
+                </div>
               </div>
             </div>
           </div>
@@ -1010,6 +1325,23 @@
 
     <div class="toast" id="toast" hidden></div>
 
-    <script type="module" src="./script.js"></script>
+    <script type="module" src="./script.js?v=2.2"></script>
+      <!-- FLOATING WHATSAPP SIDE DOCK & DIRECT ACCESS -->
+    <aside class="whatsapp-dock" aria-label="WhatsApp Quick Contact">
+      <a
+        href="https://wa.me/918919443535?text=Hi%20Sai%20Silver%20Dum%20Biryani,%20I%20would%20like%20to%20order"
+        target="_blank"
+        rel="noreferrer"
+        class="whatsapp-float-btn"
+        aria-label="Direct message on WhatsApp: 89194 43535"
+      >
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 6.46 17.5 2 12.04 2M12.05 3.67C16.58 3.67 20.28 7.37 20.28 11.92C20.28 16.46 16.58 20.17 12.05 20.17C10.57 20.17 9.15 19.78 7.9 19.04L7.6 18.86L4.48 19.68L5.31 16.64L5.12 16.33C4.33 15.07 3.91 13.51 3.91 11.91C3.91 7.36 7.61 3.67 12.05 3.67M9.06 6.94C8.91 6.94 8.67 6.99 8.46 7.22C8.25 7.45 7.66 8 7.66 9.21C7.66 10.42 8.54 11.59 8.67 11.75C8.79 11.91 10.37 14.35 12.8 15.41C13.38 15.66 13.83 15.81 14.19 15.92C14.78 16.11 15.32 16.08 15.75 16.02C16.23 15.95 17.22 15.42 17.43 14.83C17.64 14.25 17.64 13.75 17.58 13.64C17.51 13.54 17.36 13.48 17.14 13.37C16.92 13.26 15.83 12.72 15.63 12.65C15.42 12.57 15.27 12.54 15.13 12.76C14.98 12.98 14.56 13.48 14.43 13.63C14.31 13.78 14.18 13.8 13.97 13.69C13.75 13.59 13.04 13.35 12.21 12.61C11.55 12.02 11.11 11.3 10.98 11.08C10.86 10.86 10.97 10.74 11.08 10.63C11.18 10.53 11.3 10.37 11.41 10.24C11.52 10.11 11.56 10.02 11.63 9.87C11.7 9.73 11.67 9.6 11.61 9.49C11.56 9.38 11.11 8.28 10.93 7.83C10.74 7.39 10.56 7.45 10.42 7.45C10.29 7.45 10.14 7.44 10 7.44C9.85 7.44 9.61 7.5 9.43 7.7C9.25 7.9 8.76 8.36 8.76 9.32"/></svg>
+        <span class="whatsapp-float-btn__text">
+          <span class="whatsapp-float-btn__title">WhatsApp Direct</span>
+          <span class="whatsapp-float-btn__sub">89194 43535</span>
+        </span>
+      </a>
+    </aside>
+
   </body>
 </html>
