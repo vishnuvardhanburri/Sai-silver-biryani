@@ -5355,3 +5355,253 @@ textarea {
   color: #ffffff !important;
   transform: translateY(-1px) !important;
 }
+
+
+/* ==========================================================================
+   COMPLETE LIGHT LUXURY THEME (BRIGHT, APPETIZING, ZERO DARK GLOOM)
+   ========================================================================== */
+body {
+  background: #fdfaf6 !important;
+  color: #1a0f0a !important;
+}
+
+/* Site Background & Ambient Veils */
+.site-background {
+  background: #fdfaf6 !important;
+}
+
+.site-background__veil {
+  background: 
+    radial-gradient(circle at 50% 15%, rgba(255, 123, 37, 0.08), transparent 60%),
+    radial-gradient(circle at 85% 75%, rgba(226, 55, 68, 0.06), transparent 50%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(253, 250, 246, 0.75) 50%, rgba(250, 245, 238, 0.95) 100%) !important;
+}
+
+/* Hero Section & Hero Copy Card */
+.hero-copy {
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(28px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(28px) saturate(180%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.98) !important;
+  border-left: 5px solid #ff7b25 !important;
+  border-radius: 26px !important;
+  box-shadow: 0 24px 60px rgba(35, 18, 10, 0.22), 0 4px 18px rgba(255, 123, 37, 0.12) !important;
+  color: #1a0f0a !important;
+}
+
+.hero-copy h1 {
+  color: #1a0f0a !important;
+  font-weight: 900 !important;
+  text-shadow: none !important;
+}
+
+.hero-tagline {
+  color: #553d33 !important;
+  font-weight: 600 !important;
+}
+
+.rating-pill {
+  background: #ffffff !important;
+  border: 1px solid rgba(255, 123, 37, 0.35) !important;
+  color: #1a0f0a !important;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06) !important;
+}
+
+.rating-pill .stars {
+  color: #f39c12 !important;
+}
+
+.rating-pill .muted {
+  color: #7a6458 !important;
+}
+
+.hero-meta span {
+  background: #fbf7f3 !important;
+  border: 1px solid rgba(210, 185, 170, 0.8) !important;
+  color: #2b1810 !important;
+  font-weight: 700 !important;
+}
+
+.hero-actions .button--ghost {
+  background: #ffffff !important;
+  border: 1.5px solid #2b1810 !important;
+  color: #2b1810 !important;
+  font-weight: 800 !important;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08) !important;
+}
+
+.hero-actions .button--ghost:hover {
+  background: #ff7b25 !important;
+  border-color: #ff7b25 !important;
+  color: #ffffff !important;
+  transform: translateY(-2px) !important;
+}
+
+.order-strip {
+  border-top: 1px solid rgba(0, 0, 0, 0.08) !important;
+}
+
+.order-strip p {
+  color: #6a5245 !important;
+  font-weight: 700 !important;
+}
+
+.order-link--light {
+  background: #ffffff !important;
+  border: 1px solid rgba(226, 55, 68, 0.35) !important;
+  color: #e23744 !important;
+  font-weight: 700 !important;
+}
+
+.order-link--accent {
+  background: #ffffff !important;
+  border: 1px solid rgba(252, 128, 25, 0.35) !important;
+  color: #fc8019 !important;
+  font-weight: 700 !important;
+}
+
+/* Speed Navigation Bar */
+.speed-nav {
+  background: rgba(255, 255, 255, 0.98) !important;
+  backdrop-filter: blur(20px) !important;
+  border-bottom: 2px solid rgba(255, 123, 37, 0.25) !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07) !important;
+}
+
+.speed-nav__label {
+  color: #c04e0a !important;
+  font-weight: 800 !important;
+}
+
+.speed-chip {
+  background: #fbf7f3 !important;
+  border: 1px solid rgba(210, 185, 170, 0.85) !important;
+  color: #2b1810 !important;
+  font-weight: 700 !important;
+}
+
+.speed-chip:hover {
+  background: #ff7b25 !important;
+  border-color: #ff7b25 !important;
+  color: #ffffff !important;
+}
+
+/* Headings and Copy Across All Sections */
+h1, h2, h3, h4 {
+  color: #1a0f0a !important;
+}
+
+p {
+  color: #4a3a31 !important;
+}
+
+.section-copy h2 {
+  color: #1a0f0a !important;
+}
+
+.section-copy p {
+  color: #4a3a31 !important;
+}
+
+.badge-tag,
+.eyebrow-badge {
+  background: rgba(255, 123, 37, 0.12) !important;
+  color: #c04e0a !important;
+  border: 1px solid rgba(255, 123, 37, 0.3) !important;
+}
+
+/* KPI Cards */
+.kpi-card {
+  background: #ffffff !important;
+  border: 1px solid rgba(210, 185, 170, 0.8) !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06) !important;
+}
+
+.kpi-value {
+  color: #c04e0a !important;
+}
+
+.kpi-label {
+  color: #6a5245 !important;
+}
+
+/* Group Portion Planner Box */
+.planner-box {
+  background: #ffffff !important;
+  border: 1px solid rgba(210, 185, 170, 0.8) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08) !important;
+}
+
+.planner-chip {
+  background: #fbf7f3 !important;
+  border: 1px solid rgba(210, 185, 170, 0.8) !important;
+  color: #2b1810 !important;
+  font-weight: 700 !important;
+}
+
+.planner-chip.is-active {
+  background: #ff7b25 !important;
+  border-color: #ff7b25 !important;
+  color: #ffffff !important;
+}
+
+.planner-result-card {
+  background: #fdfaf7 !important;
+  border: 1px solid rgba(255, 123, 37, 0.3) !important;
+}
+
+.planner-result-combo h3 {
+  color: #1a0f0a !important;
+}
+
+.price-big {
+  color: #e23744 !important;
+}
+
+/* Category Tabs Navigation */
+.menu-tab-btn {
+  background: #ffffff !important;
+  border: 1px solid rgba(210, 185, 170, 0.8) !important;
+  color: #2b1810 !important;
+  font-weight: 700 !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05) !important;
+}
+
+.menu-tab-btn.is-active {
+  background: #ff7b25 !important;
+  border-color: #ff7b25 !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 14px rgba(255, 123, 37, 0.35) !important;
+}
+
+.menu-tab-btn.is-active .menu-tab-count {
+  background: #ffffff !important;
+  color: #ff7b25 !important;
+}
+
+/* Search Bar & Dietary Filter Pills */
+.menu-search-box {
+  background: #ffffff !important;
+  border: 1px solid rgba(210, 185, 170, 0.8) !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06) !important;
+}
+
+.search-input,
+#menu-search-input {
+  color: #1a0f0a !important;
+}
+
+.filter-pill,
+.diet-pill {
+  background: #fbf7f3 !important;
+  border: 1px solid rgba(210, 185, 170, 0.8) !important;
+  color: #2b1810 !important;
+  font-weight: 700 !important;
+}
+
+.filter-pill.is-active,
+.diet-pill.is-active {
+  background: #ff7b25 !important;
+  border-color: #ff7b25 !important;
+  color: #ffffff !important;
+}
