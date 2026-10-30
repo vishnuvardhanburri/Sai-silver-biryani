@@ -5373,11 +5373,11 @@ textarea {
 .tech-tier-btn:hover,
 .tech-tier-dropdown:hover .tech-tier-btn,
 .tech-tier-dropdown.is-open .tech-tier-btn {
-  background: linear-gradient(135deg, #ff7b25 0%, #ff4d4d 100%) !important;
-  border-color: transparent !important;
+  background: rgba(255, 123, 37, 0.28) !important;
+  border-color: rgba(255, 177, 80, 0.65) !important;
   color: #ffffff !important;
-  text-shadow: none !important;
-  box-shadow: 0 6px 18px rgba(255, 123, 37, 0.4) !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9) !important;
+  box-shadow: 0 4px 18px rgba(255, 123, 37, 0.32) !important;
   transform: translateY(-2px) !important;
 }
 
@@ -5387,50 +5387,50 @@ textarea {
   color: #ffffff !important;
 }
 
-/* Dropdown Tier Panels (Crisp Light Card) */
+/* Dropdown Tier Panels — Dark Frosted Glass */
 .tech-tier-panel {
-  background: rgba(255, 255, 255, 0.96) !important;
-  backdrop-filter: blur(24px) saturate(190%) !important;
-  -webkit-backdrop-filter: blur(24px) saturate(190%) !important;
-  border: 1px solid rgba(255, 255, 255, 0.95) !important;
-  border-top: 3px solid #ff7b25 !important;
-  border-radius: 12px !important;
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.25) !important;
+  background: rgba(14, 9, 7, 0.94) !important;
+  backdrop-filter: blur(28px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(28px) saturate(180%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+  border-top: 2px solid rgba(255, 177, 80, 0.70) !important;
+  border-radius: 16px !important;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.70) !important;
   padding: 12px !important;
 }
 
 .tech-tier-panel__header {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.08) !important;
-  color: #d35400 !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12) !important;
+  color: #ffb150 !important;
   font-weight: 800 !important;
 }
 
 .tech-tier-row {
-  background: #faf6f2 !important;
-  border: 1px solid rgba(0, 0, 0, 0.05) !important;
-  border-radius: 6px !important;
-  color: #2b1810 !important;
+  background: rgba(255, 255, 255, 0.06) !important;
+  border: 1px solid rgba(255, 255, 255, 0.10) !important;
+  border-radius: 10px !important;
+  color: #ffffff !important;
 }
 
 .tech-tier-row:hover {
-  background: #fff0e6 !important;
-  border-color: #ff7b25 !important;
-  color: #1a0f0a !important;
+  background: rgba(255, 123, 37, 0.20) !important;
+  border-color: rgba(255, 177, 80, 0.50) !important;
+  color: #ffffff !important;
   transform: translateX(4px) !important;
 }
 
 .tech-tier-row strong {
-  color: #1a0f0a !important;
+  color: #ffffff !important;
   font-size: 0.88rem !important;
 }
 
 .tech-tier-row small {
-  color: #6a584e !important;
+  color: rgba(255, 255, 255, 0.72) !important;
   font-size: 0.74rem !important;
 }
 
 .tech-tier-row .arrow-icon {
-  color: #e02438 !important;
+  color: #ffb150 !important;
   font-weight: 800 !important;
 }
 
@@ -6280,4 +6280,104 @@ label span {
 .button--zomato-mini,
 .button--swiggy-mini {
   border-radius: 999px !important;
+}
+
+/* ==========================================================================
+   v3.6 — Mobile Navigation Fix + Full Transparency Pass
+   ========================================================================== */
+
+/* Section-copy: always transparent, no box, no border at any breakpoint */
+.section-copy,
+.about-copy,
+.section-copy--center {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  border-radius: 0 !important;
+}
+
+/* Mobile Nav: breathing room, no overflow, wrapping */
+@media (max-width: 900px) {
+  .topbar {
+    padding: 12px 16px 10px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .topbar-main-row {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 10px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .brand-tech {
+    font-size: 1rem !important;
+  }
+
+  .tech-topbar-actions {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 6px !important;
+    width: 100% !important;
+  }
+
+  .tech-btn {
+    padding: 6px 10px !important;
+    font-size: 0.68rem !important;
+    border-radius: 999px !important;
+    white-space: nowrap !important;
+  }
+
+  .topbar-sub-row {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 8px !important;
+    padding-top: 8px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    overflow: visible !important;
+  }
+
+  .tech-breadcrumbs {
+    font-size: 0.68rem !important;
+    gap: 4px !important;
+    flex-wrap: wrap !important;
+    max-width: 100% !important;
+  }
+
+  .tech-tier-nav {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 6px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .tech-tier-btn {
+    font-size: 0.68rem !important;
+    padding: 6px 10px !important;
+    white-space: nowrap !important;
+    border-radius: 999px !important;
+  }
+
+  /* Dropdown panels: always left-anchored, never off-screen */
+  .tech-tier-panel {
+    left: 0 !important;
+    right: auto !important;
+    max-width: calc(100vw - 32px) !important;
+    min-width: 200px !important;
+    width: max-content !important;
+  }
+
+  /* Last 2 tiers: anchor right so they don't go off-screen */
+  .tech-tier-dropdown:nth-last-child(-n+2) .tech-tier-panel {
+    left: auto !important;
+    right: 0 !important;
+  }
 }
