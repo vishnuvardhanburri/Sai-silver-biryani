@@ -4049,6 +4049,7 @@ const WhatsAppCart = {
   CUSTOMER_KEY: "ssdb_customer_v1",
 
   init() {
+    window.WhatsAppCart = this;
     this.loadFromStorage();
     this.injectCartDOM();
     this.bindEvents();
