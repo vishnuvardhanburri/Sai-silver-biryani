@@ -31,7 +31,7 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css?v=3.8" />
+    <link rel="stylesheet" href="./styles.css?v=4.0" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -264,7 +264,7 @@
           <header class="topbar">
             <!-- ROW 1: BRAND + DIRECT ORDER ACTIONS -->
             <div class="topbar-main-row">
-              <a href="./index.html" class="brand-tech">
+              <a href="./" class="brand-tech">
                 <span class="brand-tech__name">Sai Silver Dum Biryani</span>
                 <span class="brand-tech__kicker">Authentic Hyderabadi Cuisine &bull; Auto Nagar, Vijayawada</span>
               </a>
@@ -285,232 +285,20 @@
               </div>
             </div>
 
-            <!-- ROW 2: BREADCRUMB + 5 TIER CATEGORIZED DIRECTORY (VARDHAN TECH AESTHETIC) -->
-            <div class="topbar-sub-row">
-              <div class="tech-breadcrumbs">
-                <span>Sai Silver</span>
-                <span class="crumb-sep">&gt;</span>
-                <span>Auto Nagar Kitchen</span>
-                <span class="crumb-sep">&gt;</span>
-                <span>134 Verified Dishes</span>
+            <!-- ROW 2: MULTI-PAGE CLEAN NAVIGATION PILL BAR -->
+            <nav class="topbar-sub-row" aria-label="Website Navigation">
+              <div class="site-nav-scroll">
+                <ul class="site-nav-pills">
+                  <li><a href="./" class="nav-page-pill is-active">00. Home</a></li>
+                  <li><a href="./restaurant/" class="nav-page-pill">01. Restaurant</a></li>
+                  <li><a href="./menu-book.html" class="nav-page-pill">02. Menu System</a></li>
+                  <li><a href="./orders/" class="nav-page-pill">03. Orders</a></li>
+                  <li><a href="./payments/" class="nav-page-pill">04. Payments</a></li>
+                  <li><a href="./catering/" class="nav-page-pill">05. Catering</a></li>
+                  <li><a href="./contact/" class="nav-page-pill">06. Contact</a></li>
+                </ul>
               </div>
-
-              <!-- 5 TIERS (NO OVAL) -->
-              <nav class="tech-tier-nav" aria-label="System Directory">
-                <!-- Tier 1: Restaurant -->
-                <div class="tech-tier-dropdown">
-                  <button type="button" class="tech-tier-btn" aria-haspopup="true" aria-expanded="false">
-                    <span>01. Restaurant</span>
-                    <span class="toggle-icon">+</span>
-                  </button>
-                  <div class="tech-tier-panel">
-                    <div class="tech-tier-panel__header">
-                      <span>Sai Silver / Restaurant</span>
-                      <span>03 Topics</span>
-                    </div>
-                    <div class="tech-tier-list">
-                      <a href="#about" class="tech-tier-row" data-scroll-target="about">
-                        <span>
-                          <strong>About Restaurant</strong>
-                          <small>Heritage &amp; slow-dum tradition</small>
-                        </span>
-                        <span class="arrow-icon">&nearr;</span>
-                      </a>
-                      <a href="#videos" class="tech-tier-row" data-scroll-target="videos">
-                        <span>
-                          <strong>Meet Founder (Krishna)</strong>
-                          <small>Owner podcast &amp; video interview</small>
-                        </span>
-                        <span class="arrow-icon">&nearr;</span>
-                      </a>
-                      <a href="#gallery" class="tech-tier-row" data-scroll-target="gallery">
-                        <span>
-                          <strong>Kitchen Dum Craft</strong>
-                          <small>Handi dum gallery &amp; dining space</small>
-                        </span>
-                        <span class="arrow-icon">&nearr;</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Tier 2: Menu System -->
-                <div class="tech-tier-dropdown">
-                  <button type="button" class="tech-tier-btn" aria-haspopup="true" aria-expanded="false">
-                    <span>02. Menu System</span>
-                    <span class="toggle-icon">+</span>
-                  </button>
-                  <div class="tech-tier-panel">
-                    <div class="tech-tier-panel__header">
-                      <span>Kitchen Directory / Menu</span>
-                      <span>134 Items</span>
-                    </div>
-                    <div class="tech-tier-list">
-                      <a href="#menu" class="tech-tier-row" data-scroll-target="menu" data-tier-filter="all">
-                        <span>
-                          <strong>All 134 Authentic Dishes</strong>
-                          <small>Live prices &amp; direct ordering</small>
-                        </span>
-                        <span class="arrow-icon">&nearr;</span>
-                      </a>
-                      <a href="#menu" class="tech-tier-row" data-scroll-target="menu" data-tier-filter="veg">
-                        <span>
-                          <strong>Pure Veg Specialties</strong>
-                          <small>Paneer, Kaju &amp; Veggies (40 items)</small>
-                        </span>
-                        <span class="arrow-icon">&nearr;</span>
-                      </a>
-                      <a href="#menu" class="tech-tier-row" data-scroll-target="menu" data-tier-filter="non-veg">
-                        <span>
-                          <strong>Non-Veg Specialties</strong>
-                          <small>Chicken, Seafood &amp; Curries (94 items)</small>
-                        </span>
-                        <span class="arrow-icon">&nearr;</span>
-                      </a>
-                      <a href="#menu" class="tech-tier-row" data-scroll-target="menu" data-tier-speed="Couple &amp; Family Packs">
-                        <span>
-                          <strong>Couple &amp; Family Packs</strong>
-                          <small>Save up to 28% on combo meals</small>
-                        </span>
-                        <span class="arrow-icon">&nearr;</span>
-                      </a>
-                      <a href="./menu-book.html" class="tech-tier-row" style="background:rgba(255,177,80,0.1);border-color:rgba(255,177,80,0.3);">
-                        <span>
-                          <strong style="color:#ffb150;">Digital Menu Book &amp; Calculator</strong>
-                          <small>Analytical view &amp; portion calculator</small>
-                        </span>
-                        <span class="arrow-icon" style="color:#ffb150;">&rarr;</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Tier 3: Orders -->
-                <div class="tech-tier-dropdown">
-                  <button type="button" class="tech-tier-btn" aria-haspopup="true" aria-expanded="false">
-                    <span>03. Orders</span>
-                    <span class="toggle-icon">+</span>
-                  </button>
-                  <div class="tech-tier-panel">
-                    <div class="tech-tier-panel__header">
-                      <span>Delivery Channels / Live</span>
-                      <span>4 Methods</span>
-                    </div>
-                    <div class="tech-tier-list">
-                      <a href="https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order" target="_blank" rel="noreferrer" class="tech-tier-row">
-                        <span>
-                          <strong style="color:#ff707b;">Order on Zomato</strong>
-                          <small>Live GPS tracking &amp; offers</small>
-                        </span>
-                        <span class="arrow-icon">&nearr;</span>
-                      </a>
-                      <a href="https://www.swiggy.com/city/vijayawada/sai-silver-dum-biryani-mogalrajapuram-benz-circle-and-auto-nagar-rest809458" target="_blank" rel="noreferrer" class="tech-tier-row">
-                        <span>
-                          <strong style="color:#ff9d47;">Order on Swiggy</strong>
-                          <small>Doorstep Vijayawada delivery</small>
-                        </span>
-                        <span class="arrow-icon">&nearr;</span>
-                      </a>
-                      <a href="https://wa.me/918919443535?text=Hi%20Sai%20Silver%20Dum%20Biryani,%20I%20would%20like%20to%20order" target="_blank" rel="noreferrer" class="tech-tier-row">
-                        <span>
-                          <strong style="color:#25d366;">WhatsApp Direct Order (89194 43535)</strong>
-                          <small>Direct takeaway dispatch</small>
-                        </span>
-                        <span class="arrow-icon">&nearr;</span>
-                      </a>
-                      <a href="#catering" class="tech-tier-row" data-scroll-target="catering">
-                        <span>
-                          <strong>Event &amp; Bulk Catering</strong>
-                          <small>20 to 500+ guests packages</small>
-                        </span>
-                        <span class="arrow-icon">&nearr;</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Tier 4: Payments -->
-                <div class="tech-tier-dropdown">
-                  <button type="button" class="tech-tier-btn" aria-haspopup="true" aria-expanded="false">
-                    <span>04. Payments</span>
-                    <span class="toggle-icon">+</span>
-                  </button>
-                  <div class="tech-tier-panel">
-                    <div class="tech-tier-panel__header">
-                      <span>Checkout / UPI Verification</span>
-                      <span>Direct</span>
-                    </div>
-                    <div class="tech-tier-list">
-                      <a href="#payments" class="tech-tier-row" data-scroll-target="payments">
-                        <span>
-                          <strong>Direct UPI &amp; QR Codes</strong>
-                          <small>GPay / PhonePe / Paytm to 89194 43535</small>
-                        </span>
-                        <span class="arrow-icon">&nearr;</span>
-                      </a>
-                      <a href="https://wa.me/918919443535?text=Hi%20Krishna%20/%20Sai%20Silver%20Dum%20Biryani,%20I%20have%20made%20a%20UPI%20payment%20for%20my%20order" target="_blank" rel="noreferrer" class="tech-tier-row">
-                        <span>
-                          <strong style="color:#25d366;">WhatsApp Payment Screenshot</strong>
-                          <small>Direct to owner Krishna (89194 43535)</small>
-                        </span>
-                        <span class="arrow-icon">&nearr;</span>
-                      </a>
-                      <a href="#payments" class="tech-tier-row" data-scroll-target="payments">
-                        <span>
-                          <strong>Cash &amp; POS Counter Swipe</strong>
-                          <small>Available at Sanath Nagar kitchen</small>
-                        </span>
-                        <span class="arrow-icon">&nearr;</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Tier 5: Directory -->
-                <div class="tech-tier-dropdown">
-                  <button type="button" class="tech-tier-btn" aria-haspopup="true" aria-expanded="false">
-                    <span>05. Directory</span>
-                    <span class="toggle-icon">+</span>
-                  </button>
-                  <div class="tech-tier-panel">
-                    <div class="tech-tier-panel__header">
-                      <span>Official Links &amp; Hotline</span>
-                      <span>Auto Nagar</span>
-                    </div>
-                    <div class="tech-tier-list">
-                      <a href="tel:08919443535" class="tech-tier-row">
-                        <span>
-                          <strong>Hotline: 089194 43535</strong>
-                          <small>Reservations &amp; kitchen queries</small>
-                        </span>
-                        <span class="arrow-icon">&nearr;</span>
-                      </a>
-                      <a href="https://wa.me/918919443535" target="_blank" rel="noreferrer" class="tech-tier-row">
-                        <span>
-                          <strong style="color:#25d366;">WhatsApp: 89194 43535</strong>
-                          <small>Direct chat with owner Krishna</small>
-                        </span>
-                        <span class="arrow-icon">&nearr;</span>
-                      </a>
-                      <a href="#contact" class="tech-tier-row" data-scroll-target="contact">
-                        <span>
-                          <strong>Auto Nagar Location &amp; Map</strong>
-                          <small>Sanath Nagar, Vijayawada 520007</small>
-                        </span>
-                        <span class="arrow-icon">&nearr;</span>
-                      </a>
-                      <a href="./links/" class="tech-tier-row">
-                        <span>
-                          <strong>Official Links Directory</strong>
-                          <small>Social pages &amp; online channels</small>
-                        </span>
-                        <span class="arrow-icon">&rarr;</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </nav>
-            </div>
+            </nav>
           </header>
 
           <div class="hero-copy">
@@ -589,6 +377,103 @@
       </nav>
 
       <main>
+        <!-- DEDICATED EXPERIENCE PORTALS (INNOVATIVE MULTI-PAGE ARCHITECTURE) -->
+        <section class="section" id="portals" style="padding: 40px 0 20px;">
+          <div class="container">
+            <div class="section-copy section-copy--center">
+              <span class="eyebrow-badge"><span class="live-dot"></span> Explore Dedicated Experiences</span>
+              <h2>Everything at a Glance</h2>
+              <p>Direct access to our dedicated sections for in-depth menus, direct delivery apps, verified UPI, and catering.</p>
+            </div>
+
+            <div class="portal-grid">
+              <a href="./restaurant/" class="portal-card">
+                <div>
+                  <div class="portal-card__icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8zM6 1v3M10 1v3M14 1v3"/></svg>
+                  </div>
+                  <h3>01. Restaurant &amp; Heritage</h3>
+                  <p>Authentic slow-dum heritage, master chefs, Auto Nagar kitchen hygiene, founder Krishna spotlight, and 4.4★ Google reviews.</p>
+                </div>
+                <div class="portal-card__footer">
+                  <span>Explore Restaurant Story</span>
+                  <span>&rarr;</span>
+                </div>
+              </a>
+
+              <a href="./menu-book.html" class="portal-card">
+                <div>
+                  <div class="portal-card__icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M4 4.5A2.5 2.5 0 0 1 6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15z"/></svg>
+                  </div>
+                  <h3>02. Menu System (134 Dishes)</h3>
+                  <p>Complete interactive menu book with instant search, dietary Veg/Non-Veg filter, portion details, and live delivery pricing.</p>
+                </div>
+                <div class="portal-card__footer">
+                  <span>Open Digital Menu Book</span>
+                  <span>&rarr;</span>
+                </div>
+              </a>
+
+              <a href="./orders/" class="portal-card">
+                <div>
+                  <div class="portal-card__icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                  </div>
+                  <h3>03. Orders &amp; Delivery</h3>
+                  <p>Order direct on Zomato, Swiggy, or WhatsApp. Real-time delivery coverage across Auto Nagar, Benz Circle, and Sanath Nagar.</p>
+                </div>
+                <div class="portal-card__footer">
+                  <span>View Order Channels</span>
+                  <span>&rarr;</span>
+                </div>
+              </a>
+
+              <a href="./payments/" class="portal-card">
+                <div>
+                  <div class="portal-card__icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+                  </div>
+                  <h3>04. Payments &amp; Direct UPI</h3>
+                  <p>Direct UPI verification to 89194 43535 (Krishna), QR code scan, online app settlement, and 100% billing transparency.</p>
+                </div>
+                <div class="portal-card__footer">
+                  <span>Check Payment Modes</span>
+                  <span>&rarr;</span>
+                </div>
+              </a>
+
+              <a href="./catering/" class="portal-card">
+                <div>
+                  <div class="portal-card__icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                  </div>
+                  <h3>05. Party &amp; Bulk Catering</h3>
+                  <p>Authentic handi catering for 20 to 500+ guests with live chef counter setup, digital GST invoice, and advance booking.</p>
+                </div>
+                <div class="portal-card__footer">
+                  <span>Explore Catering Tiers</span>
+                  <span>&rarr;</span>
+                </div>
+              </a>
+
+              <a href="./contact/" class="portal-card">
+                <div>
+                  <div class="portal-card__icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  </div>
+                  <h3>06. Contact, Map &amp; Hotline</h3>
+                  <p>Auto Nagar kitchen address, direct phone hotline (089194 43535), live Google Map directions, and daily operating hours.</p>
+                </div>
+                <div class="portal-card__footer">
+                  <span>Find Us &amp; Call Now</span>
+                  <span>&rarr;</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+
         <section class="section section--about" id="about">
           <div class="container about-grid">
             <div class="about-visual">

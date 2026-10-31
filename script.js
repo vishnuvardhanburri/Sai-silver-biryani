@@ -1,3 +1,11 @@
+// Clean URL: Strip /index.html from URL bar seamlessly for clean "saisilverdumbiryani.com/" or "saisilverdumbiryani.com/home/" appearance
+try {
+  if (window.location.pathname.endsWith('/index.html') || window.location.pathname === '/index.html') {
+    const cleanPath = window.location.pathname.replace(/\/index\.html$/, '/') + window.location.search + window.location.hash;
+    window.history.replaceState(null, '', cleanPath || '/');
+  }
+} catch (e) {}
+
 document.documentElement.classList.add("js");
 
 const restaurantInfo = {
@@ -3341,6 +3349,15 @@ function renderMenuCards(animate = false) {
                 <span class="list-row__price" id="card-price-${item.id}">${formatCurrency(currentPrice)}</span>
               </div>
               <div class="list-row__btns">
+                <button
+                  type="button"
+                  class="btn-add-to-cart"
+                  data-add-to-cart="${item.id}"
+                  title="Add ${escapeHtml(item.name)} to your order"
+                >
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                  <span>+ Add</span>
+                </button>
                 <a
                   href="https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
                   target="_blank"
@@ -3464,6 +3481,15 @@ function renderMenuCards(animate = false) {
 
               <div class="menu-card__actions">
                 <div class="menu-card__order-group">
+                  <button
+                    type="button"
+                    class="btn-add-to-cart"
+                    data-add-to-cart="${item.id}"
+                    title="Add ${escapeHtml(item.name)} to your order"
+                  >
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                    <span>+ Add to Cart</span>
+                  </button>
                   <a
                     href="https://www.zomato.com/vijayawada/sai-silver-dum-biryani-auto-nagar/order"
                     target="_blank"
@@ -3848,6 +3874,16 @@ function handleMenuGridInteractions(event) {
     renderMenuCards();
     return;
   }
+
+  const addBtn = event.target.closest("[data-add-to-cart]");
+  if (addBtn) {
+    event.stopPropagation();
+    const dishId = Number(addBtn.dataset.addToCart);
+    if (typeof WhatsAppCart !== "undefined") {
+      WhatsAppCart.addItem(dishId);
+    }
+    return;
+  }
 }
 
 function handleDietFilter(event) {
@@ -4004,6 +4040,473 @@ function setupHeroParallax() {
   heroBackdrop.style.transform = "";
 }
 
+// ==========================================================================
+// WHATSAPP DIRECT CART & CHECKOUT CONTROLLER (MOBILE + DESKTOP)
+// ==========================================================================
+const WhatsAppCart = {
+  items: [],
+  STORAGE_KEY: "ssdb_cart_v1",
+  CUSTOMER_KEY: "ssdb_customer_v1",
+
+  init() {
+    this.loadFromStorage();
+    this.injectCartDOM();
+    this.bindEvents();
+    this.updateUI();
+  },
+
+  loadFromStorage() {
+    try {
+      const saved = localStorage.getItem(this.STORAGE_KEY);
+      if (saved) {
+        this.items = JSON.parse(saved);
+        if (!Array.isArray(this.items)) this.items = [];
+      }
+    } catch (e) {
+      this.items = [];
+    }
+  },
+
+  saveToStorage() {
+    try {
+      localStorage.setItem(this.STORAGE_KEY, JSON.stringify(this.items));
+    } catch (e) {}
+  },
+
+  getCustomerInfo() {
+    try {
+      const saved = localStorage.getItem(this.CUSTOMER_KEY);
+      return saved ? JSON.parse(saved) : {};
+    } catch (e) {
+      return {};
+    }
+  },
+
+  saveCustomerInfo(info) {
+    try {
+      localStorage.setItem(this.CUSTOMER_KEY, JSON.stringify(info));
+    } catch (e) {}
+  },
+
+  addItem(dishId, portionName = null, overridePrice = null) {
+    let dish = null;
+    for (const cat of menuItems) {
+      const d = cat.items.find((i) => i.id === dishId);
+      if (d) {
+        dish = d;
+        break;
+      }
+    }
+    if (!dish) return;
+
+    let portion = portionName;
+    let price = overridePrice;
+    if (!portion) {
+      const sel = selectedPortions[dishId];
+      if (sel) {
+        portion = sel.name;
+        price = sel.price;
+      } else if (dish.portions && dish.portions.length > 0) {
+        portion = dish.portions[0].name;
+        price = dish.portions[0].price;
+      } else {
+        portion = "Standard";
+        price = dish.price;
+      }
+    }
+    if (price == null) price = dish.price;
+
+    const existingIndex = this.items.findIndex(
+      (i) => i.id === dishId && i.portion === portion
+    );
+
+    if (existingIndex > -1) {
+      this.items[existingIndex].quantity += 1;
+    } else {
+      this.items.push({
+        id: dishId,
+        name: dish.name,
+        portion: portion,
+        price: Number(price),
+        quantity: 1,
+        isVeg: Boolean(dish.isVeg),
+      });
+    }
+
+    this.saveToStorage();
+    this.updateUI();
+    this.showAddedFeedback(dish.name, portion);
+  },
+
+  updateQuantity(index, delta) {
+    if (index >= 0 && index < this.items.length) {
+      this.items[index].quantity += delta;
+      if (this.items[index].quantity <= 0) {
+        this.items.splice(index, 1);
+      }
+      this.saveToStorage();
+      this.updateUI();
+    }
+  },
+
+  removeItem(index) {
+    if (index >= 0 && index < this.items.length) {
+      this.items.splice(index, 1);
+      this.saveToStorage();
+      this.updateUI();
+    }
+  },
+
+  clear() {
+    this.items = [];
+    this.saveToStorage();
+    this.updateUI();
+  },
+
+  getTotalCount() {
+    return this.items.reduce((sum, item) => sum + item.quantity, 0);
+  },
+
+  getGrandTotal() {
+    return this.items.reduce((sum, item) => sum + item.price * item.quantity, 0);
+  },
+
+  injectCartDOM() {
+    if (document.querySelector("#floating-cart-btn")) return;
+
+    const floatingBtn = document.createElement("button");
+    floatingBtn.type = "button";
+    floatingBtn.id = "floating-cart-btn";
+    floatingBtn.className = "floating-cart-btn";
+    floatingBtn.setAttribute("aria-label", "View order cart");
+    floatingBtn.innerHTML = `
+      <span class="cart-icon-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="9" cy="21" r="1"></circle>
+          <circle cx="20" cy="21" r="1"></circle>
+          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+        </svg>
+        <span class="cart-count" id="cart-count-badge">0</span>
+      </span>
+      <span class="cart-btn-label">
+        <span class="cart-btn-title">View Cart</span>
+        <span class="cart-btn-total" id="cart-btn-total-amount">₹0</span>
+      </span>
+    `;
+    document.body.appendChild(floatingBtn);
+
+    const modalBackdrop = document.createElement("div");
+    modalBackdrop.id = "cart-modal-backdrop";
+    modalBackdrop.className = "cart-modal-backdrop";
+    modalBackdrop.hidden = true;
+    modalBackdrop.innerHTML = `
+      <div class="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cart-title">
+        <div class="cart-header">
+          <div>
+            <h2 id="cart-title">Your Order Cart</h2>
+            <p style="margin: 3px 0 0; font-size: 0.80rem; color: #ffb150; font-weight: 600;">Sai Silver Dum Biryani • Instant WhatsApp Kitchen Dispatch</p>
+          </div>
+          <button type="button" class="cart-close-btn" id="cart-close-btn" aria-label="Close cart">&times;</button>
+        </div>
+
+        <div class="cart-items-list" id="cart-items-list"></div>
+
+        <div class="cart-summary" id="cart-summary">
+          <span>Estimated Total:</span>
+          <strong id="cart-grand-total">₹0</strong>
+        </div>
+
+        <form class="cart-form" id="cart-checkout-form">
+          <div class="cart-form-group">
+            <label for="cart-customer-name">Full Name *</label>
+            <input type="text" id="cart-customer-name" name="name" placeholder="Enter your full name" required autocomplete="name" />
+          </div>
+
+          <div class="cart-form-group">
+            <label for="cart-customer-phone">WhatsApp Mobile Number *</label>
+            <input type="tel" id="cart-customer-phone" name="phone" placeholder="10-digit mobile number (e.g. 9876543210)" pattern="[0-9]{10}" maxlength="10" required autocomplete="tel" />
+          </div>
+
+          <div class="cart-form-group">
+            <label for="cart-order-type">Order Delivery Preference</label>
+            <select id="cart-order-type" name="orderType">
+              <option value="Home Delivery">Door Delivery (Auto Nagar, Benz Circle, Sanath Nagar, Mogalrajapuram)</option>
+              <option value="Takeaway Counter">Takeaway Pickup at Sanath Nagar Counter (15 mins)</option>
+              <option value="Party Bulk Handi">Party / Event Handi Order</option>
+            </select>
+          </div>
+
+          <div class="cart-form-group">
+            <label for="cart-customer-address">Complete Address & Landmark *</label>
+            <textarea id="cart-customer-address" name="address" rows="2" placeholder="House/Flat No., Apartment, Street, Landmark, Vijayawada" required></textarea>
+          </div>
+
+          <div class="cart-form-group">
+            <label for="cart-customer-notes">Special Cooking Notes (Optional)</label>
+            <input type="text" id="cart-customer-notes" name="notes" placeholder="e.g. Less spicy, extra raita & salan, call on arrival" />
+          </div>
+
+          <button type="submit" class="button button--solid" style="width: 100%; margin-top: 10px; font-size: 1.02rem; font-weight: 800; padding: 15px 20px; justify-content: center; background: linear-gradient(135deg, #25D366 0%, #128C7E 100%); border-color: #25D366; box-shadow: 0 10px 24px rgba(37, 211, 102, 0.45);">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm5.78 14.12c-.24.68-1.39 1.3-1.92 1.38-.49.07-1.12.1-3.24-.77-2.7-1.12-4.44-3.87-4.57-4.05-.14-.18-1.09-1.45-1.09-2.76 0-1.32.69-1.96.93-2.23.24-.27.53-.34.71-.34.18 0 .36 0 .52.01.17.01.4.06.61.56.24.58.82 2 .89 2.15.07.15.12.33.02.53-.1.2-.15.33-.3.51-.15.18-.32.4-.46.54-.15.15-.31.31-.13.62.18.31.8 1.32 1.72 2.14 1.18 1.05 2.18 1.38 2.49 1.53.31.15.49.13.67-.08.18-.21.78-.91.99-1.22.21-.31.42-.26.71-.15.29.11 1.86.88 2.18 1.04.32.16.53.24.61.37.08.13.08.76-.16 1.44z"/></svg>
+            <span>Order Now via WhatsApp</span>
+          </button>
+        </form>
+      </div>
+    `;
+    document.body.appendChild(modalBackdrop);
+
+    // Prefill customer info if saved
+    const info = this.getCustomerInfo();
+    if (info.name) {
+      const nameInput = document.querySelector("#cart-customer-name");
+      if (nameInput) nameInput.value = info.name;
+    }
+    if (info.phone) {
+      const phoneInput = document.querySelector("#cart-customer-phone");
+      if (phoneInput) phoneInput.value = info.phone;
+    }
+    if (info.orderType) {
+      const typeInput = document.querySelector("#cart-order-type");
+      if (typeInput) typeInput.value = info.orderType;
+    }
+    if (info.address) {
+      const addrInput = document.querySelector("#cart-customer-address");
+      if (addrInput) addrInput.value = info.address;
+    }
+    if (info.notes) {
+      const notesInput = document.querySelector("#cart-customer-notes");
+      if (notesInput) notesInput.value = info.notes;
+    }
+  },
+
+  bindEvents() {
+    const floatingBtn = document.querySelector("#floating-cart-btn");
+    const backdrop = document.querySelector("#cart-modal-backdrop");
+    const closeBtn = document.querySelector("#cart-close-btn");
+    const form = document.querySelector("#cart-checkout-form");
+    const itemsList = document.querySelector("#cart-items-list");
+
+    if (floatingBtn) {
+      floatingBtn.addEventListener("click", () => this.openCart());
+    }
+
+    if (closeBtn) {
+      closeBtn.addEventListener("click", () => this.closeCart());
+    }
+
+    if (backdrop) {
+      backdrop.addEventListener("click", (e) => {
+        if (e.target === backdrop) this.closeCart();
+      });
+    }
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && backdrop && !backdrop.hidden) {
+        this.closeCart();
+      }
+    });
+
+    if (itemsList) {
+      itemsList.addEventListener("click", (e) => {
+        const plusBtn = e.target.closest("[data-cart-plus]");
+        if (plusBtn) {
+          const index = Number(plusBtn.dataset.cartPlus);
+          this.updateQuantity(index, 1);
+          return;
+        }
+        const minusBtn = e.target.closest("[data-cart-minus]");
+        if (minusBtn) {
+          const index = Number(minusBtn.dataset.cartMinus);
+          this.updateQuantity(index, -1);
+          return;
+        }
+        const removeBtn = e.target.closest("[data-cart-remove]");
+        if (removeBtn) {
+          const index = Number(removeBtn.dataset.cartRemove);
+          this.removeItem(index);
+          return;
+        }
+      });
+    }
+
+    if (form) {
+      form.addEventListener("submit", (e) => this.handleCheckout(e));
+    }
+
+    // Global listener for any add-to-cart clicks
+    document.addEventListener("click", (e) => {
+      const btn = e.target.closest("[data-add-to-cart]");
+      if (btn) {
+        const dishId = Number(btn.dataset.addToCart);
+        if (dishId) {
+          this.addItem(dishId);
+        }
+      }
+    });
+  },
+
+  openCart() {
+    const backdrop = document.querySelector("#cart-modal-backdrop");
+    if (backdrop) {
+      this.updateUI();
+      backdrop.hidden = false;
+      document.body.style.overflow = "hidden";
+    }
+  },
+
+  closeCart() {
+    const backdrop = document.querySelector("#cart-modal-backdrop");
+    if (backdrop) {
+      backdrop.hidden = true;
+      document.body.style.overflow = "";
+    }
+  },
+
+  updateUI() {
+    const totalCount = this.getTotalCount();
+    const grandTotal = this.getGrandTotal();
+
+    const floatingBtn = document.querySelector("#floating-cart-btn");
+    const countBadge = document.querySelector("#cart-count-badge");
+    const totalAmount = document.querySelector("#cart-btn-total-amount");
+
+    if (floatingBtn && countBadge && totalAmount) {
+      countBadge.textContent = totalCount;
+      totalAmount.textContent = `${totalCount} item${totalCount === 1 ? "" : "s"} • ₹${grandTotal}`;
+      if (totalCount > 0) {
+        floatingBtn.classList.add("is-visible");
+        floatingBtn.style.display = "inline-flex";
+      } else {
+        floatingBtn.classList.remove("is-visible");
+        floatingBtn.style.display = "none";
+      }
+    }
+
+    const itemsList = document.querySelector("#cart-items-list");
+    const grandTotalEl = document.querySelector("#cart-grand-total");
+    const formEl = document.querySelector("#cart-checkout-form");
+
+    if (grandTotalEl) {
+      grandTotalEl.textContent = `₹${grandTotal}`;
+    }
+
+    if (itemsList) {
+      if (this.items.length === 0) {
+        itemsList.innerHTML = `
+          <div style="text-align: center; padding: 28px 14px; color: rgba(255, 255, 255, 0.70);">
+            <div style="font-size: 2.4rem; margin-bottom: 8px;">🛒</div>
+            <strong style="color: #ffffff; font-size: 1.05rem; display: block; margin-bottom: 4px;">Your Cart is Empty</strong>
+            <p style="font-size: 0.85rem; margin: 0; line-height: 1.4;">Add your favorite Biryanis, Starters, and Curries from the menu to build your WhatsApp order!</p>
+          </div>
+        `;
+        if (formEl) formEl.style.display = "none";
+      } else {
+        if (formEl) formEl.style.display = "flex";
+        itemsList.innerHTML = this.items
+          .map(
+            (item, idx) => `
+          <div class="cart-item-row">
+            <div class="cart-item-info">
+              <div class="cart-item-name">
+                <span style="display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: ${item.isVeg ? "#00c853" : "#e53935"}; margin-right: 6px; vertical-align: middle;"></span>
+                ${escapeHtml(item.name)}
+              </div>
+              <div class="cart-item-portion">${escapeHtml(item.portion)} • ₹${item.price} each</div>
+            </div>
+            <div class="cart-qty-ctrl">
+              <button type="button" class="cart-qty-btn" data-cart-minus="${idx}" aria-label="Decrease quantity">&minus;</button>
+              <span class="cart-qty-val">${item.quantity}</span>
+              <button type="button" class="cart-qty-btn" data-cart-plus="${idx}" aria-label="Increase quantity">&#43;</button>
+            </div>
+            <div class="cart-item-price">₹${item.price * item.quantity}</div>
+            <button type="button" data-cart-remove="${idx}" aria-label="Remove item" style="background: none; border: none; color: rgba(255, 255, 255, 0.5); cursor: pointer; font-size: 1.3rem; line-height: 1; padding: 0 4px;">&times;</button>
+          </div>
+        `
+          )
+          .join("");
+      }
+    }
+  },
+
+  showAddedFeedback(dishName, portion) {
+    if (typeof showToast === "function") {
+      showToast(`✓ Added ${dishName} (${portion}) to cart! Tap cart icon to checkout.`);
+    }
+    const floatingBtn = document.querySelector("#floating-cart-btn");
+    if (floatingBtn) {
+      floatingBtn.style.transform = "scale(1.12)";
+      setTimeout(() => {
+        floatingBtn.style.transform = "";
+      }, 300);
+    }
+  },
+
+  handleCheckout(e) {
+    e.preventDefault();
+    if (this.items.length === 0) {
+      alert("Please add at least one dish to your cart before ordering.");
+      return;
+    }
+
+    const nameInput = document.querySelector("#cart-customer-name");
+    const phoneInput = document.querySelector("#cart-customer-phone");
+    const typeInput = document.querySelector("#cart-order-type");
+    const addrInput = document.querySelector("#cart-customer-address");
+    const notesInput = document.querySelector("#cart-customer-notes");
+
+    const name = nameInput ? nameInput.value.trim() : "";
+    const phone = phoneInput ? phoneInput.value.trim() : "";
+    const orderType = typeInput ? typeInput.value : "Home Delivery";
+    const address = addrInput ? addrInput.value.trim() : "";
+    const notes = notesInput ? notesInput.value.trim() : "";
+
+    if (!name) {
+      alert("Please enter your name.");
+      return;
+    }
+    if (!phone || phone.length < 10) {
+      alert("Please enter a valid 10-digit mobile number.");
+      return;
+    }
+    if (!address) {
+      alert("Please enter your delivery address / landmark.");
+      return;
+    }
+
+    this.saveCustomerInfo({ name, phone, orderType, address, notes });
+
+    const totalCount = this.getTotalCount();
+    const grandTotal = this.getGrandTotal();
+
+    const itemsSummary = this.items
+      .map((it, i) => `${i + 1}. *${it.name}* (${it.portion}) x ${it.quantity} = ₹${it.price * it.quantity}`)
+      .join("\n");
+
+    const message =
+`*🍗 NEW ORDER - SAI SILVER DUM BIRYANI*
+━━━━━━━━━━━━━━━━━━━━
+*Customer Details:*
+• *Name:* ${name}
+• *Mobile:* ${phone}
+• *Order Preference:* ${orderType}
+• *Delivery Address:* ${address}
+${notes ? `• *Special Notes:* ${notes}\n` : ""}
+*Order Items (${totalCount} item${totalCount === 1 ? "" : "s"}):*
+${itemsSummary}
+
+*Estimated Bill Total:* *₹${grandTotal}*
+━━━━━━━━━━━━━━━━━━━━
+_Order placed via saisilverdumbiryani.com_
+_Please confirm preparation time, delivery, and payment UPI._`;
+
+    const whatsappUrl = `https://wa.me/918919443535?text=${encodeURIComponent(message)}`;
+
+    this.clear();
+    this.closeCart();
+    window.open(whatsappUrl, "_blank");
+  },
+};
+
 function init() {
   queryDOMElements();
 
@@ -4017,6 +4520,7 @@ function init() {
   renderCatering();
   setupRevealAnimations();
   setupHeroParallax();
+  WhatsAppCart.init();
 
   document.addEventListener("click", handleScrollClick);
   if (menuTabs) menuTabs.addEventListener("click", handleMenuClick);
